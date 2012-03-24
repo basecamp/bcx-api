@@ -25,11 +25,12 @@ Messages are listed alongside all the other [topics](https://github.com/37signal
   "comments": [
     {
       "content": "Yeah, really, welcome!",
+      "created_at": "2012-03-22T16:56:48-05:00",
+      "updated_at": "2012-03-22T16:56:48-05:00"
       "creator": {
         "id": 149087659,
         "name": "Jason Fried"
-      },
-      "created_at": "2012-03-22T16:56:48-05:00"
+      }
     }
   ]
 }
