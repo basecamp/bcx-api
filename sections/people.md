@@ -15,12 +15,14 @@ Get people
     "id": 149087659,
     "name": "Jason Fried",
     "email_address": "jason@37signals.com",
+    "updated_at": "2012-03-22T16:56:48-05:00",
     "url": "https://basecamp.com/735644780/api/v1/people/149087659-jason-fried.json"
   },
   {
     "id": 1071630348,
     "name": "Jeremy Kemper",
     "email_address": "jeremy@37signals.com",
+    "updated_at": "2012-03-22T16:56:48-05:00",
     "url": "https://basecamp.com/735644780/api/v1/people/1071630348-jeremy-kemper.json"
   }
 ]
