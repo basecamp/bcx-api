@@ -58,7 +58,7 @@ Get projects
     "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx/calendar_events.json"
   },
   "documents": {
-    "count": 1,
+    "count": 0,
     "updated_at": null,
     "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx/documents.json"
   },
@@ -88,4 +88,19 @@ Create project
 }
 ```
 
-This will return `200 OK` with the location of the new project in the `Location` header, if the creation was a success. If the user does not have access to create new projects or the account has reached the project limit, you'll see `403 Forbidden`.
+This will return `200 OK`, with the location of the new project in the `Location` header, if the creation was a success. If the user does not have access to create new projects or the account has reached the project limit, you'll see `403 Forbidden`.
+
+
+Update project
+---------------
+
+* `PUT /projects/1.json` will update the project from the parameters passed.
+
+```json
+{
+  "name": "This is a new name for the project!",
+  "description": "And a new description..."
+}
+```
+
+This will return `200 OK` if the update was a success. If the user does not have access to update the project, you'll see `403 Forbidden`.
