@@ -54,7 +54,8 @@ Get people
     "updated_at": "2012-03-22T16:56:47-05:00",
     "url": "http://bcx.dev/735644780/api/v1/people/149087659-jason-fried/attachments.json"
   }
-}```
+}
+```
 
 Create/update people
 --------------------
