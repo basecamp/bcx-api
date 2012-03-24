@@ -10,17 +10,19 @@ Get comments
 Comments are included on the [topics](https://github.com/37signals/bcx-api/blob/master/sections/topics.md) directly. So to see all comments for a message, you'd just GET that message and they're included and look like this:
 
 ```json
-"comments": [
-  {
-    "content": "Yeah, really, welcome!",
-    "created_at": "2012-03-22T16:56:48-05:00",
-    "updated_at": "2012-03-22T16:56:48-05:00"
-    "creator": {
-      "id": 149087659,
-      "name": "Jason Fried"
+{
+  "comments": [
+    {
+      "content": "Yeah, really, welcome!",
+      "created_at": "2012-03-22T16:56:48-05:00",
+      "updated_at": "2012-03-22T16:56:48-05:00"
+      "creator": {
+        "id": 149087659,
+        "name": "Jason Fried"
+      }
     }
-  }
-]
+  ]
+}
 ```
 
 
