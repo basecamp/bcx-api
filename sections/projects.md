@@ -1,4 +1,6 @@
-== Projects
+Projects
+========
+
 
 `GET /projects.json`
 
