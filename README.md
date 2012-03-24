@@ -1,3 +1,3 @@
-= The new Basecamp API
+== The new Basecamp API
 
 IT'S SO WONDERFUL!
