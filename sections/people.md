@@ -3,6 +3,7 @@ People
 
 > The major problems of our work are not so much technological as sociological in nature - T. DeMarco & T. Lister
 
+
 Get people
 ----------
 
@@ -56,6 +57,7 @@ Get people
   }
 }
 ```
+
 
 Create/update people
 --------------------

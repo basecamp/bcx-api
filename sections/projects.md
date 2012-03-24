@@ -4,6 +4,7 @@ Projects
 > Operations keeps the lights on, strategy provides a light at the end of the tunnel, 
 > but project management is the train engine that moves the organization forward - Joy Gumz
 
+
 Get projects
 ------------
 
@@ -75,6 +76,7 @@ Get projects
   }
 }
 ```
+
 
 Create project
 --------------
