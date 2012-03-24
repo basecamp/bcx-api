@@ -2,8 +2,7 @@ Projects
 ========
 
 > Operations keeps the lights on, strategy provides a light at the end of the tunnel, 
-> but project management is the train engine that moves the organization forward
-> - Joy Gumz
+> but project management is the train engine that moves the organization forward - Joy Gumz
 
 Get projects
 ------------
@@ -87,5 +86,6 @@ Create project
   "name": "This is my new project!",
   "description": "It's going to run real smooth"
 }
+```
 
 This will return `200 OK` with the location of the new project in the Location header, if the creation was a success. If the user does not have access to create new projects or the account has reached the project limit, you'll see `403 Forbidden`.
