@@ -7,8 +7,8 @@ Projects
 Get projects
 ------------
 
-`GET /projects.json` will return all active projects.
-`GET /projects/archived.json` will return all archived projects.
+* `GET /projects.json` will return all active projects.
+* `GET /projects/archived.json` will return all archived projects.
 
 ```json
 [
@@ -88,4 +88,4 @@ Create project
 }
 ```
 
-This will return `200 OK` with the location of the new project in the Location header, if the creation was a success. If the user does not have access to create new projects or the account has reached the project limit, you'll see `403 Forbidden`.
+This will return `200 OK` with the location of the new project in the `Location` header, if the creation was a success. If the user does not have access to create new projects or the account has reached the project limit, you'll see `403 Forbidden`.
