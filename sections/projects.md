@@ -46,33 +46,33 @@ Get projects
   "accesses": {
     "count": 5,
     "updated_at": "2012-03-23T13:55:43-05:00",
-    "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx/accesses.json"
+    "url": "https://basecamp.com/735644780/api/v1/projects/605816632-bcx/accesses.json"
   },
   "attachments": {
     "count": 0,
     "updated_at": null,
-    "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx/attachments.json"
+    "url": "https://basecamp.com/735644780/api/v1/projects/605816632-bcx/attachments.json"
   },
   "calendar_events": {
     "count": 3,
     "updated_at": "2012-03-22T17:35:50-05:00",
-    "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx/calendar_events.json"
+    "url": "https://basecamp.com/735644780/api/v1/projects/605816632-bcx/calendar_events.json"
   },
   "documents": {
     "count": 0,
     "updated_at": null,
-    "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx/documents.json"
+    "url": "https://basecamp.com/735644780/api/v1/projects/605816632-bcx/documents.json"
   },
   "topics": {
     "count": 2,
     "updated_at": "2012-03-22T17:35:50-05:00",
-    "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx/topics.json"
+    "url": "https://basecamp.com/735644780/api/v1/projects/605816632-bcx/topics.json"
   },
   "todolists": {
     "remaining_count": 4,
     "completed_count": 0,
     "updated_at": "2012-03-23T12:59:23-05:00",
-    "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx/todolists.json"
+    "url": "https://basecamp.com/735644780/api/v1/projects/605816632-bcx/todolists.json"
   }
 }
 ```

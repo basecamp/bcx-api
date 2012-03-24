@@ -45,7 +45,7 @@ Get todolists
         "comments_count": 0,
         "created_at": "2012-03-24T09:53:35-05:00",
         "updated_at": "2012-03-24T09:55:52-05:00",
-        "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx/todos/223304243-design-it.json",
+        "url": "https://basecamp.com/735644780/api/v1/projects/605816632-bcx/todos/223304243-design-it.json",
         "assignee": {
           "id": 149087659,
           "name": "Jason Fried"
@@ -57,7 +57,7 @@ Get todolists
         "comments_count": 0,
         "created_at": "2012-03-24T09:53:35-05:00",
         "updated_at": "2012-03-24T09:53:35-05:00",
-        "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx/todos/411008527-test-it.json",
+        "url": "https://basecamp.com/735644780/api/v1/projects/605816632-bcx/todos/411008527-test-it.json",
         "assignee": {}
       }
     ],
@@ -68,7 +68,7 @@ Get todolists
         "comments_count": 0,
         "created_at": "2012-03-24T09:59:33-05:00",
         "updated_at": "2012-03-24T09:59:35-05:00",
-        "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx/todos/1046098401-think-of-it.json",
+        "url": "https://basecamp.com/735644780/api/v1/projects/605816632-bcx/todos/1046098401-think-of-it.json",
         "completer": {
           "id": 149087659,
           "name": "Jason Fried"
