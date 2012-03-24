@@ -29,7 +29,7 @@ Get projects
 ]
 ```
 
-`GET /projects/1.json`
+* `GET /projects/1.json` will return the specified project.
 
 ```json
 {
@@ -79,7 +79,7 @@ Get projects
 Create project
 --------------
 
-`POST /projects.json`
+* `POST /projects.json` will create a new project from the parameters passed.
 
 ```json
 {
