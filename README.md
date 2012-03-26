@@ -1,10 +1,54 @@
 The new Basecamp API
 ====================
 
-IT'S SO WONDERFUL!
+The all-new Basecamp has an all-new API. It is not compatible with the [Basecamp Classic API](http://developer.37signals.com/basecamp/). All integrations will have to be updated to use the new API. The core ingredients are still the same, though. This is a REST-style API that uses JSON for serialization and OAuth2 for authentication.
 
-Sections
---------
+NOTE: This has yet to go live. We're putting the final touches on everything now. It should be available very shortly.
+
+
+Authentication
+--------------
+
+If you're making a private integration with Basecamp for your own purposes, you can use HTTP Basic authentication. This is secure since all requests in the new Basecamp happens over SSL.
+
+If you're making a public integration with Basecamp for others to enjoy, you must use OAuth2. This allows users to authorize your application to use Basecamp on their behalf and avoids having you storing their actual password. Please [register your OAuth2 app](http://integrate.37signals.com/apps/new) before use. If you already have a registration, you can also [update it](http://integrate.37signals.com/).
+
+
+No XML, just JSON
+-----------------
+
+We only support JSON for serialization of data. Our format is to have no root element and we use snake_case to describe attribute keys. This means that you have to send `Content-Type: application/json; charset=utf-8` when you're POSTing or PUTing data into Basecamp. All API URLs end in .json to indicate that they accept JSON.
+
+
+Making a request
+----------------
+
+All URLs in the API sections assume a base like this: https://basecamp.com/999999999/api/v1/. That includes the account id and the version of the API. If we change the API in backwards incompatible ways, we'll be able to bump the version marker and still have old integrations work.
+
+So to make a request for all the projects on your account, you'd append the projects index path to the base url to form something like https://basecamp.com/999999999/api/v1/projects.json. In curl, that'd look like:
+
+```shell
+curl -u username:password https://basecamp.com/999999999/api/v1/projects.json
+```
+
+To create something, it's the same deal except you also have to include the content-type header and the data. Example:
+
+```shell
+curl -u username:password -d '{ "name": "My new project!" }' \
+-H 'Content-Type: application/json' https://basecamp.com/999999999/api/v1/projects.json
+```
+
+That's all!
+
+
+Rate limiting
+-------------
+
+You can perform up to 500 requests per 10 second period from the same IP address for the same account. If you exceed this limit, you'll get a 503 response for subsequent requests. Check the Retry-After header to see how many seconds to wait before trying again.
+
+
+Sections ready for use
+----------------------
 
 * [Projects](https://github.com/37signals/bcx-api/blob/master/sections/projects.md)
 * [People](https://github.com/37signals/bcx-api/blob/master/sections/people.md)
@@ -13,8 +57,22 @@ Sections
 * [Todo lists](https://github.com/37signals/bcx-api/blob/master/sections/todolists.md)
 * [Todos](https://github.com/37signals/bcx-api/blob/master/sections/todos.md)
 
-Still coming...
----------------
 
-* Attachments
-* Notifications
+Concerns still under development
+--------------------------------
+
+* Access: Granting and revoking access to projects and calendars
+* Calendars: Working with events
+* Companies/Groups: Organize people in groups
+* Documents: Collaborative texts
+* Events: We audit log just about everything, share the firehose
+* Topics: Everything can have comments, see what does
+* Uploads/Attachments: Uploading and downloading of files
+* Notifications: Letting people know by email if new content was added
+* Trashing: Deleting content
+
+
+Help us make it better
+----------------------
+
+Please tell us how we can make the API better. If you have a specific feature request or if you found a bug, please use Github issues. If you just want to talk with us or other developers about the API, you can subscribe to the [37signals-api mailing list](http://groups.google.com/group/37signals-api).
