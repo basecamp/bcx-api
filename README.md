@@ -17,7 +17,7 @@ If you're making a public integration with Basecamp for others to enjoy, you mus
 No XML, just JSON
 -----------------
 
-We only support JSON for serialization of data. Our format is to have no root element and we use snake_case to describe attribute keys. This means that you have to send `Content-Type: application/json; charset=utf-8` when you're POSTing or PUTing data into Basecamp. All API URLs end in .json to indicate that they accept JSON.
+We only support JSON for serialization of data. Our format is to have no root element and we use snake\_case to describe attribute keys. This means that you have to send `Content-Type: application/json; charset=utf-8` when you're POSTing or PUTing data into Basecamp. All API URLs end in .json to indicate that they accept JSON.
 
 
 Use HTTP caching
