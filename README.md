@@ -71,6 +71,7 @@ Sections ready for use
 * [Todo lists](https://github.com/37signals/bcx-api/blob/master/sections/todolists.md)
 * [Todos](https://github.com/37signals/bcx-api/blob/master/sections/todos.md)
 * [Events](https://github.com/37signals/bcx-api/blob/master/sections/events.md)
+* [Topics](https://github.com/37signals/bcx-api/blob/master/sections/topics.md)
 
 
 Concerns still under development
@@ -78,7 +79,6 @@ Concerns still under development
 
 * Calendars: Working with events
 * Documents: Collaborative texts
-* Topics: Everything can have comments, see what does
 * Uploads/Attachments: Uploading and downloading of files
 * Notifications: Letting people know by email if new content was added
 * Trashing: Deleting content
