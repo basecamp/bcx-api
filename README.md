@@ -46,13 +46,13 @@ All URLs in the API sections assume a base like this: https://basecamp.com/99999
 So to make a request for all the projects on your account, you'd append the projects index path to the base url to form something like https://basecamp.com/999999999/api/v1/projects.json. In curl, that'd look like:
 
 ```shell
-curl -u username:password -H 'User-Agent: Reporting tool (david@37signals.com)' \ https://basecamp.com/999999999/api/v1/projects.json
+curl -u user:pass -H 'User-Agent: Rapp (david@37signals.com)' https://basecamp.com/999999999/api/v1/projects.json
 ```
 
 To create something, it's the same deal except you also have to include the content-type header and the data. Example:
 
 ```shell
-curl -u username:password -H 'Content-Type: application/json'  -H 'User-Agent: Reporting tool (david@37signals.com)' \
+curl -u user:pass -H 'Content-Type: application/json'  -H 'User-Agent: Rapp (david@37signals.com)' \
 -d '{ "name": "My new project!" }' \
 https://basecamp.com/999999999/api/v1/projects.json
 ```
