@@ -8,8 +8,8 @@ All actions in Basecamp generate an event for the progress log. If you start a n
 If you're using this API for polling, please make sure that you're using the `since` parameter to limit the result set. Use the `created_at` time of the first item on the list for subsequent polls. If there's nothing new since that date, you'll get `[]` back.
 
 
-Get accesses
-------------
+Get global events
+-----------------
 
 * `GET /events.json?since=2012-03-24T11:00:00-06:00` will return all the events on the account since 11am CST March 24, 2012. We will return 50 events per page. If the result set has 50 entries, it's your responsibility to check the next page to see if there are any more events -- you do this by adding `&page=2` to the query, then `&page=3` and so on.
 
@@ -72,6 +72,10 @@ Get accesses
 As you can see from the result set, the summary only contains a text version of what happened. You'll want to check the url of the eventable to get the latest structured data. Also note that if the `created_at` and `updated_at` fields are different, it means that the event was updated within the 15 minutes "correction window" we allow for people to fix spelling mistakes etc.
 
 The bucket type can either be `Project` or `Calendar`.
+
+
+Get project events
+------------------
 
 * `GET /projects/1/events.json?since=2012-03-24T11:00:00-06:00` will return all the events on the project like the global GET, except there won't be a bucket included. Similar use of the since term and the pagination.
 
