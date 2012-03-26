@@ -41,6 +41,12 @@ curl -u username:password -d '{ "name": "My new project!" }' \
 That's all!
 
 
+Use HTTP caching
+----------------
+
+It's strongly encouraged that you use the HTTP freshness headers to increase the speed of your application and lessen the load on our servers. Most requests we return will include `Last-Modified` and `ETag` headers. When you first request a resource, store these values, and then submit them back to us on subsequent requests as `If-Modified-Since` and `If-None-Match`. If the resource hasn't changed, you'll see a `304 Not Modified` response, which saves you the bandwidth and us the computation of sending something you already have.
+
+
 Rate limiting
 -------------
 
