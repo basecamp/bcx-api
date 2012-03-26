@@ -35,7 +35,7 @@ Please include a `User-Agent` header with the name of your application and a lin
 Rate limiting
 -------------
 
-You can perform up to 500 requests per 10 second period from the same IP address for the same account. If you exceed this limit, you'll get a '429 Too Many Requests' response for subsequent requests. Check the Retry-After header to see how many seconds to wait before trying again.
+You can perform up to 500 requests per 10 second period from the same IP address for the same account. If you exceed this limit, you'll get a [429 Too Many Requests](http://tools.ietf.org/html/draft-nottingham-http-new-status-02#section-4) response for subsequent requests. Check the `Retry-After` header to see how many seconds to wait before trying again.
 
 
 Making a request
