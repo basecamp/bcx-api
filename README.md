@@ -77,13 +77,13 @@ Concerns still under development
 --------------------------------
 
 * Calendars: Working with events
-* Companies/Groups: Organize people in groups
 * Documents: Collaborative texts
 * Topics: Everything can have comments, see what does
 * Uploads/Attachments: Uploading and downloading of files
 * Notifications: Letting people know by email if new content was added
 * Trashing: Deleting content
 * Moving todos and todolists: Changing their position in the UI
+* Companies/Groups: Organize people in groups
 
 
 Help us make it better

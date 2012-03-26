@@ -27,10 +27,10 @@ Get accesses
       "id": 605816632,
       "name": "BCX",
       "type": "Project",
-      "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx.json"
+      "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx.json"
     },
     "summary": "re-assigned a to-do to Funky ones: Design it",
-    "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx/todos/223304243-design-it.json"
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/todos/223304243-design-it.json"
   },
   {
     "id": 1054456334,
@@ -44,10 +44,10 @@ Get accesses
       "id": 605816632,
       "name": "BCX",
       "type": "Project",
-      "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx.json"
+      "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx.json"
     },
     "summary": "created a to-do list: lists",
-    "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx/todolists/1056802576-lists.json"
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/todolists/1056802576-lists.json"
   },
   {
     "id": 973672263,
@@ -61,10 +61,10 @@ Get accesses
       "id": 605816632,
       "name": "BCX",
       "type": "Project",
-      "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx.json"
+      "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx.json"
     },
     "summary": "commented on Prep the materials before the board meeting with Bezos",
-    "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx/calendar_events/174886926-prep-the-materials.json"
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/calendar_events/174886926-prep-the-materials.json"
   }
 ]
 ```
@@ -86,7 +86,7 @@ The bucket type can either be `Project` or `Calendar`.
       "name": "Jason Fried"
     },
     "summary": "re-assigned a to-do to Funky ones: Design it",
-    "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx/todos/223304243-design-it.json"
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/todos/223304243-design-it.json"
   },
   {
     "id": 1054456335,
@@ -97,7 +97,7 @@ The bucket type can either be `Project` or `Calendar`.
       "name": "Jason Fried"
     },
     "summary": "added a to-do: t",
-    "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx/todos/1046098402-t.json"
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/todos/1046098402-t.json"
   }
 ]
 ```

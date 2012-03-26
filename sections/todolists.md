@@ -17,14 +17,14 @@ Get todolists
     "name": "Launch list",
     "description": "What we need for launch",
     "updated_at": "2012-03-22T16:56:52-05:00",
-    "url": "https://basecamp.com/735644780/api/v1/projects/605816632-bcx/todolists/968316918-launch-list.json"
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/todolists/968316918-launch-list.json"
   },
   {
     "id": 812358930,
     "name": "Version 2",
     "description": "What we will do next",
     "updated_at": "2012-03-22T16:56:52-05:00",
-    "url": "https://basecamp.com/735644780/api/v1/projects/605816632-bcx/todolists/812358930-version-2.json"
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/todolists/812358930-version-2.json"
   }
 ]
 ```
@@ -51,7 +51,7 @@ Get todolists
           "type": "Person",
           "name": "Jason Fried"
         },
-        "url": "https://basecamp.com/735644780/api/v1/projects/605816632-bcx/todos/223304243-design-it.json"
+        "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/todos/223304243-design-it.json"
       },
       {
         "id": 411008527,
@@ -61,7 +61,7 @@ Get todolists
         "created_at": "2012-03-24T09:53:35-05:00",
         "updated_at": "2012-03-24T09:53:35-05:00",
         "assignee": {},
-        "url": "https://basecamp.com/735644780/api/v1/projects/605816632-bcx/todos/411008527-test-it.json"
+        "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/todos/411008527-test-it.json"
       }
     ],
     "completed": [
@@ -73,7 +73,7 @@ Get todolists
         "created_at": "2012-03-24T09:59:33-05:00",
         "updated_at": "2012-03-24T09:59:35-05:00",
         "completed_at": "2012-03-24T09:59:35-05:00",
-        "url": "https://basecamp.com/735644780/api/v1/projects/605816632-bcx/todos/1046098401-think-of-it.json",
+        "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/todos/1046098401-think-of-it.json",
         "assignee": {},
         "completer": {
           "id": 149087659,
