@@ -3,8 +3,6 @@ The new Basecamp API
 
 The all-new Basecamp has an all-new API. It is not compatible with the [Basecamp Classic API](http://developer.37signals.com/basecamp/). All integrations will have to be updated to use the new API. The core ingredients are still the same, though. This is a REST-style API that uses JSON for serialization and OAuth2 for authentication.
 
-NOTE: This has yet to go live. We're putting the final touches on everything now. It should be available very shortly.
-
 
 Authentication
 --------------
@@ -74,8 +72,8 @@ Sections ready for use
 * [Topics](https://github.com/37signals/bcx-api/blob/master/sections/topics.md)
 
 
-Concerns still under development
---------------------------------
+Still under development
+-----------------------
 
 * Calendars: Working with events
 * Documents: Collaborative texts
