@@ -70,6 +70,7 @@ Sections ready for use
 * [Comments](https://github.com/37signals/bcx-api/blob/master/sections/comments.md)
 * [Todo lists](https://github.com/37signals/bcx-api/blob/master/sections/todolists.md)
 * [Todos](https://github.com/37signals/bcx-api/blob/master/sections/todos.md)
+* [Events](https://github.com/37signals/bcx-api/blob/master/sections/events.md)
 
 
 Concerns still under development
@@ -78,7 +79,6 @@ Concerns still under development
 * Calendars: Working with events
 * Companies/Groups: Organize people in groups
 * Documents: Collaborative texts
-* Events: We audit log just about everything, share the firehose
 * Topics: Everything can have comments, see what does
 * Uploads/Attachments: Uploading and downloading of files
 * Notifications: Letting people know by email if new content was added
