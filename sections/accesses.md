@@ -1,0 +1,54 @@
+Accesses
+========
+
+> <Clever quote about accesses>
+
+
+Get accesses
+------------
+
+* `GET /projects/1/accesses.json` will return all the people with access to the project.
+
+```json
+[
+  {
+    "id": 149087659,
+    "name": "Jason Fried",
+    "email_address": "jason@37signals.com",
+    "updated_at": "2012-03-22T16:56:48-05:00",
+    "url": "https://basecamp.com/735644780/api/v1/people/149087659-jason-fried.json"
+  },
+  {
+    "id": 1071630348,
+    "name": "Jeremy Kemper",
+    "email_address": "jeremy@37signals.com",
+    "updated_at": "2012-03-22T16:56:48-05:00",
+    "url": "https://basecamp.com/735644780/api/v1/people/1071630348-jeremy-kemper.json"
+  }
+]
+```
+
+
+Grant access
+------------
+
+* `POST /projects/1/accesses.json` will grant access to the project for the existing `ids` of people already on the account or new people via `email_addresses`.
+
+```json
+{
+  "ids": [ 5, 6, 10 ],
+  "email_addresses": [ "someone@example.com", "someoneelse@example.com" ]
+}
+```
+
+You can get the ids of existing people on the account from the [people API](https://github.com/37signals/bcx-api/blob/master/sections/people.md).
+
+This will return `200 OK` if the access was granted successfully. If the user does not have access to grant further access to the project, `403 Forbidden` will be returned.
+
+
+Revoke access
+-------------
+
+* `DELETE /projects/1/accesses/1.json` will revoke the access of the person who's id is mentioned in the URL.
+
+This will return `200 OK` if the revoke was a success. If the user does not have access to revoke access from the project, `403 Forbidden` will be returned.

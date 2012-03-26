@@ -65,6 +65,7 @@ Sections ready for use
 
 * [Projects](https://github.com/37signals/bcx-api/blob/master/sections/projects.md)
 * [People](https://github.com/37signals/bcx-api/blob/master/sections/people.md)
+* [Accesses](https://github.com/37signals/bcx-api/blob/master/sections/accesses.md)
 * [Messages](https://github.com/37signals/bcx-api/blob/master/sections/messages.md)
 * [Comments](https://github.com/37signals/bcx-api/blob/master/sections/comments.md)
 * [Todo lists](https://github.com/37signals/bcx-api/blob/master/sections/todolists.md)
@@ -74,7 +75,6 @@ Sections ready for use
 Concerns still under development
 --------------------------------
 
-* Access: Granting and revoking access to projects and calendars
 * Calendars: Working with events
 * Companies/Groups: Organize people in groups
 * Documents: Collaborative texts
@@ -83,6 +83,7 @@ Concerns still under development
 * Uploads/Attachments: Uploading and downloading of files
 * Notifications: Letting people know by email if new content was added
 * Trashing: Deleting content
+* Moving todos and todolists: Changing their position in the UI
 
 
 Help us make it better
