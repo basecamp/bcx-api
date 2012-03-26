@@ -20,10 +20,6 @@ Get topics
     "created_at": "2012-03-24T09:53:35-05:00",
     "updated_at": "2012-03-24T09:53:35-05:00",
     "attachments": 0,
-    "creator": {
-      "id": 127326141,
-      "name": "David Heinemeier Hansson"
-    },
     "last_updater": {
       "id": 149087659,
       "name": "Jason Fried"
@@ -41,10 +37,6 @@ Get topics
     "created_at": "2012-03-24T09:53:35-05:00",
     "updated_at": "2012-03-24T09:53:35-05:00",
     "attachments": 1,
-    "creator": {
-      "id": 149087659,
-      "name": "Jason Fried"
-    },
     "last_updater": {
       "id": 149087659,
       "name": "Jason Fried"
@@ -57,3 +49,5 @@ Get topics
   }
 ]
 ```
+
+The `title` is the original title of the topicable and the `excerpt` is from the latest comment. If a message does not have any comments, the `last_updater` is the creator of the message.
