@@ -20,6 +20,24 @@ No XML, just JSON
 We only support JSON for serialization of data. Our format is to have no root element and we use snake_case to describe attribute keys. This means that you have to send `Content-Type: application/json; charset=utf-8` when you're POSTing or PUTing data into Basecamp. All API URLs end in .json to indicate that they accept JSON.
 
 
+Use HTTP caching
+----------------
+
+It's strongly encouraged that you use the HTTP freshness headers to increase the speed of your application and lessen the load on our servers. Most requests we return will include `Last-Modified` and `ETag` headers. When you first request a resource, store these values, and then submit them back to us on subsequent requests as `If-Modified-Since` and `If-None-Match`. If the resource hasn't changed, you'll see a `304 Not Modified` response, which saves you the bandwidth and us the computation of sending something you already have.
+
+
+Include a user agent
+--------------------
+
+Please include a `User-Agent` header with the name of your application and a link to it or your email address, so we can get in touch in case you're doing something wrong (so we may warn you before you're blacklisted) or something awesome (so we may congratulate you). Example `User-Agent: Freshbooks (http://freshbooks.com)`.
+
+
+Rate limiting
+-------------
+
+You can perform up to 500 requests per 10 second period from the same IP address for the same account. If you exceed this limit, you'll get a 503 response for subsequent requests. Check the Retry-After header to see how many seconds to wait before trying again.
+
+
 Making a request
 ----------------
 
@@ -28,29 +46,17 @@ All URLs in the API sections assume a base like this: https://basecamp.com/99999
 So to make a request for all the projects on your account, you'd append the projects index path to the base url to form something like https://basecamp.com/999999999/api/v1/projects.json. In curl, that'd look like:
 
 ```shell
-curl -u username:password https://basecamp.com/999999999/api/v1/projects.json
+curl -u username:password -H 'User-Agent: Reporting tool (david@37signals.com)' \ https://basecamp.com/999999999/api/v1/projects.json
 ```
 
 To create something, it's the same deal except you also have to include the content-type header and the data. Example:
 
 ```shell
 curl -u username:password -d '{ "name": "My new project!" }' \
--H 'Content-Type: application/json' https://basecamp.com/999999999/api/v1/projects.json
+-H 'Content-Type: application/json'  -H 'User-Agent: Reporting tool \ (david@37signals.com)'https://basecamp.com/999999999/api/v1/projects.json
 ```
 
 That's all!
-
-
-Use HTTP caching
-----------------
-
-It's strongly encouraged that you use the HTTP freshness headers to increase the speed of your application and lessen the load on our servers. Most requests we return will include `Last-Modified` and `ETag` headers. When you first request a resource, store these values, and then submit them back to us on subsequent requests as `If-Modified-Since` and `If-None-Match`. If the resource hasn't changed, you'll see a `304 Not Modified` response, which saves you the bandwidth and us the computation of sending something you already have.
-
-
-Rate limiting
--------------
-
-You can perform up to 500 requests per 10 second period from the same IP address for the same account. If you exceed this limit, you'll get a 503 response for subsequent requests. Check the Retry-After header to see how many seconds to wait before trying again.
 
 
 Sections ready for use
