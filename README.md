@@ -27,7 +27,7 @@ It's strongly encouraged that you use the HTTP freshness headers to increase the
 Include a user agent
 --------------------
 
-Please include a `User-Agent` header with the name of your application and a link to it or your email address, so we can get in touch in case you're doing something wrong (so we may warn you before you're blacklisted) or something awesome (so we may congratulate you). Example `User-Agent: Freshbooks (http://freshbooks.com)`.
+It's mandatory to include a `User-Agent` header with the name of your application on any request except GETs and a link to it or your email address, so we can get in touch in case you're doing something wrong (so we may warn you before you're blacklisted) or something awesome (so we may congratulate you). Example `User-Agent: Freshbooks (http://freshbooks.com)`. If you do not do this, you will get a `400 Bad Request`.
 
 
 Rate limiting
