@@ -64,19 +64,19 @@ Sections ready for use
 * [Projects](https://github.com/37signals/bcx-api/blob/master/sections/projects.md)
 * [People](https://github.com/37signals/bcx-api/blob/master/sections/people.md)
 * [Accesses](https://github.com/37signals/bcx-api/blob/master/sections/accesses.md)
+* [Events](https://github.com/37signals/bcx-api/blob/master/sections/events.md)
+* [Topics](https://github.com/37signals/bcx-api/blob/master/sections/topics.md)
 * [Messages](https://github.com/37signals/bcx-api/blob/master/sections/messages.md)
 * [Comments](https://github.com/37signals/bcx-api/blob/master/sections/comments.md)
 * [Todo lists](https://github.com/37signals/bcx-api/blob/master/sections/todolists.md)
 * [Todos](https://github.com/37signals/bcx-api/blob/master/sections/todos.md)
-* [Events](https://github.com/37signals/bcx-api/blob/master/sections/events.md)
-* [Topics](https://github.com/37signals/bcx-api/blob/master/sections/topics.md)
+* [Documents](https://github.com/37signals/bcx-api/blob/master/sections/documents.md)
 
 
 Still under development
 -----------------------
 
 * Calendars: Working with events
-* Documents: Collaborative texts
 * Uploads/Attachments: Uploading and downloading of files
 * Notifications: Letting people know by email if new content was added
 * Trashing: Deleting content
