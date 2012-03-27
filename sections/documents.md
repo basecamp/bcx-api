@@ -16,15 +16,42 @@ Get documents
     "id": 963979453,
     "title": "Manifesto",
     "updated_at": "2012-03-27T13:39:33-05:00",
-    "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx/documents/963979453-manifesto.json"
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/documents/963979453-manifesto.json"
   },
   {
     "id": 243535881,
     "title": "Really important notes",
     "updated_at": "2012-03-27T13:39:12-05:00",
-    "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx/documents/243535881-really-important.json"
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/documents/243535881-really-important.json"
   }
 ]
+```
+
+* `GET /projects/1/documents/1.json` will return the specified document along with all comments.
+
+```json
+{
+  "id": 963979453,
+  "title": "Manifesto",
+  "content": "Do this<br>Then that<br>Finally just so!",
+  "created_at": "2012-03-27T13:19:29-05:00",
+  "updated_at": "2012-03-27T13:53:24-05:00",
+  "last_updater": {
+    "id": 149087659,
+    "name": "Jason Fried"
+  },
+  "comments": [
+    {
+      "content": "I think there should be more sass to it.",
+      "created_at": "2012-03-27T13:53:24-05:00",
+      "updated_at": "2012-03-27T13:53:24-05:00",
+      "creator": {
+        "id": 149087659,
+        "name": "Jason Fried"
+      }
+    }
+  ]
+}
 ```
 
 
