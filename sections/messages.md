@@ -55,7 +55,7 @@ This will return `200 OK`, with the location of the new project in the `Location
 Update message
 --------------
 
-* `PUT /projects/1.json` will update the message from the parameters passed.
+* `PUT /projects/1/messages/1.json` will update the message from the parameters passed.
 
 ```json
 {
