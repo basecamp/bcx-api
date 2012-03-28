@@ -83,6 +83,7 @@ API ready for use
 * [Todos](https://github.com/37signals/bcx-api/blob/master/sections/todos.md)
 * [Documents](https://github.com/37signals/bcx-api/blob/master/sections/documents.md)
 * [Files](https://github.com/37signals/bcx-api/blob/master/sections/files.md)
+* [Calendar events](https://github.com/37signals/bcx-api/blob/master/sections/calendar_events.md)
 
 
 API still under development
