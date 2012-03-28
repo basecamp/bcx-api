@@ -33,10 +33,8 @@ customers for their passwords -- or storing them! -- so we offer a simple way to
 ask a user for access to his account. You get an API access token back without
 ever having to see his password or ask him to copy/paste an API key.
 
-To get started:
-
-1. Grab an OAuth 2 library from http://oauth.net/code/
-2. Register your app at https://integrate.37signals.com. You'll be assigned a client_id and client_secret. You'll need to provide a redirect_uri: a URL where we can send a verification code. Just enter a dummy URL like `http://myapp.com/oauth` if you're not ready for this yet.
+1. [Grab an OAuth 2 library](http://oauth.net/code/).
+2. Register your app at [integrate.37signals.com](https://integrate.37signals.com). You'll be assigned a client_id and client_secret. You'll need to provide a redirect_uri: a URL where we can send a verification code. Just enter a dummy URL like `http://myapp.com/oauth` if you're not ready for this yet.
 3. Configure your OAuth 2 library with your client_id, client_secret, and redirect_uri. Tell it to use `https://launchpad.37signals.com/authorization/new` to request authorization and `https://launchpad.37signals.com/authorization/token` to get access tokens.
 4. Try making an authorized request to `https://launchpad.37signals.com/authorization.json` to dig in and test it out!
 
