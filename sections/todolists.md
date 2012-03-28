@@ -114,3 +114,9 @@ Update todolist
 ```
 
 This will return `200 OK` if the creation was a success. If the user does not have access to update the todolist, you'll see `403 Forbidden`.
+
+
+Trash todolist
+--------------
+
+* `DELETE /projects/1/todolists/1.json` will trash the todolist specified and return `200 OK` if that was successful. If the user does not have access to trash the todolist, you'll see `403 Forbidden`.
