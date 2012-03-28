@@ -66,8 +66,8 @@ Handling errors
 If Basecamp is having trouble, you might see a 5xx error. `500` means that the app is entirely down, but you might also see `502 Bad Gateway`, `503 Service Unavailable`, or `504 Gateway Timeout`. It's your responsibility in all of these cases to retry your request later. 
 
 
-Sections ready for use
-----------------------
+API ready for use
+-----------------
 
 * [Projects](https://github.com/37signals/bcx-api/blob/master/sections/projects.md)
 * [People](https://github.com/37signals/bcx-api/blob/master/sections/people.md)
@@ -82,8 +82,8 @@ Sections ready for use
 * [Files](https://github.com/37signals/bcx-api/blob/master/sections/files.md)
 
 
-Still under development
------------------------
+API still under development
+---------------------------
 
 * Calendars: Working with events
 * Notifications: Letting people know by email if new content was added
@@ -94,4 +94,6 @@ Still under development
 Help us make it better
 ----------------------
 
-Please tell us how we can make the API better. If you have a specific feature request or if you found a bug, please use Github issues. If you just want to talk with us or other developers about the API, you can subscribe to the [37signals-api mailing list](http://groups.google.com/group/37signals-api).
+Please tell us how we can make the API better. If you have a specific feature request or if you found a bug, please use GitHub issues. Fork these docs and send a pull request with improvements.
+
+To talk with us and other developers about the API, subscribe to the [37signals-api mailing list](http://groups.google.com/group/37signals-api).
