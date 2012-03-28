@@ -58,6 +58,12 @@ https://basecamp.com/999999999/api/v1/projects.json
 That's all!
 
 
+Handling errors
+---------------
+
+If Basecamp is having trouble, you might see a 5xx error. `500` means that the app is entirely down, but you might also see `502 Bad Gateway`, `503 Service Unavailable`, or `504 Gateway Timeout`. It's your responsibility in all of these cases to retry your request later. 
+
+
 Sections ready for use
 ----------------------
 
