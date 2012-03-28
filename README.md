@@ -88,7 +88,6 @@ API ready for use
 * [Todo lists](https://github.com/37signals/bcx-api/blob/master/sections/todolists.md)
 * [Todos](https://github.com/37signals/bcx-api/blob/master/sections/todos.md)
 * [Documents](https://github.com/37signals/bcx-api/blob/master/sections/documents.md)
-* [Files](https://github.com/37signals/bcx-api/blob/master/sections/files.md)
 * [Attachments](https://github.com/37signals/bcx-api/blob/master/sections/attachments.md)
 * [Calendars](https://github.com/37signals/bcx-api/blob/master/sections/calendars.md)
 * [Calendar events](https://github.com/37signals/bcx-api/blob/master/sections/calendar_events.md)
