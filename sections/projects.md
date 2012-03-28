@@ -112,7 +112,7 @@ Update project
 This will return `200 OK` if the update was a success. If the user does not have access to update the project, you'll see `403 Forbidden`.
 
 
-Trash project
+Delete project
 -------------
 
-* `DELETE /projects/1.json` will trash the project specified and return `200 OK` if that was successful. If the user does not have access to trash the project, you'll see `403 Forbidden`.
+* `DELETE /projects/1.json` will delete the project specified and return `200 OK` if that was successful. If the user does not have access to delete the project, you'll see `403 Forbidden`.

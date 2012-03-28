@@ -82,7 +82,7 @@ Update todo
 This will return `200 OK` if the update was a success. If the assignee type is unrecognized or the `due_at` is in a wrong format, you'll see a `500 Bad Request`.
 
 
-Trash todo
+Delete todo
 ----------
 
-* `DELETE /projects/1/todos/1.json` will trash the todo specified and return `200 OK` if that was successful. If the user does not have access to trash the todo, you'll see `403 Forbidden`.
+* `DELETE /projects/1/todos/1.json` will delete the todo specified and return `200 OK` if that was successful. If the user does not have access to delete the todo, you'll see `403 Forbidden`.

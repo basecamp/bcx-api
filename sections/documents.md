@@ -89,7 +89,7 @@ Update document
 This will return `200 OK` if the update was a success.
 
 
-Trash document
+Delete document
 --------------
 
-* `DELETE /projects/1/documents/1.json` will trash the document specified and return `200 OK` if that was successful. If the user does not have access to trash the document, you'll see `403 Forbidden`.
+* `DELETE /projects/1/documents/1.json` will delete the document specified and return `200 OK` if that was successful. If the user does not have access to delete the document, you'll see `403 Forbidden`.

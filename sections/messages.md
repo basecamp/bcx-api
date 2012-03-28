@@ -82,7 +82,7 @@ Update message
 This will return `200 OK` if the update was a success. If the user does not have access to update the message, you'll see `403 Forbidden`.
 
 
-Trash message
+Delete message
 -------------
 
-* `DELETE /projects/1/messages/1.json` will trash the message specified and return `200 OK` if that was successful. If the user does not have access to trash the message, you'll see `403 Forbidden`.
+* `DELETE /projects/1/messages/1.json` will delete the message specified and return `200 OK` if that was successful. If the user does not have access to delete the message, you'll see `403 Forbidden`.

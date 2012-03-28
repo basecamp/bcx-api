@@ -51,7 +51,7 @@ Create comment
 This will return `200 OK`, with the location of the commentable where the comment appears in the `Location` header, if the creation was a success. See the [files API](https://github.com/37signals/bcx-api/blob/master/sections/files.md) for details on how to upload files to be attachments.
 
 
-Trash comment
+Delete comment
 -------------
 
-* `DELETE /projects/1/comments/1.json` will trash the comment specified and return `200 OK` if that was successful. If the user does not have access to trash the comment, you'll see `403 Forbidden`.
+* `DELETE /projects/1/comments/1.json` will delete the comment specified and return `200 OK` if that was successful. If the user does not have access to delete the comment, you'll see `403 Forbidden`.
