@@ -1,15 +1,17 @@
 The new Basecamp API
 ====================
 
-The all-new Basecamp has an all-new API. It is not compatible with the [Basecamp Classic API](http://developer.37signals.com/basecamp/). All integrations will have to be updated to use the new API. The core ingredients are still the same, though. This is a REST-style API that uses JSON for serialization and OAuth2 for authentication.
+The all-new Basecamp has an all-new API. It is not compatible with the [Basecamp Classic API](http://developer.37signals.com/basecamp/). All integrations will have to be updated to use the new API. The core ingredients are still the same, though. This is a REST-style API that uses JSON for serialization and OAuth 2 for authentication.
 
 
 Authentication
 --------------
 
-If you're making a private integration with Basecamp for your own purposes, you can use HTTP Basic authentication. This is secure since all requests in the new Basecamp happens over SSL.
+If you're making a private integration with Basecamp for your own purposes, you can use HTTP Basic authentication. This is secure since all requests in the new Basecamp happen over SSL.
 
-If you're making a public integration with Basecamp for others to enjoy, you must use OAuth2. This allows users to authorize your application to use Basecamp on their behalf and avoids having you storing their actual password. Please [register your OAuth2 app](http://integrate.37signals.com/apps/new) before use. If you already have a registration, you can also [update it](http://integrate.37signals.com/).
+If you're making a public integration with Basecamp for others to enjoy, you must use OAuth 2. This allows users to authorize your application to use Basecamp on their behalf without having to copy/paste API tokens or touch sensitive login info.
+
+Read the [authentication guide](https://github.com/37signals/bcx-api/blob/master/sections/authentication.md) to get started.
 
 
 No XML, just JSON
