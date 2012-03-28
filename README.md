@@ -85,7 +85,6 @@ Still under development
 
 * Calendars: Working with events
 * Notifications: Letting people know by email if new content was added
-* Trashing: Deleting content
 * Moving todos and todolists: Changing their position in the UI
 * Companies/Groups: Organize people in groups
 
