@@ -28,6 +28,9 @@ Get people
 ]
 ```
 
+Get person
+----------
+
 * `GET /people/1.json` will return the specified person.
 
 ```json
@@ -61,7 +64,13 @@ Get people
 ```
 
 
-Create/update people
---------------------
+Create person
+-------------
 
-This has not yet been exposed through the API.
+New people can be invited directly to projects via the [accesses API](https://github.com/37signals/bcx-api/blob/master/sections/accesses.md).
+
+
+Trash person
+------------
+
+* `DELETE /people/1.json` will trash the person specified and return `200 OK` if that was successful. If the user does not have access to trash the person, you'll see `403 Forbidden`.

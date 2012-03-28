@@ -27,6 +27,10 @@ Get documents
 ]
 ```
 
+
+Get document
+------------
+
 * `GET /projects/1/documents/1.json` will return the specified document along with all comments.
 
 ```json

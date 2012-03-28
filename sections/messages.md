@@ -9,6 +9,10 @@ Get messages
 
 Messages are listed alongside all the other [topics](https://github.com/37signals/bcx-api/blob/master/sections/topics.md), so there is no individual index for them.
 
+
+Get message
+-----------
+
 * `GET /projects/1/messages/1.json` will return the specified message.
 
 ```json

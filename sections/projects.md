@@ -30,6 +30,10 @@ Get projects
 ]
 ```
 
+
+Get project
+-----------
+
 * `GET /projects/1.json` will return the specified project.
 
 ```json

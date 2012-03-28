@@ -29,6 +29,10 @@ Get todolists
 ]
 ```
 
+
+Get todolist
+------------
+
 * `GET /projects/1/todolists/1.json` will return the specified todolist including the todos.
 
 ```json
