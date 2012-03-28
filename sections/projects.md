@@ -41,6 +41,7 @@ Get project
   "id": 605816632,
   "name": "BCX",
   "description": "The Next Generation",
+  "archived": false,
   "created_at": "2012-03-22T16:56:51-05:00",
   "updated_at": "2012-03-23T13:55:43-05:00",
   "creator": {
@@ -106,6 +107,20 @@ Update project
 {
   "name": "This is a new name for the project!",
   "description": "And a new description..."
+}
+```
+
+This will return `200 OK` if the update was a success. If the user does not have access to update the project, you'll see `403 Forbidden`.
+
+
+Archiving/activating a project
+------------------------------
+
+* `PUT /projects/1.json` with the following JSON payload will archive a project (pass false to activate it again).
+
+```json
+{
+  "archived": true
 }
 ```
 
