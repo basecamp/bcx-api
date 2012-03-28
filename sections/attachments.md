@@ -12,9 +12,12 @@ Submitting files to Basecamp is a two step process:
 Create attachment
 -----------------
 
-* `POST /attachments.json` uploads a file. The request body should be the binary data of the attachment. Make sure to set the `Content-Type` and `Content-Length` headers.
+* `POST /attachments.json` uploads a file. The request body should be the
+binary data of the attachment. Make sure to set the `Content-Type` and
+`Content-Length` headers.
 
-Once the upload is successful, we'll give you a token back that you'll need to save locally to attach the file.
+Once the upload is successful, you'll get a `200 OK` response, and we'll give
+you a token back that you'll need to save locally to attach the file.
 
 ```json
 {
