@@ -44,7 +44,7 @@ OAuth 2 implementors
 
 If you're going bare-metal and developing your own OAuth 2 client, you have a bit more work to do.
 
-*TL;DR* request access, receive a verification code, trade it for an access token.
+**TL;DR** request access, receive a verification code, trade it for an access token.
 
 
 The typical flow for a web app:
