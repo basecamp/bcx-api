@@ -13,6 +13,8 @@ Get calendar events
 
 * `GET /projects/1/calendar_events.json` will return upcoming calendar events for the project.
 * `GET /calendars/1/calendar_events.json` will return upcoming calendar events for the calendar.
+* `GET /projects/1/calendar_events/past.json` will return past calendar events for the project.
+* `GET /calendars/1/calendar_events/past.json` will return past calendar events for the calendar.
 
 ```json
 [
@@ -38,10 +40,8 @@ Get calendar events
     "ends_at": "2012-03-28",
     "url": "https://basecamp.com/999999999//api/v1/projects/605816632-bcx/calendar_events/883432031-more-stuff-for-later.json"
   }
-]```
-
-* `GET /projects/1/calendar_events/past.json` will return past calendar events for the project.
-* `GET /calendars/1/calendar_events/past.json` will return past calendar events for the calendar.
+]
+```
 
 Get calendar event
 ------------------
