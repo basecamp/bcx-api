@@ -39,7 +39,7 @@ ever having to see his password or ask him to copy/paste an API key.
 4. Try making an authorized request to `https://launchpad.37signals.com/authorization.json` to dig in and test it out!
 
 
-OAuth 2 implementors
+OAuth 2 from scratch
 --------------------
 
 If you're going bare-metal and developing your own OAuth 2 client, you have a bit more work to do.
