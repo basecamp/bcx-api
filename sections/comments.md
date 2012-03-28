@@ -41,7 +41,7 @@ Create comment
 This will return `200 OK`, with the location of the commentable where the
 comment appears in the `Location` header, if the creation was a success.
 
-*Attaching files*
+### Attaching files
 
 Attaching files to a comment requires both the token and the name of the attachment. The
 token is returned from the [Create attachments](https://github.com/37signals/bcx-api/blob/master/sections/attachments.md)

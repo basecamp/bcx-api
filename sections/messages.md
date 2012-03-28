@@ -57,7 +57,7 @@ Create message
 This will return `200 OK`, with the location of the new project in the
 `Location` header, if the creation was a success.
 
-*Attaching files*
+### Attaching files
 
 Attaching files to a message requires both the token and the name of the attachment. The
 token is returned from the [Create attachments](https://github.com/37signals/bcx-api/blob/master/sections/attachments.md)

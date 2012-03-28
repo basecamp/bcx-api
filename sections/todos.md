@@ -59,7 +59,7 @@ Create todo
 }
 ```
 
-This will return `200 OK`, with the URL of the new todo in the `Location` header, if the creation was a success. If the assignee type is unrecognized or the `due_at` is in a wrong format, you'll see a `500 Bad Request`.
+This will return `200 OK`, with the URL of the new todo in the `Location` header, if the creation was a success. If the assignee type is unrecognized or the `due_at` is in a wrong format, you'll see a `400 Bad Request`.
 
 
 Update todo
@@ -79,7 +79,7 @@ Update todo
 }
 ```
 
-This will return `200 OK` if the update was a success. If the assignee type is unrecognized or the `due_at` is in a wrong format, you'll see a `500 Bad Request`.
+This will return `200 OK` if the update was a success. If the assignee type is unrecognized or the `due_at` is in a wrong format, you'll see a `400 Bad Request`.
 
 
 Delete todo

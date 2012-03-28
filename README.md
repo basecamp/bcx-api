@@ -41,7 +41,11 @@ Read the [authentication guide](https://github.com/37signals/bcx-api/blob/master
 Identify your app
 -----------------
 
-You must include a `User-Agent` header with the name of your application and a link to it or your email address so we can get in touch in case you're doing something wrong (so we may warn you before you're blacklisted) or something awesome (so we may congratulate you). Example `User-Agent: Freshbooks (http://freshbooks.com)`. If you do not do this, you will get a `400 Bad Request`.
+You must include a `User-Agent` header with the name of your application and a link to it or your email address so we can get in touch in case you're doing something wrong (so we may warn you before you're blacklisted) or something awesome (so we may congratulate you). Here's an example:
+
+    User-Agent: Freshbooks (http://freshbooks.com)
+
+If you don't supply this header, you will get a `400 Bad Request`.
 
 
 No XML, just JSON
@@ -60,6 +64,8 @@ Handling errors
 ---------------
 
 If Basecamp is having trouble, you might see a 5xx error. `500` means that the app is entirely down, but you might also see `502 Bad Gateway`, `503 Service Unavailable`, or `504 Gateway Timeout`. It's your responsibility in all of these cases to retry your request later. 
+
+We have another API for checking our system status at http://status.37signals.com/api.
 
 
 Rate limiting
