@@ -79,10 +79,7 @@ Get uploads
 -----------
 
 * `GET /projects/1/uploads.json` will show the content, comments, and
-attachments for this upload.
-
-Each upload will have its associated `attachment` and `url`, along with any
-`comments` on it.
+attachments for uploads within this project.
 
 We will return 50 uploads per page. If the
 result set has 50 uploads, it's your responsibility to check the next page 
