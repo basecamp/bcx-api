@@ -47,7 +47,10 @@ Get calendar
   "calendar_events": {
     "count": 1,
     "updated_at": "2012-03-28T13:26:07-05:00",
-    "url": "http://bcx.dev/735644780/api/v1/calendars/567469885-vacation/calendar_events.json"
+    "urls": {
+      "upcoming": "http://bcx.dev/735644780/api/v1/calendars/567469885-vacation/calendar_events.json",
+      "past": "http://bcx.dev/735644780/api/v1/calendars/567469885-vacation/calendar_events/past.json"
+    }
   }
 }
 ```
