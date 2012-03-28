@@ -4,66 +4,69 @@ The new Basecamp API
 The all-new Basecamp has an all-new API. It is not compatible with the [Basecamp Classic API](http://developer.37signals.com/basecamp/). All integrations will have to be updated to use the new API. The core ingredients are still the same, though. This is a REST-style API that uses JSON for serialization and OAuth 2 for authentication.
 
 
+Making a request
+----------------
+
+All URLs start with `https://basecamp.com/999999999/api/v1/`. That includes the account id and the API version. If we change the API in backward-incompatible ways, we'll bump the version marker and maintain stable support for the old URLs.
+
+To make a request for all the projects on your account, you'd append the projects index path to the base url to form something like https://basecamp.com/999999999/api/v1/projects.json. In curl, that look like:
+
+```shell
+curl -u user:pass -H 'User-Agent: MyApp (yourname@example.com)' https://basecamp.com/999999999/api/v1/projects.json
+```
+
+To create something, it's the same deal except you also have to include the `Content-Type` header and the JSON data:
+
+```shell
+curl -u username:password \
+  -H 'Content-Type: application/json' \
+  -H 'User-Agent: MyApp (yourname@example.com)' \
+  -d '{ "name": "My new project!" }' \
+  https://basecamp.com/999999999/api/v1/projects.json
+```
+
+That's all!
+
+
 Authentication
 --------------
 
-If you're making a private integration with Basecamp for your own purposes, you can use HTTP Basic authentication. This is secure since all requests in the new Basecamp happen over SSL.
+If you're making a private integration with Basecamp for your own purposes, you can use HTTP Basic authentication. This is secure since all requests in the new Basecamp use SSL.
 
 If you're making a public integration with Basecamp for others to enjoy, you must use OAuth 2. This allows users to authorize your application to use Basecamp on their behalf without having to copy/paste API tokens or touch sensitive login info.
 
 Read the [authentication guide](https://github.com/37signals/bcx-api/blob/master/sections/authentication.md) to get started.
 
 
+Identify your app
+-----------------
+
+You must include a `User-Agent` header with the name of your application and a link to it or your email address so we can get in touch in case you're doing something wrong (so we may warn you before you're blacklisted) or something awesome (so we may congratulate you). Example `User-Agent: Freshbooks (http://freshbooks.com)`. If you do not do this, you will get a `400 Bad Request`.
+
+
 No XML, just JSON
 -----------------
 
-We only support JSON for serialization of data. Our format is to have no root element and we use snake\_case to describe attribute keys. This means that you have to send `Content-Type: application/json; charset=utf-8` when you're POSTing or PUTing data into Basecamp. All API URLs end in .json to indicate that they accept JSON.
+We only support JSON for serialization of data. Our format is to have no root element and we use snake\_case to describe attribute keys. This means that you have to send `Content-Type: application/json; charset=utf-8` when you're POSTing or PUTing data into Basecamp. All API URLs end in .json to indicate that they accept and return JSON.
 
 
 Use HTTP caching
 ----------------
 
-You must make use of the HTTP freshness headers to lessen the load on our servers (and increase the speed of your application!). Most requests we return will include a `Last-Modified` header. When you first request a resource, store this value, and then submit them back to us on subsequent requests as `If-Modified-Since`. If the resource hasn't changed, you'll see a `304 Not Modified` response, which saves you the bandwidth and us the computation of sending something you already have.
-
-
-Include a user agent
---------------------
-
-You must include a `User-Agent` header with the name of your application and a link to it or your email address, so we can get in touch in case you're doing something wrong (so we may warn you before you're blacklisted) or something awesome (so we may congratulate you). Example `User-Agent: Freshbooks (http://freshbooks.com)`. If you do not do this, you will get a `400 Bad Request`.
-
-
-Rate limiting
--------------
-
-You can perform up to 500 requests per 10 second period from the same IP address for the same account. If you exceed this limit, you'll get a [429 Too Many Requests](http://tools.ietf.org/html/draft-nottingham-http-new-status-02#section-4) response for subsequent requests. Check the `Retry-After` header to see how many seconds to wait before trying again.
-
-
-Making a request
-----------------
-
-All URLs in the API sections assume a base like this: https://basecamp.com/999999999/api/v1/. That includes the account id and the version of the API. If we change the API in backwards incompatible ways, we'll be able to bump the version marker and still have old integrations work.
-
-So to make a request for all the projects on your account, you'd append the projects index path to the base url to form something like https://basecamp.com/999999999/api/v1/projects.json. In curl, that'd look like:
-
-```shell
-curl -u user:pass -H 'User-Agent: Rapp (david@37signals.com)' https://basecamp.com/999999999/api/v1/projects.json
-```
-
-To create something, it's the same deal except you also have to include the content-type header and the data. Example:
-
-```shell
-curl -u user:pass -H 'Content-Type: application/json'  -H 'User-Agent: Rapp (david@37signals.com)' \
--d '{ "name": "My new project!" }' \
-https://basecamp.com/999999999/api/v1/projects.json
-```
-
-That's all!
+You must make use of the HTTP freshness headers to lessen the load on our servers (and increase the speed of your application!). Most requests we return will include an `ETag` or `Last-Modified` header. When you first request a resource, store this value, and then submit them back to us on subsequent requests as `If-None-Match` and `If-Modified-Since`. If the resource hasn't changed, you'll see a `304 Not Modified` response, which saves you the time and bandwidth of sending something you already have.
 
 
 Handling errors
 ---------------
 
 If Basecamp is having trouble, you might see a 5xx error. `500` means that the app is entirely down, but you might also see `502 Bad Gateway`, `503 Service Unavailable`, or `504 Gateway Timeout`. It's your responsibility in all of these cases to retry your request later. 
+
+
+Rate limiting
+-------------
+
+You can perform up to 500 requests per 10 second period from the same IP address for the same account. If you exceed this limit, you'll get a [429 Too Many Requests](http://tools.ietf.org/html/draft-nottingham-http-new-status-02#section-4) response for subsequent requests. Check the `Retry-After` header to see how many seconds to wait before retrying the request.
+
 
 
 API ready for use
