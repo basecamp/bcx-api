@@ -21,13 +21,13 @@ We only support JSON for serialization of data. Our format is to have no root el
 Use HTTP caching
 ----------------
 
-It's strongly encouraged that you use the HTTP freshness headers to increase the speed of your application and lessen the load on our servers. Most requests we return will include `Last-Modified` and `ETag` headers. When you first request a resource, store these values, and then submit them back to us on subsequent requests as `If-Modified-Since` and `If-None-Match`. If the resource hasn't changed, you'll see a `304 Not Modified` response, which saves you the bandwidth and us the computation of sending something you already have.
+You must make use of the HTTP freshness headers to lessen the load on our servers (and increase the speed of your application!). Most requests we return will include a `Last-Modified` header. When you first request a resource, store this value, and then submit them back to us on subsequent requests as `If-Modified-Since`. If the resource hasn't changed, you'll see a `304 Not Modified` response, which saves you the bandwidth and us the computation of sending something you already have.
 
 
 Include a user agent
 --------------------
 
-It's mandatory to include a `User-Agent` header with the name of your application and a link to it or your email address, so we can get in touch in case you're doing something wrong (so we may warn you before you're blacklisted) or something awesome (so we may congratulate you). Example `User-Agent: Freshbooks (http://freshbooks.com)`. If you do not do this, you will get a `400 Bad Request`.
+You must include a `User-Agent` header with the name of your application and a link to it or your email address, so we can get in touch in case you're doing something wrong (so we may warn you before you're blacklisted) or something awesome (so we may congratulate you). Example `User-Agent: Freshbooks (http://freshbooks.com)`. If you do not do this, you will get a `400 Bad Request`.
 
 
 Rate limiting
@@ -78,7 +78,6 @@ Still under development
 -----------------------
 
 * Calendars: Working with events
-* Uploads/Attachments: Uploading and downloading of files
 * Notifications: Letting people know by email if new content was added
 * Trashing: Deleting content
 * Moving todos and todolists: Changing their position in the UI

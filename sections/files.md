@@ -9,15 +9,15 @@ Uploading files to Basecamp is a two step process:
 Some notes on files:
 
 * Files can only be attached to one "attachable".
-* Check out the [comments API](https://github.com/37signals/bcx-api/blob/master/sections/comments.md) or [todos API](https://github.com/37signals/bcx-api/blob/master/sections/todos.md) to see how to attach files to those endpoints.
+* Check out the [comments API](https://github.com/37signals/bcx-api/blob/master/sections/comments.md) or [messages API](https://github.com/37signals/bcx-api/blob/master/sections/messages.md) to see how to attach files to those endpoints.
+
 
 Create attachment
 -----------------
 
-* `POST /attachments.json` uploads a file. The request body should be the binary data of the attachment. Make sure to set the `CONTENT_TYPE` and `CONTENT_LENGTH` header.
+* `POST /attachments.json` uploads a file. The request body should be the binary data of the attachment. Make sure to set the `Content-Type` and `Content-Length` headers.
 
-Once the upload is successful, we'll give you a token back that you'll need to
-save locally to attach the file.
+Once the upload is successful, we'll give you a token back that you'll need to save locally to attach the file.
 
 ```json
 {
@@ -25,7 +25,7 @@ save locally to attach the file.
 }
 ```
 
-With `curl`, here's an example of testing this endpoint with an example file `logo.png`:
+With `curl`, here's an example:
 
 ```
 curl --data-binary @logo.png \
@@ -37,14 +37,13 @@ curl --data-binary @logo.png \
 
 *Note:* Uploading can take a while, if the file is big! Make sure to account for this in your implementation.
 
+
 Create uploads
 --------------
 
-* `POST /projects/1/uploads.json` will create a new entry in the "Files"
-section on the given project, with the given attachment token.
+* `POST /projects/1/uploads.json` will create a new entry in the "Files" section on the given project, with the given attachment token.
 
-Attaching files requires both the token, and the name of the attachment. This
-*must* be a valid filename with an extension.
+Attaching files requires both the token, and the name of the attachment. This *must* be a valid filename with an extension.
 
 ```json
 {
@@ -58,7 +57,4 @@ Attaching files requires both the token, and the name of the attachment. This
 }
 ```
 
-*Note*: Uploads can only have one attachment, despite the json blob accepting
-plural `attachments`. This is for consistency across the other endpoints that
-accept attachments. Hit the endpoint multiple times if you need to create
-multiple uploads.
+*Note*: Uploads can only have one attachment, despite the json blob accepting plural `attachments`. This is for consistency across the other endpoints that accept attachments. Hit the endpoint multiple times if you need to create multiple uploads.
