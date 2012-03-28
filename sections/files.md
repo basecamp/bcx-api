@@ -58,3 +58,46 @@ Attaching files requires both the token, and the name of the attachment. This *m
 ```
 
 *Note*: Uploads can only have one attachment, despite the json blob accepting plural `attachments`. This is for consistency across the other endpoints that accept attachments. Hit the endpoint multiple times if you need to create multiple uploads. Also, make sure that the `name` matches the name of the file, or else your attachment won't display properly.
+
+Get upload
+----------
+
+* `GET /projects/1/upload/2.json` will show the content, comments, and attachments for this upload.
+
+Each attachment blob includes the `url` parameter, which you can make a
+`GET` request (with authentication) in order to directly download the attachment.
+
+```json
+{
+  "created_at": "2012-03-27T22:48:49-04:00",
+  "updated_at": "2012-03-28T11:36:10-04:00",
+  "content": "Test",
+  "attachments": [
+    {
+      "key": "40b8a84cb1a30dbe04457dc99e094b6299deea41",
+      "name": "bearwave.gif",
+      "byte_size": 508254,
+      "content_type": "image/gif",
+      "created_at": "2012-03-27T22:48:49-04:00",
+      "url": "https://basecamp.com/1111/api/v1/projects/2222/attachments/3333/40b8a84cb1a30dbe04457dc99e094b6299deea41/original/bearwave.gif",
+      "creator": {
+        "id": 73,
+        "name": "Nick Quaranto"
+      }
+    }
+  ],
+  "comments": [
+    {
+      "id": 5566323,
+      "content": "Testing a comment",
+      "created_at": "2012-03-28T11:36:10-04:00",
+      "updated_at": "2012-03-28T11:36:10-04:00",
+      "attachments": [],
+      "creator": {
+        "id": 73,
+        "name": "Nick Quaranto"
+      }
+    }
+  ]
+}
+```
