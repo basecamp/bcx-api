@@ -3,8 +3,8 @@ Files
 
 Uploading files to Basecamp is a two step process:
 
-# Create the attachment, receive a token verifying the upload was successful ("Create attachment" endpoint)
-# Attach the file to a comment, message, or upload ("Create (comment|message|upload)" endpoint)
+1. Create the attachment, receive a token verifying the upload was successful ("Create attachment" endpoint)
+2. Attach the file to a comment, message, or upload ("Create (comment|message|upload)" endpoint)
 
 Some notes on files:
 
