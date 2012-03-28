@@ -24,6 +24,7 @@ Messages are listed alongside all the other [topics](https://github.com/37signal
   },
   "comments": [
     {
+      "id": 1028592764,
       "content": "Yeah, really, welcome!",
       "created_at": "2012-03-22T16:56:48-05:00",
       "updated_at": "2012-03-22T16:56:48-05:00"

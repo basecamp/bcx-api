@@ -57,4 +57,4 @@ Attaching files requires both the token, and the name of the attachment. This *m
 }
 ```
 
-*Note*: Uploads can only have one attachment, despite the json blob accepting plural `attachments`. This is for consistency across the other endpoints that accept attachments. Hit the endpoint multiple times if you need to create multiple uploads.
+*Note*: Uploads can only have one attachment, despite the json blob accepting plural `attachments`. This is for consistency across the other endpoints that accept attachments. Hit the endpoint multiple times if you need to create multiple uploads. Also, make sure that the `name` matches the name of the file, or else your attachment won't display properly.

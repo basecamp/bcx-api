@@ -13,9 +13,10 @@ Comments are included on the [topics](https://github.com/37signals/bcx-api/blob/
 {
   "comments": [
     {
+      "id": 1028592764,
       "content": "Yeah, really, welcome!",
       "created_at": "2012-03-22T16:56:48-05:00",
-      "updated_at": "2012-03-22T16:56:48-05:00"
+      "updated_at": "2012-03-22T16:56:48-05:00",
       "creator": {
         "id": 149087659,
         "name": "Jason Fried"
@@ -49,11 +50,8 @@ Create comment
 
 This will return `200 OK`, with the location of the commentable where the comment appears in the `Location` header, if the creation was a success. See the [files API](https://github.com/37signals/bcx-api/blob/master/sections/files.md) for details on how to upload files to be attachments.
 
-```json
-{
-  "content": "Shipped all the things!",
-}
-```
 
-*Note*: Make sure that the `name` matches the name of the file, or else your
-attachment won't display properly.
+Trash comment
+-------------
+
+* `DELETE /projects/1/comments/1.json` will trash the comment specified and return `200 OK` if that was successful. If the user does not have access to trash the comment, you'll see `403 Forbidden`.
