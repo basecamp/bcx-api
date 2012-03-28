@@ -35,6 +35,24 @@ Create comment
 ```json
 {
   "content": "Imma let you finish, but...",
+}
+```
+
+This will return `200 OK`, with the location of the commentable where the
+comment appears in the `Location` header, if the creation was a success.
+
+*Attaching files*
+
+Attaching files to a comment requires both the token and the name of the attachment. The
+token is returned from the [Create attachments](https://github.com/37signals/bcx-api/blob/master/sections/attachments.md)
+endpoint, which you must hit first before creating an upload.
+
+The `name` parameter *must* be a valid filename with an extension. Multiple
+attachments are allowed.
+
+```json
+{
+  "content": "Here's the stuff",
   "attachments": [
     {
       "token": "4f71ea23-134660425d1818169ecfdbaa43cfc07f4e33ef4c",
@@ -47,8 +65,6 @@ Create comment
   ]
 }
 ```
-
-This will return `200 OK`, with the location of the commentable where the comment appears in the `Location` header, if the creation was a success. See the [files API](https://github.com/37signals/bcx-api/blob/master/sections/files.md) for details on how to upload files to be attachments.
 
 
 Delete comment

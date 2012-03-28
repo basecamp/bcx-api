@@ -50,21 +50,38 @@ Create message
 ```json
 {
   "subject": "Hello everyone",
-  "content": "This is going to be a GREAT Saturday!",
+  "content": "This is going to be a GREAT Saturday!"
+}
+```
+
+This will return `200 OK`, with the location of the new project in the
+`Location` header, if the creation was a success.
+
+*Attaching files*
+
+Attaching files to a message requires both the token and the name of the attachment. The
+token is returned from the [Create attachments](https://github.com/37signals/bcx-api/blob/master/sections/attachments.md)
+endpoint, which you must hit first before creating an upload.
+
+The `name` parameter *must* be a valid filename with an extension. Multiple
+attachments are allowed.
+
+```json
+{
+  "subject": "Totally done!",
+  "content": "I finished the reports, check them out!",
   "attachments": [
     {
-      "token": "4f71ea23-134660425d1818169ecfdbaa43cfc07f4e33ef4c",
-      "name": "final_mockup.png"
+      "token": "4f73595a-39a6fd18317b1eeffb9c4734e95a179aa4b1b7c8",
+      "name": "cover_page.pdf"
     },
     {
-      "token": "4f71ea23-458294fc0d87927301c5d54b69a7517602939e2c",
-      "name": "draft_agreement.png"
+      "token": "4f73595f-78efbe63c77a4f5c752ce7d113d0361220f70b69",
+      "name": "final_draft.pdf"
     }
   ]
 }
 ```
-
-This will return `200 OK`, with the location of the new project in the `Location` header, if the creation was a success. See the [files API](https://github.com/37signals/bcx-api/blob/master/sections/files.md) for details on how to upload files to be attachments.
 
 
 Update message
