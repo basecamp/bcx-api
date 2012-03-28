@@ -91,6 +91,7 @@ API ready for use
 API still under development
 ---------------------------
 
+* Live updates: Pushing changes to the browser so they'll appear without needing to refresh
 * Notifications: Letting people know by email if new content was added
 * Moving todos and todolists: Changing their position in the UI
 * Companies/Groups: Organize people in groups
