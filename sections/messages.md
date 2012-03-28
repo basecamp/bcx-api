@@ -51,6 +51,27 @@ Create message
 
 This will return `200 OK`, with the location of the new project in the `Location` header, if the creation was a success.
 
+Attaching files to messages is possible with the [files
+API](https://github.com/37signals/bcx-api/blob/master/sections/files.md). Once
+you've hit the "Create attachment" endpoint, perhaps multiple times, creating
+a message with attachments would look like so:
+
+```json
+{
+  "subject": "How do these logos look?",
+  "content": "I'd really appreciate some :eyes: on these!",
+  "attachments": [
+    {
+      "token": "4f71ea23-134660425d1818169ecfdbaa43cfc07f4e33ef4c",
+      "name": "logo-1"
+    },
+    {
+      "token": "4f71ea23-458294fc0d87927301c5d54b69a7517602939e2c",
+      "name": "logo-2"
+    }
+  ]
+}
+```
 
 Update message
 --------------

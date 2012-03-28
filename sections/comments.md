@@ -38,3 +38,27 @@ Create comment
 ```
 
 This will return `200 OK`, with the location of the commentable where the comment appears in the `Location` header, if the creation was a success.
+
+Attaching files to comments is possible with the [files
+API](https://github.com/37signals/bcx-api/blob/master/sections/files.md). Once
+you've hit the "Create attachment" endpoint, perhaps multiple times, creating a 
+comment with attachments would look like so:
+
+```json
+{
+  "content": "Shipped all the things!",
+  "attachments": [
+    {
+      "token": "4f71ea23-134660425d1818169ecfdbaa43cfc07f4e33ef4c",
+      "name": "final_mockup.png"
+    },
+    {
+      "token": "4f71ea23-458294fc0d87927301c5d54b69a7517602939e2c",
+      "name": "draft_agreement.png"
+    }
+  ]
+}
+```
+
+*Note*: Make sure that the `name` matches the name of the file, or else your
+attachment won't display properly.
