@@ -105,3 +105,39 @@ Get project events
   }
 ]
 ```
+
+
+Get person events
+------------------
+
+* `GET /people/1/events.json?since=2012-03-24T11:00:00-06:00` will return all the events by that person like the global GET, except there won't be creator parameter. Similar use of the since term and the pagination.
+
+```json
+[
+  {
+    "id": 1054456336,
+    "created_at": "2012-03-24T11:00:50-05:00",
+    "updated_at": "2012-03-24T11:00:50-05:00",
+    "bucket": {
+      "id": 605816632,
+      "name": "BCX",
+      "type": "Project",
+      "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx.json"
+    },
+    "summary": "re-assigned a to-do to Funky ones: Design it",
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/todos/223304243-design-it.json"
+  },
+  {
+    "id": 1054456334,
+    "created_at": "2012-03-24T11:00:39-05:00",
+    "updated_at": "2012-03-24T11:00:39-05:00",
+    "bucket": {
+      "id": 605816632,
+      "name": "BCX",
+      "type": "Project",
+      "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx.json"
+    },
+    "summary": "created a to-do list: lists",
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/todolists/1056802576-lists.json"
+  }
+]```

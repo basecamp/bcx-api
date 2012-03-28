@@ -44,21 +44,6 @@ Get person
     "count": 19,
     "updated_at": "2012-03-23T13:55:43-05:00",
     "url": "https://basecamp.com/999999999/api/v1/people/149087659-jason-fried/events.json"
-  },
-  "assigned_todos": {
-    "count": 0,
-    "updated_at": null,
-    "url": "https://basecamp.com/999999999/api/v1/people/149087659-jason-fried/assigned_todos.json"
-  },
-  "completed_todos": {
-    "count": 0,
-    "last_completed_at": null,
-    "url": "https://basecamp.com/999999999/api/v1/people/149087659-jason-fried/completed_todos.json"
-  },
-  "attachments": {
-    "count": 3,
-    "updated_at": "2012-03-22T16:56:47-05:00",
-    "url": "https://basecamp.com/999999999/api/v1/people/149087659-jason-fried/attachments.json"
   }
 }
 ```

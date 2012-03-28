@@ -8,6 +8,7 @@ Get accesses
 ------------
 
 * `GET /projects/1/accesses.json` will return all the people with access to the project.
+* `GET /calendars/1/accesses.json` will return all the people with access to the calendar.
 
 ```json
 [
@@ -32,7 +33,7 @@ Get accesses
 Grant access
 ------------
 
-* `POST /projects/1/accesses.json` will grant access to the project for the existing `ids` of people already on the account or new people via `email_addresses`.
+* `POST /projects/1/accesses.json` will grant access to the project for the existing `ids` of people already on the account or new people via `email_addresses`. (Same goes for calendars with /calendars/ instead)
 
 ```json
 {
@@ -49,6 +50,6 @@ This will return `200 OK` if the access was granted successfully. If the user do
 Revoke access
 -------------
 
-* `DELETE /projects/1/accesses/1.json` will revoke the access of the person who's id is mentioned in the URL.
+* `DELETE /projects/1/accesses/1.json` will revoke the access of the person who's id is mentioned in the URL.  (Same goes for calendars with /calendars/ instead)
 
 This will return `200 OK` if the revoke was a success. If the user does not have access to revoke access from the project, `403 Forbidden` will be returned.

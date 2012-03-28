@@ -46,7 +46,8 @@ Get calendar events
 Get calendar event
 ------------------
 
-* `GET /projects/1/calendar_events/1.json` will return the specified calendar event.
+* `GET /projects/1/calendar_events/1.json` will return the specified calendar event. 
+* `GET /calendars/1/calendar_events/1.json` will return the specified calendar event. 
 
 ```json
 {
