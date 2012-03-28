@@ -41,6 +41,7 @@ Each attachment blob includes the `url` parameter, which you can make a
 
 ```json
 {
+  "id": 31709,
   "created_at": "2012-03-27T22:48:49-04:00",
   "updated_at": "2012-03-28T11:36:10-04:00",
   "content": "Hi there!",
@@ -89,6 +90,7 @@ query, then `&page=3` and so on.
 ```json
 [
   {
+    "id": 31709,
     "created_at": "2012-03-27T22:48:49-04:00",
     "updated_at": "2012-03-28T11:36:10-04:00",
     "content": "Hi there!",
@@ -109,6 +111,7 @@ query, then `&page=3` and so on.
     "comments": []
   },
   {
+    "id": 31710,
     "created_at": "2012-03-27T22:48:49-04:00",
     "updated_at": "2012-03-28T11:36:10-04:00",
     "content": "Here's the report",
