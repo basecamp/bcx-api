@@ -62,7 +62,7 @@ Get document
 Create document
 ---------------
 
-* `POST /projects/1/document.json` will create a new document from the parameters passed.
+* `POST /projects/1/documents.json` will create a new document from the parameters passed.
 
 ```json
 {
