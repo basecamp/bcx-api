@@ -12,13 +12,13 @@ Get calendars
     "id": 336154974,
     "name": "Board Meetings",
     "updated_at": "2012-03-27T13:19:29-05:00",
-    "url": "https://basecamp.com/999999999//api/v1/calendars/336154974-board-meetings.json"
+    "url": "https://basecamp.com/999999999/api/v1/calendars/336154974-board-meetings.json"
   },
   {
     "id": 237581901,
     "name": "General",
     "updated_at": "2012-03-27T13:19:29-05:00",
-    "url": "https://basecamp.com/999999999//api/v1/calendars/237581901-general.json"
+    "url": "https://basecamp.com/999999999/api/v1/calendars/237581901-general.json"
   }
 ]
 ```
@@ -42,14 +42,14 @@ Get calendar
   "accesses": {
     "count": 3,
     "updated_at": "2012-03-28T13:14:31-05:00",
-    "url": "https://basecamp.com/999999999//api/v1/calendars/567469885-vacation/accesses.json"
+    "url": "https://basecamp.com/999999999/api/v1/calendars/567469885-vacation/accesses.json"
   },
   "calendar_events": {
     "count": 1,
     "updated_at": "2012-03-28T13:26:07-05:00",
     "urls": {
-      "upcoming": "https://basecamp.com/999999999//api/v1/calendars/567469885-vacation/calendar_events.json",
-      "past": "https://basecamp.com/999999999//api/v1/calendars/567469885-vacation/calendar_events/past.json"
+      "upcoming": "https://basecamp.com/999999999/api/v1/calendars/567469885-vacation/calendar_events.json",
+      "past": "https://basecamp.com/999999999/api/v1/calendars/567469885-vacation/calendar_events/past.json"
     }
   }
 }
