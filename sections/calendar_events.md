@@ -27,7 +27,7 @@ Get calendar events
     "all_day": false,
     "starts_at": "2012-03-28T07:00:00-05:00",
     "ends_at": "2012-03-28T07:00:00-05:00",
-    "url": "https://basecamp.com/999999999//api/v1/projects/605816632-bcx/calendar_events/883432030-something-coming-up.json"
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/calendar_events/883432030-something-coming-up.json"
   },
   {
     "id": 883432031,
@@ -38,7 +38,7 @@ Get calendar events
     "all_day": true,
     "starts_at": "2012-03-28",
     "ends_at": "2012-03-28",
-    "url": "https://basecamp.com/999999999//api/v1/projects/605816632-bcx/calendar_events/883432031-more-stuff-for-later.json"
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/calendar_events/883432031-more-stuff-for-later.json"
   }
 ]
 ```
