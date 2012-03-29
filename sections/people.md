@@ -32,6 +32,7 @@ Get person
 ----------
 
 * `GET /people/1.json` will return the specified person.
+* `GET /people/me.json` will return the current person.
 
 ```json
 {
