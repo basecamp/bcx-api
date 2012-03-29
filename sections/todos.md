@@ -46,7 +46,7 @@ Get todo
 Create todo
 -----------
 
-* `POST /projects/1/todolists.json` will create a new todolist from the parameters passed. The `due_at` parameter should be in ISO 8601 format (like "2012-03-27T16:00:00-05:00"). The assignee parameters need an `type` field with either `Person` or `Group` specified. The `id` is then the id of that person or group.
+* `POST /projects/1/todolists/1/todos.json` will add a new todo to the specified todolist from the parameters passed. The `due_at` parameter should be in ISO 8601 format (like "2012-03-27T16:00:00-05:00"). The assignee parameters need an `type` field with either `Person` or `Group` specified. The `id` is then the id of that person or group.
 
 ```json
 {
@@ -65,7 +65,7 @@ This will return `200 OK`, with the URL of the new todo in the `Location` header
 Update todo
 -----------
 
-* `PUT /projects/1/todolists/1.json` will update the todolist from the parameters passed. The `completed` field can be set to either `true` or `false` to check or uncheck the todo.
+* `PUT /projects/1/todos/1.json` will update the todo from the parameters passed. The `completed` field can be set to either `true` or `false` to check or uncheck the todo.
 
 ```json
 {
