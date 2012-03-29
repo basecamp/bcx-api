@@ -29,6 +29,52 @@ Get todolists
 ]
 ```
 
+Get todolists with assigned todos
+---------------------------------
+
+* `GET /people/1/assigned_todos.json` will return all the todolists with todos assigned to the specified person.
+
+```json
+[
+  {
+    "id": 968316918,
+    "name": "Launch list",
+    "description": "What we need for launch!",
+    "updated_at": "2012-03-29T11:00:39-05:00",
+    "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx/todolists/968316918-launch-list.json",
+    "assigned_todos": [
+      {
+        "id": 223304243,
+        "content": "Design it",
+        "due_at": "2012-03-30T09:00:00-05:00",
+        "comments_count": 0,
+        "created_at": "2012-03-27T13:19:30-05:00",
+        "updated_at": "2012-03-29T11:00:38-05:00",
+        "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx/todos/223304243-design-it.json"
+      }
+    ]
+  },
+  {
+    "id": 812358930,
+    "name": "Version 2",
+    "description": "What we will do next",
+    "updated_at": "2012-03-29T10:50:33-05:00",
+    "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx/todolists/812358930-version-2.json",
+    "assigned_todos": [
+      {
+        "id": 270524416,
+        "content": "Fix all the bugs",
+        "due_at": null,
+        "comments_count": 0,
+        "created_at": "2012-03-27T13:19:30-05:00",
+        "updated_at": "2012-03-29T10:50:33-05:00",
+        "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx/todos/270524416-fix-all-the-bugs.json"
+      }
+    ]
+  }
+]
+```
+
 
 Get todolist
 ------------
