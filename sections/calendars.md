@@ -67,7 +67,7 @@ Create calendar
 }
 ```
 
-This will return `200 OK`, with the location of the new calendar in the `Location` header, if the creation was a success.
+This will return `201 Created`, with the location of the new calendar in the `Location` header along with a representation of the calendar in JSON in the response body if the creation was a success (See the **Get calendar** endpoint).
 
 
 Update calendar
@@ -81,10 +81,10 @@ Update calendar
 }
 ```
 
-This will return `200 OK` if the update was a success. If the user does not have access to update the calendar, you'll see `403 Forbidden`.
+This will return `200 OK` if the update was a success, along with a represenation of the calendar in JSON (See the **Get calendar** endpoint). If the user does not have access to update the calendar, you'll see `403 Forbidden`.
 
 
 Delete calendar
--------------
+---------------
 
-* `DELETE /calendars/1.json` will delete the calendar specified and return `200 OK` if that was successful. If the user does not have access to delete the calendar, you'll see `403 Forbidden`.
+* `DELETE /calendars/1.json` will delete the calendar specified and return `204 No Content` if that was successful. If the user does not have access to delete the calendar, you'll see `403 Forbidden`.

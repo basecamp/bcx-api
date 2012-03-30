@@ -9,6 +9,8 @@ Create uploads
 
 * `POST /projects/1/uploads.json` will create a new entry in the "Files" section on the given project, with the given attachment token.
 
+This endpoint will return a `201 Created` if successful, with the URL to the new uplaod in the `Location` header along with the current JSON representation of the upload. See the **Get upload** for more info.
+
 Attaching files requires both the token and the name of the attachment. The
 token is returned from the [Create attachments](https://github.com/37signals/bcx-api/blob/master/sections/attachments.md)
 endpoint, which you must hit first before creating an upload.

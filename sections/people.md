@@ -59,4 +59,4 @@ New people can be invited directly to projects via the [accesses API](https://gi
 Delete person
 ------------
 
-* `DELETE /people/1.json` will delete the person specified and return `200 OK` if that was successful. If the user does not have access to delete the person, you'll see `403 Forbidden`.
+* `DELETE /people/1.json` will delete the person specified and return `204 No Content` if that was successful. If the user does not have access to delete the person, you'll see `403 Forbidden`.

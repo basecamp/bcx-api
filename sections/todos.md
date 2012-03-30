@@ -59,7 +59,7 @@ Create todo
 }
 ```
 
-This will return `200 OK`, with the URL of the new todo in the `Location` header, if the creation was a success. If the assignee type is unrecognized or the `due_at` is in a wrong format, you'll see a `400 Bad Request`.
+This will return `201 Created`, with the URL of the new todo in the `Location` header along with the current JSON representation of the todo if the creation was a success. See the **Get todo** endpoint for more info. If the assignee type is unrecognized or the `due_at` is in a wrong format, you'll see a `400 Bad Request`.
 
 
 Update todo
@@ -79,10 +79,10 @@ Update todo
 }
 ```
 
-This will return `200 OK` if the update was a success. If the assignee type is unrecognized or the `due_at` is in a wrong format, you'll see a `400 Bad Request`.
+This will return `200 OK` if the update was a success along with the current JSON representation of the todo in the response body. See the **Get todo** endpoint for more info. If the assignee type is unrecognized or the `due_at` is in a wrong format, you'll see a `400 Bad Request`.
 
 
 Delete todo
 ----------
 
-* `DELETE /projects/1/todos/1.json` will delete the todo specified and return `200 OK` if that was successful. If the user does not have access to delete the todo, you'll see `403 Forbidden`.
+* `DELETE /projects/1/todos/1.json` will delete the todo specified and return `204 No Content` if that was successful. If the user does not have access to delete the todo, you'll see `403 Forbidden`.

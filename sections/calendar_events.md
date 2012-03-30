@@ -125,7 +125,7 @@ Examples:
 }
 ```
 
-This will return `200 OK`, with the URL of the new calendar_event in the `Location` header, if the creation was a success. If the dates are not in the proper format, you'll get a `400 Bad Request`.
+This will return `201 Created`, with the URL of the new calendar_event in the `Location` header and a JSON representation of the event in the response body, if the creation was a success. If the dates are not in the proper format, you'll get a `400 Bad Request`.
 
 
 Update calendar event
@@ -144,10 +144,10 @@ Update calendar event
 }
 ```
 
-This will return `200 OK` if the creation was a success. If the dates are not in the proper format, you'll get a `400 Bad Request`.
+This will return `200 OK` if the creation was a success, with a JSON representation of the resource in the response body. If the dates are not in the proper format, you'll get a `400 Bad Request`.
 
 
 Delete calendar event
 ---------------------
 
-* `DELETE /projects/1/calendar_events/1.json` will delete the calendar event specified and return `200 OK` if that was successful. (The same for /calendars/)
+* `DELETE /projects/1/calendar_events/1.json` will delete the calendar event specified and return `204 No Content` if that was successful. (The same for /calendars/)

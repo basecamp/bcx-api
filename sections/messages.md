@@ -54,8 +54,7 @@ Create message
 }
 ```
 
-This will return `200 OK`, with the location of the new project in the
-`Location` header, if the creation was a success.
+This will return `201 Created`, with the location of the new project in the `Location` header along with the current JSON representation of the message  if the creation was a success. See the **Get message* endpoint for more info.
 
 ### Attaching files
 
@@ -96,10 +95,10 @@ Update message
 }
 ```
 
-This will return `200 OK` if the update was a success. If the user does not have access to update the message, you'll see `403 Forbidden`.
+This will return `200 OK` if the update was a success, along with the current JSON representation of the message in the response body. If the user does not have access to update the message, you'll see `403 Forbidden`. See the **Get message** endpoint for more info.
 
 
 Delete message
 -------------
 
-* `DELETE /projects/1/messages/1.json` will delete the message specified and return `200 OK` if that was successful. If the user does not have access to delete the message, you'll see `403 Forbidden`.
+* `DELETE /projects/1/messages/1.json` will delete the message specified and return `204 No Content` if that was successful. If the user does not have access to delete the message, you'll see `403 Forbidden`.

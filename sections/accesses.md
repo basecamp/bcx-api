@@ -1,9 +1,6 @@
 Accesses
 ========
 
-> <Clever quote about accesses>
-
-
 Get accesses
 ------------
 
@@ -44,7 +41,7 @@ Grant access
 
 You can get the ids of existing people on the account from the [people API](https://github.com/37signals/bcx-api/blob/master/sections/people.md).
 
-This will return `200 OK` if the access was granted successfully. If the user does not have access to grant further access to the project, `403 Forbidden` will be returned.
+This will return `204 No Content` if the access was granted successfully. If the user does not have access to grant further access to the project, `403 Forbidden` will be returned.
 
 
 Revoke access
@@ -52,4 +49,4 @@ Revoke access
 
 * `DELETE /projects/1/accesses/1.json` will revoke the access of the person who's id is mentioned in the URL.  (Same goes for calendars with /calendars/ instead)
 
-This will return `200 OK` if the revoke was a success. If the user does not have access to revoke access from the project, `403 Forbidden` will be returned.
+This will return `204 No Content` if the revoke was a success. If the user does not have access to revoke access from the project, `403 Forbidden` will be returned.

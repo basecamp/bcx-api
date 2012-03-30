@@ -38,8 +38,21 @@ Create comment
 }
 ```
 
-This will return `200 OK`, with the location of the commentable where the
-comment appears in the `Location` header, if the creation was a success.
+This will return `201 Created`, with a representation of the comment just created in the response body if the creation was a success. The topic can be accessed via the `topic_url` parameter. For example:
+
+```json
+{
+  "id": 1028592764,
+  "content": "Yeah, really, welcome!",
+  "created_at": "2012-03-22T16:56:48-05:00",
+  "updated_at": "2012-03-22T16:56:48-05:00",
+  "creator": {
+    "id": 149087659,
+    "name": "Jason Fried"
+  },
+  "topic_url": "https://basecamp.com/9999999/api/v1/messages/888888.json"
+}
+```
 
 ### Attaching files
 
@@ -70,4 +83,4 @@ attachments are allowed.
 Delete comment
 -------------
 
-* `DELETE /projects/1/comments/1.json` will delete the comment specified and return `200 OK` if that was successful. If the user does not have access to delete the comment, you'll see `403 Forbidden`.
+* `DELETE /projects/1/comments/1.json` will delete the comment specified and return `204 No Content` if that was successful. If the user does not have access to delete the comment, you'll see `403 Forbidden`.

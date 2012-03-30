@@ -95,7 +95,7 @@ Create project
 }
 ```
 
-This will return `200 OK`, with the location of the new project in the `Location` header, if the creation was a success. If the user does not have access to create new projects or the account has reached the project limit, you'll see `403 Forbidden`.
+This will return `201 Created`, with the location of the new project in the `Location` header along with the current JSON representation of the project if the creation was a success. See the **Get project** endpoint for more info. If the user does not have access to create new projects or the account has reached the project limit, you'll see `403 Forbidden`.
 
 
 Update project
@@ -110,7 +110,7 @@ Update project
 }
 ```
 
-This will return `200 OK` if the update was a success. If the user does not have access to update the project, you'll see `403 Forbidden`.
+This will return `200 OK` if the update was a success along with the current JSON representation of the project. See the **Get project** endpoint for more info. If the user does not have access to update the project, you'll see `403 Forbidden`.
 
 
 Archiving/activating a project
@@ -124,10 +124,10 @@ Archiving/activating a project
 }
 ```
 
-This will return `200 OK` if the update was a success. If the user does not have access to update the project, you'll see `403 Forbidden`.
+This will return `200 OK` if the update was a success, along with the current JSON representation of the project. If the user does not have access to update the project, you'll see `403 Forbidden`.
 
 
 Delete project
 -------------
 
-* `DELETE /projects/1.json` will delete the project specified and return `200 OK` if that was successful. If the user does not have access to delete the project, you'll see `403 Forbidden`.
+* `DELETE /projects/1.json` will delete the project specified and return `204 No Content` if that was successful. If the user does not have access to delete the project, you'll see `403 Forbidden`.
