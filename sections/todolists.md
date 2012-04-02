@@ -83,6 +83,7 @@ Get todolist
 
 ```json
 {
+  "id": 968316918,
   "name": "Launch list",
   "description": "What we need for launch!",
   "created_at": "2012-03-24T09:53:35-05:00",
