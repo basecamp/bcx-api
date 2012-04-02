@@ -17,14 +17,16 @@ Get todolists
     "name": "Launch list",
     "description": "What we need for launch",
     "updated_at": "2012-03-22T16:56:52-05:00",
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/todolists/968316918-launch-list.json"
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/todolists/968316918-launch-list.json",
+    "completed": false
   },
   {
     "id": 812358930,
     "name": "Version 2",
     "description": "What we will do next",
     "updated_at": "2012-03-22T16:56:52-05:00",
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/todolists/812358930-version-2.json"
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/todolists/812358930-version-2.json",
+    "completed": false
   }
 ]
 ```
@@ -42,6 +44,7 @@ Get todolists with assigned todos
     "description": "What we need for launch!",
     "updated_at": "2012-03-29T11:00:39-05:00",
     "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx/todolists/968316918-launch-list.json",
+    "completed": false,
     "assigned_todos": [
       {
         "id": 223304243,
@@ -60,6 +63,7 @@ Get todolists with assigned todos
     "description": "What we will do next",
     "updated_at": "2012-03-29T10:50:33-05:00",
     "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx/todolists/812358930-version-2.json",
+    "completed": false,
     "assigned_todos": [
       {
         "id": 270524416,
@@ -88,6 +92,7 @@ Get todolist
   "description": "What we need for launch!",
   "created_at": "2012-03-24T09:53:35-05:00",
   "updated_at": "2012-03-24T09:59:35-05:00",
+  "completed": false,
   "todos": {
     "remaining": [
       {
