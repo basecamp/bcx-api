@@ -46,7 +46,7 @@ Get todolists with assigned todos
       {
         "id": 223304243,
         "content": "Design it",
-        "due_at": "2012-03-30T09:00:00-05:00",
+        "due_at": "2012-03-30",
         "comments_count": 0,
         "created_at": "2012-03-27T13:19:30-05:00",
         "updated_at": "2012-03-29T11:00:38-05:00",
@@ -93,7 +93,7 @@ Get todolist
       {
         "id": 223304243,
         "content": "Design it",
-        "due_at": "2012-03-24T16:00:00-05:00",
+        "due_at": "2012-03-24",
         "comments_count": 0,
         "created_at": "2012-03-24T09:53:35-05:00",
         "updated_at": "2012-03-24T09:55:52-05:00",

@@ -1,9 +1,6 @@
 Todos
 =====
 
-> <Clever quote about todos>
-
-
 Get todos
 ---------
 
@@ -19,7 +16,7 @@ Get todo
 {
   "content": "Design it",
   "completed": false,
-  "due_at": "2012-03-27T09:00:00-05:00",
+  "due_at": "2012-03-27",
   "created_at": "2012-03-24T09:53:35-05:00",
   "updated_at": "2012-03-24T10:56:33-05:00",
   "assignee": {
@@ -51,7 +48,7 @@ Create todo
 ```json
 {
   "content": "This is my new thing!",
-  "due_at": "2012-03-27T16:00:00-05:00",
+  "due_at": "2012-03-27",
   "assignee": {
     "id": 149087659,
     "type": "Person"
@@ -70,7 +67,7 @@ Update todo
 ```json
 {
   "content": "New content thing!",
-  "due_at": "2012-03-27T16:00:00-05:00",
+  "due_at": "2012-03-27",
   "assignee": {
     "id": 149087659,
     "type": "Person"
