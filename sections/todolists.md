@@ -45,6 +45,7 @@ Get todolists with assigned todos
     "updated_at": "2012-03-29T11:00:39-05:00",
     "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx/todolists/968316918-launch-list.json",
     "completed": false,
+    "position": 1,
     "assigned_todos": [
       {
         "id": 223304243,
@@ -53,7 +54,8 @@ Get todolists with assigned todos
         "comments_count": 0,
         "created_at": "2012-03-27T13:19:30-05:00",
         "updated_at": "2012-03-29T11:00:38-05:00",
-        "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx/todos/223304243-design-it.json"
+        "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx/todos/223304243-design-it.json",
+        "position": 1
       }
     ]
   },
@@ -64,6 +66,7 @@ Get todolists with assigned todos
     "updated_at": "2012-03-29T10:50:33-05:00",
     "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx/todolists/812358930-version-2.json",
     "completed": false,
+    "position": 2,
     "assigned_todos": [
       {
         "id": 270524416,
@@ -72,7 +75,8 @@ Get todolists with assigned todos
         "comments_count": 0,
         "created_at": "2012-03-27T13:19:30-05:00",
         "updated_at": "2012-03-29T10:50:33-05:00",
-        "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx/todos/270524416-fix-all-the-bugs.json"
+        "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx/todos/270524416-fix-all-the-bugs.json",
+        "position": 1
       }
     ]
   }
@@ -93,6 +97,7 @@ Get todolist
   "created_at": "2012-03-24T09:53:35-05:00",
   "updated_at": "2012-03-24T09:59:35-05:00",
   "completed": false,
+  "position": 1,
   "todos": {
     "remaining": [
       {
@@ -107,6 +112,7 @@ Get todolist
           "type": "Person",
           "name": "Jason Fried"
         },
+        "position": 1,
         "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/todos/223304243-design-it.json"
       },
       {
@@ -117,6 +123,7 @@ Get todolist
         "created_at": "2012-03-24T09:53:35-05:00",
         "updated_at": "2012-03-24T09:53:35-05:00",
         "assignee": {},
+        "position": 2,
         "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/todos/411008527-test-it.json"
       }
     ],
@@ -131,6 +138,7 @@ Get todolist
         "completed_at": "2012-03-24T09:59:35-05:00",
         "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/todos/1046098401-think-of-it.json",
         "assignee": {},
+        "position": 3,
         "completer": {
           "id": 149087659,
           "name": "Jason Fried"
@@ -171,6 +179,17 @@ Update todolist
 
 This will return `200 OK` if the creation was a success along with the current JSON representation of the todolist in the response body. See the **Get todolist** endpoint for more info. If the user does not have access to update the todolist, you'll see `403 Forbidden`.
 
+### Reordering todolists
+
+Updating the `position` of a todolist is also possible through this endpoint by passing an integer between `1` and `n`, where `n` is the number of todolists in this project.
+
+```json
+{
+  "position": 2
+}
+```
+
+*Note*: If the position is out of bounds, the todo will be moved to the bottom.
 
 Delete todolist
 --------------
