@@ -19,6 +19,7 @@ Get todo
   "due_at": "2012-03-27",
   "created_at": "2012-03-24T09:53:35-05:00",
   "updated_at": "2012-03-24T10:56:33-05:00",
+  "position": 1,
   "assignee": {
     "id": 149087659,
     "type": "Person",
