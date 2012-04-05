@@ -1,9 +1,6 @@
 Todo lists
 ==========
 
-> <Clever quote about todo lists>
-
-
 Get todolists
 -------------
 
@@ -18,7 +15,8 @@ Get todolists
     "description": "What we need for launch",
     "updated_at": "2012-03-22T16:56:52-05:00",
     "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/todolists/968316918-launch-list.json",
-    "completed": false
+    "completed": false,
+    "position": 1
   },
   {
     "id": 812358930,
@@ -26,7 +24,8 @@ Get todolists
     "description": "What we will do next",
     "updated_at": "2012-03-22T16:56:52-05:00",
     "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/todolists/812358930-version-2.json",
-    "completed": false
+    "completed": false,
+    "position": 1
   }
 ]
 ```
