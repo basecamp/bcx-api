@@ -27,7 +27,7 @@ Get calendars
 Get calendar
 ------------
 
-* `GET /calendar/1.json` will return the specified calendar.
+* `GET /calendars/1.json` will return the specified calendar.
 
 ```json
 {

@@ -36,7 +36,7 @@ attachment is allowed.
 Get upload
 ----------
 
-* `GET /projects/1/upload/2.json` will show the content, comments, and attachments for this upload.
+* `GET /projects/1/uploads/2.json` will show the content, comments, and attachments for this upload.
 
 Each attachment blob includes the `url` parameter, which you can make a
 `GET` request (with authentication) in order to directly download the attachment.
