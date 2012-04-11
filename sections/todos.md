@@ -14,6 +14,8 @@ Get todo
 
 ```json
 {
+  "id": 1,
+  "todolist_id": 1000,
   "content": "Design it",
   "completed": false,
   "due_at": "2012-03-27",
