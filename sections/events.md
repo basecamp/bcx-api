@@ -5,15 +5,13 @@ Events
 
 All actions in Basecamp generate an event for the progress log. If you start a new todo list, there's an event. If you give someone access to a project, there's an event. If you add a comment. You get the drill.
 
-If you're using this API for polling, please make sure that you're using the `after` parameter to limit the result set to events that happened after that id. Use the id of the first item on the list for subsequent polls. If there's nothing new, you'll get `[]` back.
-
-You can also poll by timestamp using the `since` parameter. Use the `created_at` time of the first item on the list for subsequent polls. If there's nothing new since that date, you'll get `[]` back.
+If you're using this API for polling, please make sure that you're using the `since` parameter to limit the result set. Use the `created_at` time of the first item on the list for subsequent polls. If there's nothing new since that date, you'll get `[]` back.
 
 
 Get global events
 -----------------
 
-* `GET /events.json?after=1234` will return all the events on the account after event 1234. We will return 50 events per page. If the result set has 50 entries, it's your responsibility to check the next page to see if there are any more events -- you do this by adding `&page=2` to the query, then `&page=3` and so on.
+* `GET /events.json?since=2012-03-24T11:00:00-06:00` will return all the events on the account since 11am CST March 24, 2012. We will return 50 events per page. If the result set has 50 entries, it's your responsibility to check the next page to see if there are any more events -- you do this by adding `&page=2` to the query, then `&page=3` and so on.
 
 ```json
 [
@@ -79,7 +77,7 @@ The bucket type can either be `Project` or `Calendar`.
 Get project events
 ------------------
 
-* `GET /projects/1/events.json?after=1234` will return all the events on the project like the global GET, except there won't be a bucket included. Similar use of the `after` param and pagination.
+* `GET /projects/1/events.json?since=2012-03-24T11:00:00-06:00` will return all the events on the project like the global GET, except there won't be a bucket included. Similar use of the since term and the pagination.
 
 ```json
 [
@@ -112,7 +110,7 @@ Get project events
 Get person events
 ------------------
 
-* `GET /people/1/events.json?after=1234` will return all the events by that person like the global GET, except there won't be creator parameter. Similar use of the `after` param and pagination.
+* `GET /people/1/events.json?since=2012-03-24T11:00:00-06:00` will return all the events by that person like the global GET, except there won't be creator parameter. Similar use of the since term and the pagination.
 
 ```json
 [
