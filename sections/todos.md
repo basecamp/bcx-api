@@ -16,12 +16,17 @@ Get todo
 {
   "id": 1,
   "todolist_id": 1000,
+  "position": 1,
   "content": "Design it",
   "completed": false,
   "due_at": "2012-03-27",
   "created_at": "2012-03-24T09:53:35-05:00",
   "updated_at": "2012-03-24T10:56:33-05:00",
-  "position": 1,
+  "comments_count": 1,
+  "creator": {
+    "id": 127326141,
+    "name": "David Heinemeier Hansson"
+  },
   "assignee": {
     "id": 149087659,
     "type": "Person",
