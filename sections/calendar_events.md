@@ -27,6 +27,10 @@ Get calendar events
     "all_day": false,
     "starts_at": "2012-03-28T07:00:00-05:00",
     "ends_at": "2012-03-28T07:00:00-05:00",
+    "creator": {
+      "id": 149087659,
+      "name": "Jason Fried"
+    },
     "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/calendar_events/883432030-something-coming-up.json"
   },
   {
@@ -38,6 +42,10 @@ Get calendar events
     "all_day": true,
     "starts_at": "2012-03-28",
     "ends_at": "2012-03-28",
+    "creator": {
+      "id": 149087659,
+      "name": "Jason Fried"
+    },
     "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/calendar_events/883432031-more-stuff-for-later.json"
   }
 ]
@@ -63,6 +71,7 @@ Get calendar event
     "id": 149087659,
     "name": "Jason Fried"
   },
+  "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/calendar_events/883432030-something-coming-up.json"
   "comments": [
     {
       "id": 1028592772,
