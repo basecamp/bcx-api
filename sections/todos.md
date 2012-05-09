@@ -86,6 +86,8 @@ Update todo
 
 This will return `200 OK` if the update was a success along with the current JSON representation of the todo in the response body. See the **Get todo** endpoint for more info. If the assignee type is unrecognized or the `due_at` is in a wrong format, you'll see a `400 Bad Request`.
 
+Sending a payload with `assignee` set to `null` will un-assign the todo, and setting `due_at` to `null` will remove the due date.
+
 ### Reordering todos
 
 Updating the `position` of a todo is also possible through this endpoint by passing an integer between `1` and `n`, where `n` is the number of todos in this list.
