@@ -35,7 +35,7 @@ If you're making a private integration with Basecamp for your own purposes, you 
 
 If you're making a public integration with Basecamp for others to enjoy, you must use OAuth 2. This allows users to authorize your application to use Basecamp on their behalf without having to copy/paste API tokens or touch sensitive login info.
 
-Read the [authentication guide](https://github.com/37signals/bcx-api/blob/master/sections/authentication.md) to get started.
+Read the [authentication guide](https://github.com/37signals/api/blob/master/sections/authentication.md) to get started.
 
 
 Identify your app
