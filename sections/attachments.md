@@ -69,7 +69,7 @@ query, then `&page=3` and so on.
     "attachable": {
       "id": 70219655,
       "type": "Upload",
-      "url": "https://basecmap.com/1111/api/v1/projects/2222/uploads/70219655.json"
+      "url": "https://basecamp.com/1111/api/v1/projects/2222/uploads/70219655.json"
     }
   }
   {
@@ -86,7 +86,7 @@ query, then `&page=3` and so on.
     "attachable": {
       "id": 12092382,
       "type": "Message",
-      "url": "https://basecmap.com/1111/api/v1/projects/2222/messages/12092382.json"
+      "url": "https://basecamp.com/1111/api/v1/projects/2222/messages/12092382.json"
     }
   }
 ]
