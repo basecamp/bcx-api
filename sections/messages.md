@@ -45,12 +45,13 @@ Get message
 Create message
 --------------
 
-* `POST /projects/1/messages.json` will create a new message from the parameters passed.
+* `POST /projects/1/messages.json` will create a new message from the parameters passed. The subscribers array is an optional list of people IDs that you want to notify about this comment (see [Get accesses](https://github.com/37signals/bcx-api/blob/master/sections/accesses.md) on how to get the people IDs for a given project).
 
 ```json
 {
   "subject": "Hello everyone",
-  "content": "This is going to be a GREAT Saturday!"
+  "content": "This is going to be a GREAT Saturday!",
+  "subscribers": [ 1, 5, 6]
 }
 ```
 

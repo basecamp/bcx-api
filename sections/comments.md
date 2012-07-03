@@ -30,11 +30,12 @@ Comments are included on the [topics](https://github.com/37signals/bcx-api/blob/
 Create comment
 --------------
 
-* `POST /projects/1/<section>/1/comments.json` will create a new comment from the parameters passed for the commentable described via <section>/<id> -- for example /projects/1/messages/1/comments.json or /projects/1/todos/1/comments.json.
+* `POST /projects/1/<section>/1/comments.json` will create a new comment from the parameters passed for the commentable described via <section>/<id> -- for example /projects/1/messages/1/comments.json or /projects/1/todos/1/comments.json. The subscribers array is an optional list of people IDs that you want to notify about this comment (see [Get accesses](https://github.com/37signals/bcx-api/blob/master/sections/accesses.md) on how to get the people IDs for a given project).
 
 ```json
 {
   "content": "Imma let you finish, but...",
+  "subscribers": [ 1, 5, 6]
 }
 ```
 

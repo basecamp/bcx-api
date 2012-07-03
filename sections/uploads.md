@@ -18,6 +18,8 @@ endpoint, which you must hit first before creating an upload.
 The `name` parameter *must* be a valid filename with an extension. Only one
 attachment is allowed.
 
+The subscribers array is an optional list of people IDs that you want to notify about this comment (see [Get accesses](https://github.com/37signals/bcx-api/blob/master/sections/accesses.md) on how to get the people IDs for a given project).
+
 ```json
 {
   "content": "Here's the new logo!",
@@ -26,7 +28,8 @@ attachment is allowed.
       "token": "4f71ea23-134660425d1818169ecfdbaa43cfc07f4e33ef4c",
       "name": "new_logo.png"
     }
-  ]
+  ],
+  "subscribers": [ 1, 5, 6]
 }
 ```
 
