@@ -76,6 +76,16 @@ Each attachment blob includes the `url` parameter, which you can make a
         "name": "Nick Quaranto"
       }
     }
+  ],
+  "subscribers": [
+    {
+      "id": 149087659,
+      "name": "Jason Fried"
+    },
+    {
+      "id": 1071630348,
+      "name": "Jeremy Kemper"
+    }
   ]
 }
 ```

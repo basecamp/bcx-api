@@ -43,6 +43,16 @@ Get todo
         "name": "David Heinemeier Hansson"
       }
     }
+  ],
+  "subscribers": [
+    {
+      "id": 149087659,
+      "name": "Jason Fried"
+    },
+    {
+      "id": 1071630348,
+      "name": "Jeremy Kemper"
+    }
   ]
 }
 ```

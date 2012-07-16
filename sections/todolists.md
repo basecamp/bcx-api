@@ -144,7 +144,29 @@ Get todolist
         }
       }
     ]
-  }
+  },
+  "comments": [
+    {
+      "id": 1028592764,
+      "content": "+1",
+      "created_at": "2012-03-24T09:53:34-05:00",
+      "updated_at": "2012-03-24T09:53:34-05:00",
+      "creator": {
+        "id": 127326141,
+        "name": "David Heinemeier Hansson"
+      }
+    }
+  ],
+  "subscribers": [
+    {
+      "id": 149087659,
+      "name": "Jason Fried"
+    },
+    {
+      "id": 1071630348,
+      "name": "Jeremy Kemper"
+    }
+  ]
 }
 ```
 
