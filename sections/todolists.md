@@ -16,7 +16,11 @@ Get todolists
     "updated_at": "2012-03-22T16:56:52-05:00",
     "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/todolists/968316918-launch-list.json",
     "completed": false,
-    "position": 1
+    "position": 1,
+    "creator": {
+      "id": 127326141,
+      "name": "David Heinemeier Hansson"
+    },
   },
   {
     "id": 812358930,
@@ -25,7 +29,11 @@ Get todolists
     "updated_at": "2012-03-22T16:56:52-05:00",
     "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/todolists/812358930-version-2.json",
     "completed": false,
-    "position": 1
+    "position": 2,
+    "creator": {
+      "id": 127326141,
+      "name": "David Heinemeier Hansson"
+    },
   }
 ]
 ```
@@ -45,6 +53,10 @@ Get todolists with assigned todos
     "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx/todolists/968316918-launch-list.json",
     "completed": false,
     "position": 1,
+    "creator": {
+      "id": 127326141,
+      "name": "David Heinemeier Hansson"
+    },
     "assigned_todos": [
       {
         "id": 223304243,
@@ -66,6 +78,10 @@ Get todolists with assigned todos
     "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx/todolists/812358930-version-2.json",
     "completed": false,
     "position": 2,
+    "creator": {
+      "id": 127326141,
+      "name": "David Heinemeier Hansson"
+    },
     "assigned_todos": [
       {
         "id": 270524416,
@@ -97,6 +113,10 @@ Get todolist
   "updated_at": "2012-03-24T09:59:35-05:00",
   "completed": false,
   "position": 1,
+  "creator": {
+    "id": 127326141,
+    "name": "David Heinemeier Hansson"
+  },
   "todos": {
     "remaining": [
       {
