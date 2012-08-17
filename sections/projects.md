@@ -20,6 +20,7 @@ Get projects
     "updated_at": "2012-03-23T13:55:43-05:00",
     "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx.json",
     "archived": false
+    "starred": true
   },
   {
     "id": 684146117,
@@ -28,6 +29,7 @@ Get projects
     "updated_at": "2012-03-22T16:56:51-05:00",
     "url": "https://basecamp.com/999999999/api/v1/projects/684146117-nothing-here.json",
     "archived": false
+    "starred": false
   }
 ]
 ```
@@ -46,6 +48,7 @@ Get project
   "archived": false,
   "created_at": "2012-03-22T16:56:51-05:00",
   "updated_at": "2012-03-23T13:55:43-05:00",
+  "starred": true,
   "creator": {
     "id": 149087659,
     "name": "Jason Fried"
