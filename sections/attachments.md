@@ -41,9 +41,10 @@ curl --data-binary @logo.png \
 Get attachments
 ---------------
 
-* `GET /projects/1/attachments.json` will show attachments for this
+* `GET /projects/1/attachments.json` shows attachments for this
 project with file metadata, urls, and associated attachables (Uploads, Messages,
 or Comments) with a `200 OK` response.
+* `GET /attachments.json` shows attachments for all projects.
 
 If you need more information about what the attachment is attached to, you can
 make another request to the `attachable`'s `url` parameter.

@@ -1,12 +1,13 @@
 Documents
-========
+=========
 
 All documents are automatically version-tracked. The API only exposes the most recent version of a document, though. Also, in the web UI we provide lock tracking to make sure people don't overwrite each other's work. There's no such automatic protection via the API. You're responsible yourself for managing this. Of course, everything is versioned so there won't be any lost data.
 
 Get documents
 -------------
 
-* `GET /projects/1/documents.json` will return all the documents on the project ordered alphabetically by `title`.
+* `GET /projects/1/documents.json` shows documents for this project ordered alphabetically by `title`.
+* `GET /documents.json` shows documents for all projects.
 
 ```json
 [

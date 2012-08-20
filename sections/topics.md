@@ -9,7 +9,8 @@ Topics are anything in Basecamp that can have comments: Messages, Calendar Event
 Get topics
 ----------
 
-* `GET /projects/1/topics.json` will return the all the topics for the project. We will return 50 topics per page. If the result set has 50 topics, it's your responsibility to check the next page to see if there are any more topics -- you do this by adding `&page=2` to the query, then `&page=3` and so on.
+* `GET /projects/1/topics.json` shows topics for this project. We will return 50 topics per page. If the result set has 50 topics, it's your responsibility to check the next page to see if there are any more topics -- you do this by adding `&page=2` to the query, then `&page=3` and so on.
+* `GET /topics.json` shows topics for all projects.
 
 ```json
 [

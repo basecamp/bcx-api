@@ -4,8 +4,10 @@ Todo lists
 Get todolists
 -------------
 
-* `GET /projects/1/todolists.json` will return all todolists with remaining todos on them sorted by position.
-* `GET /projects/1/todolists/completed.json` will return all the completed todolists.
+* `GET /projects/1/todolists.json` shows active todolists for this project sorted by position.
+* `GET /projects/1/todolists/completed.json` shows completed todolists for this project.
+* `GET /todolists.json` shows active todolists for all projects.
+* `GET /todolists/completed.json` shows completed todolists for all projects.
 
 ```json
 [
