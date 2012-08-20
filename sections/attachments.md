@@ -65,7 +65,8 @@ query, then `&page=3` and so on.
     "url": "https://basecamp.com/1111/api/v1/projects/2222/attachments/3333/40b8a84cb1a30dbe04457dc99e094b6299deea41/original/bearwave.gif",
     "creator": {
       "id": 73,
-      "name": "Nick Quaranto"
+      "name": "Nick Quaranto",
+      "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3"
     },
     "attachable": {
       "id": 70219655,
@@ -82,7 +83,8 @@ query, then `&page=3` and so on.
     "url": "https://basecamp.com/1111/api/v1/projects/2222/attachments/4444/773c74212f81f5c7d66917fb7236d5aece36c56a/original/report.pdf",
     "creator": {
       "id": 73,
-      "name": "Nick Quaranto"
+      "name": "Nick Quaranto",
+      "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3"
     },
     "attachable": {
       "id": 12092382,

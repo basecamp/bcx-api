@@ -37,7 +37,8 @@ Get calendar
   "updated_at": "2012-03-28T13:26:07-05:00",
   "creator": {
     "id": 149087659,
-    "name": "Jason Fried"
+    "name": "Jason Fried",
+    "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3"
   },
   "accesses": {
     "count": 3,

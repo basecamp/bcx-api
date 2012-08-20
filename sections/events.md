@@ -21,7 +21,8 @@ Get global events
     "updated_at": "2012-03-24T11:00:50-05:00",
     "creator": {
       "id": 149087659,
-      "name": "Jason Fried"
+      "name": "Jason Fried",
+      "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3"
     },
     "bucket": {
       "id": 605816632,
@@ -38,7 +39,8 @@ Get global events
     "updated_at": "2012-03-24T11:00:39-05:00",
     "creator": {
       "id": 149087659,
-      "name": "Jason Fried"
+      "name": "Jason Fried",
+      "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3"
     },
     "bucket": {
       "id": 605816632,
@@ -55,7 +57,8 @@ Get global events
     "updated_at": "2012-03-24T09:53:35-05:00",
     "creator": {
       "id": 149087659,
-      "name": "Jason Fried"
+      "name": "Jason Fried",
+      "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3"
     },
     "bucket": {
       "id": 605816632,
@@ -87,7 +90,8 @@ Get project events
     "updated_at": "2012-03-24T11:00:50-05:00",
     "creator": {
       "id": 149087659,
-      "name": "Jason Fried"
+      "name": "Jason Fried",
+      "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3"
     },
     "summary": "re-assigned a to-do to Funky ones: Design it",
     "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/todos/223304243-design-it.json"
@@ -98,7 +102,8 @@ Get project events
     "updated_at": "2012-03-24T11:00:44-05:00",
     "creator": {
       "id": 149087659,
-      "name": "Jason Fried"
+      "name": "Jason Fried",
+      "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3"
     },
     "summary": "added a to-do: t",
     "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/todos/1046098402-t.json"

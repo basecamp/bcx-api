@@ -29,7 +29,8 @@ Get calendar events
     "ends_at": "2012-03-28T07:00:00-05:00",
     "creator": {
       "id": 149087659,
-      "name": "Jason Fried"
+      "name": "Jason Fried",
+      "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3"
     },
     "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/calendar_events/883432030-something-coming-up.json"
   },
@@ -44,7 +45,8 @@ Get calendar events
     "ends_at": "2012-03-28",
     "creator": {
       "id": 149087659,
-      "name": "Jason Fried"
+      "name": "Jason Fried",
+      "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3"
     },
     "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/calendar_events/883432031-more-stuff-for-later.json"
   }
@@ -69,7 +71,8 @@ Get calendar event
   "ends_at": "2012-03-28T07:00:00-05:00",
   "creator": {
     "id": 149087659,
-    "name": "Jason Fried"
+    "name": "Jason Fried",
+    "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3"
   },
   "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/calendar_events/883432030-something-coming-up.json"
   "comments": [
@@ -81,7 +84,8 @@ Get calendar event
       "attachments": [],
       "creator": {
         "id": 149087659,
-        "name": "Jason Fried"
+        "name": "Jason Fried",
+        "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3"
       }
     }
   ],

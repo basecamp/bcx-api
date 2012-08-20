@@ -60,7 +60,8 @@ Each attachment blob includes the `url` parameter, which you can make a
       "url": "https://basecamp.com/1111/api/v1/projects/2222/attachments/3333/40b8a84cb1a30dbe04457dc99e094b6299deea41/original/bearwave.gif",
       "creator": {
         "id": 73,
-        "name": "Nick Quaranto"
+        "name": "Nick Quaranto",
+        "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3"
       }
     }
   ],
@@ -73,7 +74,8 @@ Each attachment blob includes the `url` parameter, which you can make a
       "attachments": [],
       "creator": {
         "id": 73,
-        "name": "Nick Quaranto"
+        "name": "Nick Quaranto",
+        "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3"
       }
     }
   ],

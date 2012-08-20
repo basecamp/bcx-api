@@ -24,7 +24,8 @@ Get message
   "content": "This is a new message",
   "creator": {
     "id": 149087659,
-    "name": "Jason Fried"
+    "name": "Jason Fried",
+    "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3"
   },
   "comments": [
     {
@@ -34,7 +35,8 @@ Get message
       "updated_at": "2012-03-22T16:56:48-05:00"
       "creator": {
         "id": 149087659,
-        "name": "Jason Fried"
+        "name": "Jason Fried",
+        "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3"
       }
     }
   ],

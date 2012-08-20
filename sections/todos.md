@@ -25,7 +25,8 @@ Get todo
   "comments_count": 1,
   "creator": {
     "id": 127326141,
-    "name": "David Heinemeier Hansson"
+    "name": "David Heinemeier Hansson",
+    "avatar_url": "https://asset0.37img.com/global/9d2148cb8ed8e2e8ecbc625dd1cbe7691896c7d9/avatar.96.gif?r=3"
   },
   "assignee": {
     "id": 149087659,
@@ -40,7 +41,8 @@ Get todo
       "updated_at": "2012-03-24T09:53:34-05:00",
       "creator": {
         "id": 127326141,
-        "name": "David Heinemeier Hansson"
+        "name": "David Heinemeier Hansson",
+        "avatar_url": "https://asset0.37img.com/global/9d2148cb8ed8e2e8ecbc625dd1cbe7691896c7d9/avatar.96.gif?r=3"
       }
     }
   ],

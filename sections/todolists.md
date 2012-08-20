@@ -23,7 +23,8 @@ Get todolists
     "remaining_count": 5,
     "creator": {
       "id": 127326141,
-      "name": "David Heinemeier Hansson"
+      "name": "David Heinemeier Hansson",
+      "avatar_url": "https://asset0.37img.com/global/9d2148cb8ed8e2e8ecbc625dd1cbe7691896c7d9/avatar.96.gif?r=3"
     },
   },
   {
@@ -38,7 +39,8 @@ Get todolists
     "remaining_count": 4,
     "creator": {
       "id": 127326141,
-      "name": "David Heinemeier Hansson"
+      "name": "David Heinemeier Hansson",
+      "avatar_url": "https://asset0.37img.com/global/9d2148cb8ed8e2e8ecbc625dd1cbe7691896c7d9/avatar.96.gif?r=3"
     },
   }
 ]
@@ -63,7 +65,8 @@ Get todolists with assigned todos
     "remaining_count": 5,
     "creator": {
       "id": 127326141,
-      "name": "David Heinemeier Hansson"
+      "name": "David Heinemeier Hansson",
+      "avatar_url": "https://asset0.37img.com/global/9d2148cb8ed8e2e8ecbc625dd1cbe7691896c7d9/avatar.96.gif?r=3"
     },
     "assigned_todos": [
       {
@@ -90,7 +93,8 @@ Get todolists with assigned todos
     "remaining_count": 4,
     "creator": {
       "id": 127326141,
-      "name": "David Heinemeier Hansson"
+      "name": "David Heinemeier Hansson",
+      "avatar_url": "https://asset0.37img.com/global/9d2148cb8ed8e2e8ecbc625dd1cbe7691896c7d9/avatar.96.gif?r=3"
     },
     "assigned_todos": [
       {
@@ -127,7 +131,8 @@ Get todolist
   "remaining_count": 5,
   "creator": {
     "id": 127326141,
-    "name": "David Heinemeier Hansson"
+    "name": "David Heinemeier Hansson",
+    "avatar_url": "https://asset0.37img.com/global/9d2148cb8ed8e2e8ecbc625dd1cbe7691896c7d9/avatar.96.gif?r=3"
   },
   "todos": {
     "remaining": [
@@ -185,7 +190,8 @@ Get todolist
       "updated_at": "2012-03-24T09:53:34-05:00",
       "creator": {
         "id": 127326141,
-        "name": "David Heinemeier Hansson"
+        "name": "David Heinemeier Hansson",
+        "avatar_url": "https://asset0.37img.com/global/9d2148cb8ed8e2e8ecbc625dd1cbe7691896c7d9/avatar.96.gif?r=3"
       }
     }
   ],

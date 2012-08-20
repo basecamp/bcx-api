@@ -19,7 +19,8 @@ Comments are included on the [topics](https://github.com/37signals/bcx-api/blob/
       "updated_at": "2012-03-22T16:56:48-05:00",
       "creator": {
         "id": 149087659,
-        "name": "Jason Fried"
+        "name": "Jason Fried",
+        "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3"
       }
     }
   ]
@@ -49,7 +50,8 @@ This will return `201 Created`, with a representation of the comment just create
   "updated_at": "2012-03-22T16:56:48-05:00",
   "creator": {
     "id": 149087659,
-    "name": "Jason Fried"
+    "name": "Jason Fried",
+    "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3"
   },
   "topic_url": "https://basecamp.com/9999999/api/v1/messages/888888.json"
 }
