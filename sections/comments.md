@@ -17,6 +17,21 @@ Comments are included on the [topics](https://github.com/37signals/bcx-api/blob/
       "content": "Yeah, really, welcome!",
       "created_at": "2012-03-22T16:56:48-05:00",
       "updated_at": "2012-03-22T16:56:48-05:00",
+      "attachments":[
+         {
+            "key": "40b8a84cb1a30dbe04457dc99e094b6299deea41",
+            "name": "bearwave.gif",
+            "byte_size": 508254,
+            "content_type":"image/png",
+            "created_at":"2012-03-27T22:48:49-04:00",
+            "url":"https://basecamp.com/1111/api/v1/projects/2222/attachments/3333/40b8a84cb1a30dbe04457dc99e094b6299deea41/original/bearwave.gif",
+            "creator":{
+               "id": 73,
+               "name": "Nick Quaranto",
+               "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3"
+            }
+         }
+      ],
       "creator": {
         "id": 149087659,
         "name": "Jason Fried",
