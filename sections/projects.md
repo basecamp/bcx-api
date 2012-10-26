@@ -19,7 +19,7 @@ Get projects
     "description": "The Next Generation",
     "updated_at": "2012-03-23T13:55:43-05:00",
     "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx.json",
-    "archived": false
+    "archived": false,
     "starred": true
   },
   {
@@ -28,7 +28,7 @@ Get projects
     "description": null,
     "updated_at": "2012-03-22T16:56:51-05:00",
     "url": "https://basecamp.com/999999999/api/v1/projects/684146117-nothing-here.json",
-    "archived": false
+    "archived": false,
     "starred": false
   }
 ]
