@@ -13,19 +13,23 @@ Get people
 [
   {
     "id": 149087659,
+    "identity_id": 982871737,
     "name": "Jason Fried",
     "email_address": "jason@37signals.com",
-    "identity_id": 982871737,
-    "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3",
+    "admin": true,
+    "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif",
+    "created_at": "2012-03-22T16:56:48-05:00",
     "updated_at": "2012-03-22T16:56:48-05:00",
     "url": "https://basecamp.com/999999999/api/v1/people/149087659-jason-fried.json"
   },
   {
     "id": 1071630348,
+    "identity_id": 827377171,
     "name": "Jeremy Kemper",
     "email_address": "jeremy@37signals.com",
-    "identity_id": 827377171,
+    "admin": true,
     "avatar_url": "https://asset0.37img.com/global/e68cafa694e8f22203eb36f13dccfefa9ac0acb2/avatar.96.gif",
+    "created_at": "2012-03-22T16:56:48-05:00",
     "updated_at": "2012-03-22T16:56:48-05:00",
     "url": "https://basecamp.com/999999999/api/v1/people/1071630348-jeremy-kemper.json"
   }
@@ -41,12 +45,13 @@ Get person
 ```json
 {
   "id": 149087659,
+  "identity_id": 982871737,
   "name": "Jason Fried",
   "email_address": "jason@37signals.com",
+  "admin": true,
   "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3",
   "created_at": "2012-03-22T16:56:51-05:00",
   "updated_at": "2012-03-23T13:55:43-05:00",
-  "identity_id": 982871737,
   "events": {
     "count": 19,
     "updated_at": "2012-03-23T13:55:43-05:00",
