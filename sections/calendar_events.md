@@ -139,15 +139,6 @@ Examples:
 }
 ```
 
-```json
-{
-  "summary": "My multi-day event starting at a specific time",
-  "description": "Details to follow",
-  "starts_at": "2012-03-28T11:50:00-05:00",
-  "ends_at": "2012-03-28T07:00:00-05:00"
-}
-```
-
 This will return `201 Created`, with the URL of the new calendar_event in the `Location` header and a JSON representation of the event in the response body, if the creation was a success. If the dates are not in the proper format, you'll get a `400 Bad Request`.
 
 
