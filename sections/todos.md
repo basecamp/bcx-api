@@ -63,7 +63,7 @@ Get todo
 Create todo
 -----------
 
-* `POST /projects/1/todolists/1/todos.json` will add a new todo to the specified todolist from the parameters passed. The `due_at` parameter should be in ISO 8601 format (like "2012-03-27T16:00:00-05:00"). The assignee parameters need an `type` field with the `Person` specified. The `id` is then the id of the person who was assigned.
+* `POST /projects/1/todolists/1/todos.json` will add a new todo to the specified todolist from the parameters passed. The `due_at` parameter should be in ISO 8601 format (like "2012-03-27T16:00:00-05:00"). The assignee parameters need a `type` field with the `Person` specified. The `id` is then the id of the person who was assigned.
 
 ```json
 {
