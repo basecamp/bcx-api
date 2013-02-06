@@ -50,8 +50,8 @@ If you need more information about what the attachment is attached to, you can
 make another request to the `attachable`'s `url` parameter.
 
 We will return 50 attachments per page. If the
-result set has 50 attachments, it's your responsibility to check the next page 
-to see if there are any more attachments -- you do this by adding `&page=2` to the 
+result set has 50 attachments, it's your responsibility to check the next page
+to see if there are any more attachments -- you do this by adding `&page=2` to the
 query, then `&page=3` and so on.
 
 ```json
@@ -62,7 +62,7 @@ query, then `&page=3` and so on.
     "byte_size": 508254,
     "content_type": "image/gif",
     "created_at": "2012-03-27T22:48:49-04:00",
-    "url": "https://basecamp.com/1111/api/v1/projects/2222/attachments/3333/40b8a84cb1a30dbe04457dc99e094b6299deea41/original/bearwave.gif",
+    "url": "https://asset1.basecamp.com/1111/api/v1/projects/2222/attachments/3333/40b8a84cb1a30dbe04457dc99e094b6299deea41/original/bearwave.gif",
     "creator": {
       "id": 73,
       "name": "Nick Quaranto",
@@ -80,7 +80,7 @@ query, then `&page=3` and so on.
     "byte_size": 508254,
     "content_type": "application/pdf",
     "created_at": "2012-03-27T22:48:49-04:00",
-    "url": "https://basecamp.com/1111/api/v1/projects/2222/attachments/4444/773c74212f81f5c7d66917fb7236d5aece36c56a/original/report.pdf",
+    "url": "https://asset1.basecamp.com/1111/api/v1/projects/2222/attachments/4444/773c74212f81f5c7d66917fb7236d5aece36c56a/original/report.pdf",
     "creator": {
       "id": 73,
       "name": "Nick Quaranto",
