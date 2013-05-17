@@ -41,11 +41,12 @@ Read the [authentication guide](https://github.com/37signals/api/blob/master/sec
 Identify your app
 -----------------
 
-You must include a `User-Agent` header with the name of your application and a link to it or your email address so we can get in touch in case you're doing something wrong (so we may warn you before you're blacklisted) or something awesome (so we may congratulate you). Here's an example:
+You must include a `User-Agent` header with the name of your application and a link to it or your email address so we can get in touch in case you're doing something wrong (so we may warn you before you're blacklisted) or something awesome (so we may congratulate you). Here's a couple of examples:
 
-    User-Agent: Freshbooks (http://freshbooks.com)
+    User-Agent: Freshbooks (http://freshbooks.com/contact.php)
+    User-Agent: Fabian's Ingenious Integration (fabian@example.com) 
 
-If you don't supply this header, you will get a `400 Bad Request`.
+If you don't supply this header, you will get a `400 Bad Request` response.
 
 
 No XML, just JSON
