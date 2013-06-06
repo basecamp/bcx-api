@@ -67,7 +67,7 @@ Create message
 }
 ```
 
-This will return `201 Created`, with the location of the new project in the `Location` header along with the current JSON representation of the message  if the creation was a success. See the **Get message* endpoint for more info.
+This will return `201 Created`, with the location of the new project in the `Location` header along with the current JSON representation of the message  if the creation was a success. See the [Get message](https://github.com/37signals/bcx-api/blob/master/sections/messages.md#get-message) endpoint for more info.
 
 ### Attaching files
 
