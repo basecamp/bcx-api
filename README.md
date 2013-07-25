@@ -102,6 +102,10 @@ API still under development
 * Moving todos and todolists: Changing their position in the UI
 * Companies/Groups: Organize people in groups
 
+API libraries
+-------------
+
+* [Logan](https://rubygems.org/gems/logan) - Ruby gem
 
 Help us make it better
 ----------------------
