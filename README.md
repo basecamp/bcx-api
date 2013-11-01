@@ -95,6 +95,10 @@ API ready for use
 
 
 
+API libraries
+-------------
+
+* [Logan](https://rubygems.org/gems/logan) - Ruby gem
 
 Help us make it better
 ----------------------
