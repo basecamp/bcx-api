@@ -94,3 +94,29 @@ query, then `&page=3` and so on.
   }
 ]
 ```
+
+Linked attachments like [Google Docs](https://basecamp.com/help/guides/projects/google-docs) don't have a `url` attribute and include additional attributes about the source.
+
+
+```json
+{
+  "id": 999008204,
+  "name": "Business ponderings",
+  "byte_size": 0,
+  "content_type": "application/vnd.google-apps.document",
+  "linked_source": "google",
+  "linked_type": "document",
+  "link_url": "https://docs.google.com/document/d/1fNihMDicThD....",
+  "created_at": "2012-03-28T22:48:49-04:00",
+  "creator": {
+    "id": 73,
+    "name": "Nick Quaranto",
+    "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3"
+  },
+  "attachable": {
+    "id": 12092383,
+    "type": "Message",
+    "url": "https://basecamp.com/1111/api/v1/projects/2222/messages/12092383.json"
+  }
+}
+```
