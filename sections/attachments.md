@@ -57,6 +57,7 @@ query, then `&page=3` and so on.
 ```json
 [
   {
+    "id": 999008202,
     "key": "40b8a84cb1a30dbe04457dc99e094b6299deea41",
     "name": "bearwave.gif",
     "byte_size": 508254,
@@ -75,6 +76,7 @@ query, then `&page=3` and so on.
     }
   }
   {
+    "id": 999008203,
     "key": "773c74212f81f5c7d66917fb7236d5aece36c56a",
     "name": "report.pdf",
     "byte_size": 508254,
