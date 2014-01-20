@@ -37,6 +37,34 @@ curl --data-binary @logo.png \
 
 *Note:* Uploading can take a while, if the file is big! Make sure to account for this in your implementation.
 
+Get attachment
+--------------
+
+* `GET /projects/1/attachments/1.json` will return the specified attachment
+ with file metadata, urls, and associated attachables (Uploads, Messages,
+or Comments) with a `200 OK` response.
+
+```json
+{
+  "id": 999008202,
+  "key": "40b8a84cb1a30dbe04457dc99e094b6299deea41",
+  "name": "bearwave.gif",
+  "byte_size": 508254,
+  "content_type": "image/gif",
+  "created_at": "2012-03-27T22:48:49-04:00",
+  "url": "https://asset1.basecamp.com/1111/api/v1/projects/2222/attachments/3333/40b8a84cb1a30dbe04457dc99e094b6299deea41/original/bearwave.gif",
+  "creator": {
+    "id": 73,
+    "name": "Nick Quaranto",
+    "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3"
+  },
+  "attachable": {
+    "id": 70219655,
+    "type": "Upload",
+    "url": "https://basecamp.com/1111/api/v1/projects/2222/uploads/70219655.json"
+  }
+}
+```
 
 Get attachments
 ---------------
