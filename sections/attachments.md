@@ -5,9 +5,9 @@ Submitting files to Basecamp is a two step process:
 
 1. Create the attachment, receive a token verifying the upload was successful ("Create attachment" endpoint)
 2. Attach the file to a comment, message, or upload. See the following endpoints for attaching:
-   * [Create uploads](https://github.com/37signals/bcx-api/blob/master/sections/uploads.md)
-   * [Create comments](https://github.com/37signals/bcx-api/blob/master/sections/comments.md)
-   * [Create messages](https://github.com/37signals/bcx-api/blob/master/sections/messages.md)
+   * [Create uploads](https://github.com/basecamp/bcx-api/blob/master/sections/uploads.md)
+   * [Create comments](https://github.com/basecamp/bcx-api/blob/master/sections/comments.md)
+   * [Create messages](https://github.com/basecamp/bcx-api/blob/master/sections/messages.md)
 
 Create attachment
 -----------------
@@ -31,7 +31,7 @@ With `curl`, here's an example:
 curl --data-binary @logo.png \
        -u user:pass \
        -H 'Content-Type: image/png' \
-       -H 'User-Agent: Rapp (david@37signals.com)' \
+       -H 'User-Agent: Rapp (david@basecamp.com)' \
        https://basecamp.com/999999999/api/v1/attachments.json
 ```
 

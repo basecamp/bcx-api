@@ -7,7 +7,7 @@ Comments
 Get comments
 ------------
 
-Comments are included on the [topics](https://github.com/37signals/bcx-api/blob/master/sections/topics.md) directly. So to see all comments for a message, you'd just GET that message and they're included and look like this:
+Comments are included on the [topics](https://github.com/basecamp/bcx-api/blob/master/sections/topics.md) directly. So to see all comments for a message, you'd just GET that message and they're included and look like this:
 
 ```json
 {
@@ -46,7 +46,7 @@ Comments are included on the [topics](https://github.com/37signals/bcx-api/blob/
 Create comment
 --------------
 
-* `POST /projects/1/<section>/1/comments.json` will create a new comment from the parameters passed for the commentable described via <section>/<id> -- for example /projects/1/messages/1/comments.json or /projects/1/todos/1/comments.json. The subscribers array is an optional list of people IDs that you want to notify about this comment (see [Get accesses](https://github.com/37signals/bcx-api/blob/master/sections/accesses.md) on how to get the people IDs for a given project).
+* `POST /projects/1/<section>/1/comments.json` will create a new comment from the parameters passed for the commentable described via <section>/<id> -- for example /projects/1/messages/1/comments.json or /projects/1/todos/1/comments.json. The subscribers array is an optional list of people IDs that you want to notify about this comment (see [Get accesses](https://github.com/basecamp/bcx-api/blob/master/sections/accesses.md) on how to get the people IDs for a given project).
 
 ```json
 {
@@ -75,7 +75,7 @@ This will return `201 Created`, with a representation of the comment just create
 ### Attaching files
 
 Attaching files to a comment requires both the token and the name of the attachment. The
-token is returned from the [Create attachments](https://github.com/37signals/bcx-api/blob/master/sections/attachments.md)
+token is returned from the [Create attachments](https://github.com/basecamp/bcx-api/blob/master/sections/attachments.md)
 endpoint, which you must hit first before creating an upload.
 
 The `name` parameter *must* be a valid filename with an extension. Multiple

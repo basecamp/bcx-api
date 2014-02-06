@@ -4,7 +4,7 @@ Todos
 Get todos
 ---------
 
-To get an index of all todos on a list, see [todolists](https://github.com/37signals/bcx-api/blob/master/sections/todolists.md).
+To get an index of all todos on a list, see [todolists](https://github.com/basecamp/bcx-api/blob/master/sections/todolists.md).
 
 
 Get todo

@@ -1,7 +1,7 @@
 The new Basecamp API
 ====================
 
-The all-new Basecamp has an all-new API. It is not compatible with the [Basecamp Classic API](http://developer.37signals.com/basecamp/). All integrations will have to be updated to use the new API. The core ingredients are still the same, though. This is a REST-style API that uses JSON for serialization and OAuth 2 for authentication.
+The all-new Basecamp has an all-new API. It is not compatible with the [Basecamp Classic API](https://github.com/basecamp/basecamp-classic-api). All integrations will have to be updated to use the new API. The core ingredients are still the same, though. This is a REST-style API that uses JSON for serialization and OAuth 2 for authentication.
 
 
 Making a request
@@ -35,7 +35,7 @@ If you're making a private integration with Basecamp for your own purposes, you 
 
 If you're making a public integration with Basecamp for others to enjoy, you must use OAuth 2. This allows users to authorize your application to use Basecamp on their behalf without having to copy/paste API tokens or touch sensitive login info.
 
-Read the [authentication guide](https://github.com/37signals/api/blob/master/sections/authentication.md) to get started.
+Read the [authentication guide](https://github.com/basecamp/api/blob/master/sections/authentication.md) to get started.
 
 
 Identify your app
@@ -78,22 +78,20 @@ You can perform up to 500 requests per 10 second period from the same IP address
 API ready for use
 -----------------
 
-* [Projects](https://github.com/37signals/bcx-api/blob/master/sections/projects.md)
-* [People](https://github.com/37signals/bcx-api/blob/master/sections/people.md)
-* [Accesses](https://github.com/37signals/bcx-api/blob/master/sections/accesses.md)
-* [Events](https://github.com/37signals/bcx-api/blob/master/sections/events.md)
-* [Topics](https://github.com/37signals/bcx-api/blob/master/sections/topics.md)
-* [Messages](https://github.com/37signals/bcx-api/blob/master/sections/messages.md)
-* [Comments](https://github.com/37signals/bcx-api/blob/master/sections/comments.md)
-* [Todo lists](https://github.com/37signals/bcx-api/blob/master/sections/todolists.md)
-* [Todos](https://github.com/37signals/bcx-api/blob/master/sections/todos.md)
-* [Documents](https://github.com/37signals/bcx-api/blob/master/sections/documents.md)
-* [Attachments](https://github.com/37signals/bcx-api/blob/master/sections/attachments.md)
-* [Uploads](https://github.com/37signals/bcx-api/blob/master/sections/uploads.md)
-* [Calendars](https://github.com/37signals/bcx-api/blob/master/sections/calendars.md)
-* [Calendar events](https://github.com/37signals/bcx-api/blob/master/sections/calendar_events.md)
-
-
+* [Projects](https://github.com/basecamp/bcx-api/blob/master/sections/projects.md)
+* [People](https://github.com/basecamp/bcx-api/blob/master/sections/people.md)
+* [Accesses](https://github.com/basecamp/bcx-api/blob/master/sections/accesses.md)
+* [Events](https://github.com/basecamp/bcx-api/blob/master/sections/events.md)
+* [Topics](https://github.com/basecamp/bcx-api/blob/master/sections/topics.md)
+* [Messages](https://github.com/basecamp/bcx-api/blob/master/sections/messages.md)
+* [Comments](https://github.com/basecamp/bcx-api/blob/master/sections/comments.md)
+* [Todo lists](https://github.com/basecamp/bcx-api/blob/master/sections/todolists.md)
+* [Todos](https://github.com/basecamp/bcx-api/blob/master/sections/todos.md)
+* [Documents](https://github.com/basecamp/bcx-api/blob/master/sections/documents.md)
+* [Attachments](https://github.com/basecamp/bcx-api/blob/master/sections/attachments.md)
+* [Uploads](https://github.com/basecamp/bcx-api/blob/master/sections/uploads.md)
+* [Calendars](https://github.com/basecamp/bcx-api/blob/master/sections/calendars.md)
+* [Calendar events](https://github.com/basecamp/bcx-api/blob/master/sections/calendar_events.md)
 
 API libraries
 -------------
@@ -105,4 +103,4 @@ Help us make it better
 
 Please tell us how we can make the API better. If you have a specific feature request or if you found a bug, please use GitHub issues. Fork these docs and send a pull request with improvements.
 
-To talk with us and other developers about the API, subscribe to the [37signals-api mailing list](http://groups.google.com/group/37signals-api).
+To talk with us and other developers about the API, [post a question on StackOverflow](http://stackoverflow.com/questions/ask) tagged `basecamp` or [open a support ticket](http://help.basecamp.com/tickets/new).

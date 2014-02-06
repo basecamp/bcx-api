@@ -12,14 +12,14 @@ Get accesses
   {
     "id": 149087659,
     "name": "Jason Fried",
-    "email_address": "jason@37signals.com",
+    "email_address": "jason@basecamp.com",
     "updated_at": "2012-03-22T16:56:48-05:00",
     "url": "https://basecamp.com/999999999/api/v1/people/149087659-jason-fried.json"
   },
   {
     "id": 1071630348,
     "name": "Jeremy Kemper",
-    "email_address": "jeremy@37signals.com",
+    "email_address": "jeremy@basecamp.com",
     "updated_at": "2012-03-22T16:56:48-05:00",
     "url": "https://basecamp.com/999999999/api/v1/people/1071630348-jeremy-kemper.json"
   }
@@ -39,7 +39,7 @@ Grant access
 }
 ```
 
-You can get the ids of existing people on the account from the [people API](https://github.com/37signals/bcx-api/blob/master/sections/people.md).
+You can get the ids of existing people on the account from the [people API](https://github.com/basecamp/bcx-api/blob/master/sections/people.md).
 
 This will return `204 No Content` if the access was granted successfully. If the authenticated user does not have access to this project, `404 Not Found` will be returned.
 

@@ -12,13 +12,13 @@ Create uploads
 This endpoint will return a `201 Created` if successful, with the URL to the new upload in the `Location` header along with the current JSON representation of the upload. See the **Get upload** for more info.
 
 Attaching files requires both the token and the name of the attachment. The
-token is returned from the [Create attachments](https://github.com/37signals/bcx-api/blob/master/sections/attachments.md)
+token is returned from the [Create attachments](https://github.com/basecamp/bcx-api/blob/master/sections/attachments.md)
 endpoint, which you must hit first before creating an upload.
 
 The `name` parameter *must* be a valid filename with an extension. Only one
 attachment is allowed.
 
-The subscribers array is an optional list of people IDs that you want to notify about this comment (see [Get accesses](https://github.com/37signals/bcx-api/blob/master/sections/accesses.md) on how to get the people IDs for a given project).
+The subscribers array is an optional list of people IDs that you want to notify about this comment (see [Get accesses](https://github.com/basecamp/bcx-api/blob/master/sections/accesses.md) on how to get the people IDs for a given project).
 
 ```json
 {

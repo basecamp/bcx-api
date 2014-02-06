@@ -15,7 +15,7 @@ Get people
     "id": 149087659,
     "identity_id": 982871737,
     "name": "Jason Fried",
-    "email_address": "jason@37signals.com",
+    "email_address": "jason@basecamp.com",
     "admin": true,
     "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif",
     "created_at": "2012-03-22T16:56:48-05:00",
@@ -26,7 +26,7 @@ Get people
     "id": 1071630348,
     "identity_id": 827377171,
     "name": "Jeremy Kemper",
-    "email_address": "jeremy@37signals.com",
+    "email_address": "jeremy@basecamp.com",
     "admin": true,
     "avatar_url": "https://asset0.37img.com/global/e68cafa694e8f22203eb36f13dccfefa9ac0acb2/avatar.96.gif",
     "created_at": "2012-03-22T16:56:48-05:00",
@@ -47,7 +47,7 @@ Get person
   "id": 149087659,
   "identity_id": 982871737,
   "name": "Jason Fried",
-  "email_address": "jason@37signals.com",
+  "email_address": "jason@basecamp.com",
   "admin": true,
   "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3",
   "created_at": "2012-03-22T16:56:51-05:00",
@@ -69,7 +69,7 @@ Get person
 Create person
 -------------
 
-New people can be invited directly to projects via the [accesses API](https://github.com/37signals/bcx-api/blob/master/sections/accesses.md).
+New people can be invited directly to projects via the [accesses API](https://github.com/basecamp/bcx-api/blob/master/sections/accesses.md).
 
 
 Delete person

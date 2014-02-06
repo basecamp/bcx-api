@@ -7,7 +7,7 @@ Messages
 Get messages
 ------------
 
-Messages are listed alongside all the other [topics](https://github.com/37signals/bcx-api/blob/master/sections/topics.md), so there is no individual index for them.
+Messages are listed alongside all the other [topics](https://github.com/basecamp/bcx-api/blob/master/sections/topics.md), so there is no individual index for them.
 
 
 Get message
@@ -57,7 +57,7 @@ Get message
 Create message
 --------------
 
-* `POST /projects/1/messages.json` will create a new message from the parameters passed. The subscribers array is an optional list of people IDs that you want to notify about this comment (see [Get accesses](https://github.com/37signals/bcx-api/blob/master/sections/accesses.md) on how to get the people IDs for a given project).
+* `POST /projects/1/messages.json` will create a new message from the parameters passed. The subscribers array is an optional list of people IDs that you want to notify about this comment (see [Get accesses](https://github.com/basecamp/bcx-api/blob/master/sections/accesses.md) on how to get the people IDs for a given project).
 
 ```json
 {
@@ -67,12 +67,12 @@ Create message
 }
 ```
 
-This will return `201 Created`, with the location of the new project in the `Location` header along with the current JSON representation of the message  if the creation was a success. See the [Get message](https://github.com/37signals/bcx-api/blob/master/sections/messages.md#get-message) endpoint for more info.
+This will return `201 Created`, with the location of the new project in the `Location` header along with the current JSON representation of the message  if the creation was a success. See the [Get message](https://github.com/basecamp/bcx-api/blob/master/sections/messages.md#get-message) endpoint for more info.
 
 ### Attaching files
 
 Attaching files to a message requires both the token and the name of the attachment. The
-token is returned from the [Create attachments](https://github.com/37signals/bcx-api/blob/master/sections/attachments.md)
+token is returned from the [Create attachments](https://github.com/basecamp/bcx-api/blob/master/sections/attachments.md)
 endpoint, which you must hit first before creating an upload.
 
 The `name` parameter *must* be a valid filename with an extension. Multiple
