@@ -56,8 +56,8 @@ Get calendar events
 Get calendar event
 ------------------
 
-* `GET /projects/1/calendar_events/1.json` will return the specified calendar event. 
-* `GET /calendars/1/calendar_events/1.json` will return the specified calendar event. 
+* `GET /projects/1/calendar_events/1.json` will return the specified calendar event.
+* `GET /calendars/1/calendar_events/1.json` will return the specified calendar event.
 
 ```json
 {
@@ -139,8 +139,18 @@ Examples:
 }
 ```
 
+```json
+{
+  "summary": "My timed event with a reminder",
+  "description": "For an email reminder, set remind_at",
+  "starts_at": "2012-03-28T11:50:00-05:00",
+  "remind_at": "2012-03-28T11:20:00-05:00"
+}
+```
+
 This will return `201 Created`, with the URL of the new calendar_event in the `Location` header and a JSON representation of the event in the response body, if the creation was a success. If the dates are not in the proper format, you'll get a `400 Bad Request`.
 
+Basecamp will send a reminder email to all subscribers if `remind_at` is set. `remind_at` can't be more than three days before `starts_at` or any time after `starts_at`.
 
 Update calendar event
 ---------------------
