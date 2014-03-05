@@ -32,7 +32,7 @@ Get message
       "id": 1028592764,
       "content": "Yeah, really, welcome!",
       "created_at": "2012-03-22T16:56:48-05:00",
-      "updated_at": "2012-03-22T16:56:48-05:00"
+      "updated_at": "2012-03-22T16:56:48-05:00",
       "creator": {
         "id": 149087659,
         "name": "Jason Fried",
@@ -63,7 +63,7 @@ Create message
 {
   "subject": "Hello everyone",
   "content": "This is going to be a GREAT Saturday!",
-  "subscribers": [ 1, 5, 6]
+  "subscribers": [1, 5, 6]
 }
 ```
 
