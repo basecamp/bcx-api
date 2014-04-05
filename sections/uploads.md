@@ -61,7 +61,8 @@ Each attachment blob includes the `url` parameter, which you can make a
       "creator": {
         "id": 73,
         "name": "Nick Quaranto",
-        "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3"
+        "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3",
+        "fullsize_avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/original.gif?r=3"
       }
     }
   ],
@@ -75,7 +76,8 @@ Each attachment blob includes the `url` parameter, which you can make a
       "creator": {
         "id": 73,
         "name": "Nick Quaranto",
-        "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3"
+        "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3",
+        "fullsize_avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/original.gif?r=3"
       }
     }
   ],

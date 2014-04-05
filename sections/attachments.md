@@ -56,7 +56,8 @@ or Comments) with a `200 OK` response.
   "creator": {
     "id": 73,
     "name": "Nick Quaranto",
-    "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3"
+    "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3",
+    "fullsize_avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/original.gif?r=3"
   },
   "attachable": {
     "id": 70219655,
@@ -95,7 +96,8 @@ query, then `&page=3` and so on.
     "creator": {
       "id": 73,
       "name": "Nick Quaranto",
-      "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3"
+      "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3",
+      "fullsize_avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/original.gif?r=3"
     },
     "attachable": {
       "id": 70219655,
@@ -114,7 +116,8 @@ query, then `&page=3` and so on.
     "creator": {
       "id": 73,
       "name": "Nick Quaranto",
-      "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3"
+      "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3",
+      "fullsize_avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/original.gif?r=3"
     },
     "attachable": {
       "id": 12092382,
@@ -141,7 +144,8 @@ Linked attachments like [Google Docs](https://basecamp.com/help/guides/projects/
   "creator": {
     "id": 73,
     "name": "Nick Quaranto",
-    "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3"
+    "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3",
+    "fullsize_avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/original.gif?r=3"
   },
   "attachable": {
     "id": 12092383,
