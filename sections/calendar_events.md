@@ -30,7 +30,8 @@ Get calendar events
     "creator": {
       "id": 149087659,
       "name": "Jason Fried",
-      "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3"
+      "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3",
+      "fullsize_avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/original.gif?r=3"
     },
     "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/calendar_events/883432030-something-coming-up.json"
   },
@@ -46,7 +47,8 @@ Get calendar events
     "creator": {
       "id": 149087659,
       "name": "Jason Fried",
-      "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3"
+      "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3",
+      "fullsize_avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/original.gif?r=3"
     },
     "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/calendar_events/883432031-more-stuff-for-later.json"
   }
@@ -73,6 +75,7 @@ Get calendar event
     "id": 149087659,
     "name": "Jason Fried",
     "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3"
+    "fullsize_avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/original.gif?r=3"
   },
   "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/calendar_events/883432030-something-coming-up.json",
   "comments": [
@@ -86,6 +89,7 @@ Get calendar event
         "id": 149087659,
         "name": "Jason Fried",
         "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3"
+        "fullsize_avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/original.gif?r=3"
       }
     }
   ],
