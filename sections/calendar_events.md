@@ -27,6 +27,8 @@ Get calendar events
     "all_day": false,
     "starts_at": "2012-03-28T07:00:00-05:00",
     "ends_at": "2012-03-28T07:00:00-05:00",
+    "private": false,
+    "trashed": false,
     "creator": {
       "id": 149087659,
       "name": "Jason Fried",
@@ -44,6 +46,8 @@ Get calendar events
     "all_day": true,
     "starts_at": "2012-03-28",
     "ends_at": "2012-03-28",
+    "private": false,
+    "trashed": false,
     "creator": {
       "id": 149087659,
       "name": "Jason Fried",
@@ -71,6 +75,8 @@ Get calendar event
   "all_day": false,
   "starts_at": "2012-03-28T07:00:00-05:00",
   "ends_at": "2012-03-28T07:00:00-05:00",
+  "private": false,
+  "trashed": false,
   "creator": {
     "id": 149087659,
     "name": "Jason Fried",

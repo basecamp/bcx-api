@@ -1,7 +1,7 @@
 Projects
 ========
 
-> Operations keeps the lights on, strategy provides a light at the end of the tunnel, 
+> Operations keeps the lights on, strategy provides a light at the end of the tunnel,
 > but project management is the train engine that moves the organization forward - Joy Gumz
 
 
@@ -20,7 +20,8 @@ Get projects
     "updated_at": "2012-03-23T13:55:43-05:00",
     "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx.json",
     "archived": false,
-    "starred": true
+    "starred": true,
+    "trashed": false
   },
   {
     "id": 684146117,
@@ -29,7 +30,8 @@ Get projects
     "updated_at": "2012-03-22T16:56:51-05:00",
     "url": "https://basecamp.com/999999999/api/v1/projects/684146117-nothing-here.json",
     "archived": false,
-    "starred": false
+    "starred": false,
+    "trashed": false
   }
 ]
 ```
@@ -49,6 +51,7 @@ Get project
   "created_at": "2012-03-22T16:56:51-05:00",
   "updated_at": "2012-03-23T13:55:43-05:00",
   "starred": true,
+  "trashed": false,
   "creator": {
     "id": 149087659,
     "name": "Jason Fried",

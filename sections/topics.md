@@ -21,6 +21,8 @@ Get topics
     "created_at": "2012-03-24T09:53:35-05:00",
     "updated_at": "2012-03-24T09:53:35-05:00",
     "attachments": 0,
+    "private": false,
+    "trashed": false,
     "last_updater": {
       "id": 149087659,
       "name": "Jason Fried"
@@ -38,6 +40,8 @@ Get topics
     "created_at": "2012-03-24T09:53:35-05:00",
     "updated_at": "2012-03-24T09:53:35-05:00",
     "attachments": 1,
+    "private": false,
+    "trashed": false,
     "last_updater": {
       "id": 149087659,
       "name": "Jason Fried"

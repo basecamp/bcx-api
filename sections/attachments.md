@@ -53,6 +53,8 @@ or Comments) with a `200 OK` response.
   "content_type": "image/gif",
   "created_at": "2012-03-27T22:48:49-04:00",
   "url": "https://asset1.basecamp.com/1111/api/v1/projects/2222/attachments/3333/40b8a84cb1a30dbe04457dc99e094b6299deea41/original/bearwave.gif",
+  "private": false,
+  "trashed": false,
   "creator": {
     "id": 73,
     "name": "Nick Quaranto",
@@ -76,7 +78,7 @@ or Comments) with a `200 OK` response.
 * `GET /attachments.json` shows attachments for all projects.
 
 If you need more information about what the attachment is attached to, you can
-make another request to the `attachable`'s `url` parameter.
+make another request to the `attachable`'s `url` value.
 
 We will return 50 attachments per page. If the
 result set has 50 attachments, it's your responsibility to check the next page
@@ -93,6 +95,8 @@ query, then `&page=3` and so on.
     "content_type": "image/gif",
     "created_at": "2012-03-27T22:48:49-04:00",
     "url": "https://asset1.basecamp.com/1111/api/v1/projects/2222/attachments/3333/40b8a84cb1a30dbe04457dc99e094b6299deea41/original/bearwave.gif",
+    "private": false,
+    "trashed": false,
     "creator": {
       "id": 73,
       "name": "Nick Quaranto",
@@ -113,6 +117,8 @@ query, then `&page=3` and so on.
     "content_type": "application/pdf",
     "created_at": "2012-03-27T22:48:49-04:00",
     "url": "https://asset1.basecamp.com/1111/api/v1/projects/2222/attachments/4444/773c74212f81f5c7d66917fb7236d5aece36c56a/original/report.pdf",
+    "private": false,
+    "trashed": false,
     "creator": {
       "id": 73,
       "name": "Nick Quaranto",
@@ -141,6 +147,8 @@ Linked attachments like [Google Docs](https://basecamp.com/help/guides/projects/
   "linked_type": "document",
   "link_url": "https://docs.google.com/document/d/1fNihMDicThD....",
   "created_at": "2012-03-28T22:48:49-04:00",
+  "private": false,
+  "trashed": false,
   "creator": {
     "id": 73,
     "name": "Nick Quaranto",

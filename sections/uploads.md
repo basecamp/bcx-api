@@ -29,7 +29,7 @@ The subscribers array is an optional list of people IDs that you want to notify 
       "name": "new_logo.png"
     }
   ],
-  "subscribers": [ 1, 5, 6]
+  "subscribers": [1, 5, 6]
 }
 ```
 
@@ -50,6 +50,7 @@ Each attachment blob includes the `url` parameter, which you can make a
   "created_at": "2012-03-27T22:48:49-04:00",
   "updated_at": "2012-03-28T11:36:10-04:00",
   "content": "Hi there!",
+  "trashed": false,
   "attachments": [
     {
       "key": "40b8a84cb1a30dbe04457dc99e094b6299deea41",

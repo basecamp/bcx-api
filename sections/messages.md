@@ -22,6 +22,8 @@ Get message
   "created_at": "2012-03-22T16:56:51-05:00",
   "updated_at": "2012-03-22T16:56:51-05:00",
   "content": "This is a new message",
+  "private": false,
+  "trashed": false,
   "creator": {
     "id": 149087659,
     "name": "Jason Fried",

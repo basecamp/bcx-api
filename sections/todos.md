@@ -23,6 +23,8 @@ Get todo
   "created_at": "2012-03-24T09:53:35-05:00",
   "updated_at": "2012-03-24T10:56:33-05:00",
   "comments_count": 1,
+  "private": false,
+  "trashed": false,
   "creator": {
     "id": 127326141,
     "name": "David Heinemeier Hansson",

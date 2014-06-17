@@ -19,6 +19,8 @@ Get todolists
     "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/todolists/968316918-launch-list.json",
     "completed": false,
     "position": 1,
+    "private": false,
+    "trashed": false,
     "completed_count": 3,
     "remaining_count": 5,
     "creator": {
@@ -36,6 +38,8 @@ Get todolists
     "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/todolists/812358930-version-2.json",
     "completed": false,
     "position": 2,
+    "private": false,
+    "trashed": false,
     "completed_count": 0,
     "remaining_count": 4,
     "creator": {
@@ -63,6 +67,8 @@ Get todolists with assigned todos
     "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx/todolists/968316918-launch-list.json",
     "completed": false,
     "position": 1,
+    "private": false,
+    "trashed": false,
     "completed_count": 3,
     "remaining_count": 5,
     "creator": {
@@ -92,6 +98,8 @@ Get todolists with assigned todos
     "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx/todolists/812358930-version-2.json",
     "completed": false,
     "position": 2,
+    "private": false,
+    "trashed": false,
     "completed_count": 0,
     "remaining_count": 4,
     "creator": {
@@ -131,6 +139,8 @@ Get todolist
   "updated_at": "2012-03-24T09:59:35-05:00",
   "completed": false,
   "position": 1,
+  "private": false,
+  "trashed": false,
   "completed_count": 3,
   "remaining_count": 5,
   "creator": {
@@ -180,6 +190,24 @@ Get todolist
         "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/todos/1046098401-think-of-it.json",
         "assignee": {},
         "position": 3,
+        "completer": {
+          "id": 149087659,
+          "name": "Jason Fried"
+        }
+      }
+    ],
+    "trashed": [
+      {
+        "id": 1046098402,
+        "content": "Ship it",
+        "due_at": null,
+        "comments_count": 0,
+        "created_at": "2012-03-24T09:59:33-05:00",
+        "updated_at": "2012-03-24T09:59:35-05:00",
+        "completed_at": "2012-03-24T09:59:35-05:00",
+        "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todos/1046098402.json",
+        "assignee": {},
+        "position": 4,
         "completer": {
           "id": 149087659,
           "name": "Jason Fried"

@@ -17,6 +17,8 @@ Comments are included on the [topics](https://github.com/basecamp/bcx-api/blob/m
       "content": "Yeah, really, welcome!",
       "created_at": "2012-03-22T16:56:48-05:00",
       "updated_at": "2012-03-22T16:56:48-05:00",
+      "private": false,
+      "trashed": false,
       "attachments":[
          {
             "key": "40b8a84cb1a30dbe04457dc99e094b6299deea41",
@@ -65,6 +67,8 @@ This will return `201 Created`, with a representation of the comment just create
   "content": "Yeah, really, welcome!",
   "created_at": "2012-03-22T16:56:48-05:00",
   "updated_at": "2012-03-22T16:56:48-05:00",
+  "private": false,
+  "trashed": false,
   "creator": {
     "id": 149087659,
     "name": "Jason Fried",

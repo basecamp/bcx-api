@@ -19,6 +19,7 @@ Get global events
     "id": 1054456336,
     "created_at": "2012-03-24T11:00:50-05:00",
     "updated_at": "2012-03-24T11:00:50-05:00",
+    "private": false,
     "creator": {
       "id": 149087659,
       "name": "Jason Fried",
@@ -38,6 +39,7 @@ Get global events
     "id": 1054456334,
     "created_at": "2012-03-24T11:00:39-05:00",
     "updated_at": "2012-03-24T11:00:39-05:00",
+    "private": false,
     "creator": {
       "id": 149087659,
       "name": "Jason Fried",
@@ -57,6 +59,7 @@ Get global events
     "id": 973672263,
     "created_at": "2012-03-24T09:53:35-05:00",
     "updated_at": "2012-03-24T09:53:35-05:00",
+    "private": false,
     "creator": {
       "id": 149087659,
       "name": "Jason Fried",
@@ -91,6 +94,7 @@ Get project events
     "id": 1054456336,
     "created_at": "2012-03-24T11:00:50-05:00",
     "updated_at": "2012-03-24T11:00:50-05:00",
+    "private": false,
     "creator": {
       "id": 149087659,
       "name": "Jason Fried",
@@ -104,6 +108,7 @@ Get project events
     "id": 1054456335,
     "created_at": "2012-03-24T11:00:44-05:00",
     "updated_at": "2012-03-24T11:00:44-05:00",
+    "private": false,
     "creator": {
       "id": 149087659,
       "name": "Jason Fried",
@@ -128,6 +133,7 @@ Get person events
     "id": 1054456336,
     "created_at": "2012-03-24T11:00:50-05:00",
     "updated_at": "2012-03-24T11:00:50-05:00",
+    "private": false,
     "bucket": {
       "id": 605816632,
       "name": "BCX",
@@ -141,6 +147,7 @@ Get person events
     "id": 1054456334,
     "created_at": "2012-03-24T11:00:39-05:00",
     "updated_at": "2012-03-24T11:00:39-05:00",
+    "private": false,
     "bucket": {
       "id": 605816632,
       "name": "BCX",
