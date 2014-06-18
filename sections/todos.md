@@ -121,3 +121,11 @@ Delete todo
 ----------
 
 * `DELETE /projects/1/todos/1.json` will delete the todo specified and return `204 No Content` if that was successful. If the user does not have access to delete the todo, you'll see `403 Forbidden`.
+
+
+Private todos
+-------------
+
+Todos inherit the privacy of their todolists. A todo on a private todolist is private. If a todolist is made private or public, so are all of its todos.
+
+Comments on a todo inherit the privacy of its todolist. If a todolist is made public or private, so are all comments on all of its todos.

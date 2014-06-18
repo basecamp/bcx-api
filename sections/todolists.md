@@ -288,3 +288,21 @@ Delete todolist
 --------------
 
 * `DELETE /projects/1/todolists/1.json` will delete the todolist specified and return `204 No Content` if that was successful. If the user does not have access to delete the todolist, you'll see `403 Forbidden`.
+
+
+Private todolists
+-----------------
+
+To hide a todolist and its todos from clients, set its `private` attribute to `true`.
+
+```json
+{
+  "name": "My really important list of stuff to do",
+  "description": "I'm serial guys, this stuff matters!",
+  "private": true
+}
+```
+
+To reveal a todolist and its todos to clients, set its `private` attribute to `false`.
+
+Comments on a todolist inherit its privacy. If a todolist is made public or private, so are all of its comments.

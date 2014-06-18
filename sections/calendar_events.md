@@ -185,3 +185,25 @@ Delete calendar event
 ---------------------
 
 * `DELETE /projects/1/calendar_events/1.json` will delete the calendar event specified and return `204 No Content` if that was successful. (The same for /calendars/)
+
+
+Private calendar events
+-----------------------
+
+To hide a calendar event on a project from clients, set its `private` attribute to `true`.
+
+```json
+{
+  "summary": "My timed event with a reminder",
+  "description": "For an email reminder, set remind_at",
+  "starts_at": "2012-03-28T11:50:00-05:00",
+  "remind_at": "2012-03-28T11:20:00-05:00",
+  "private": true
+}
+```
+
+Calendars can't have clients, so you can't make events on calendars private. Attempting to do so will result in an error and a `422 Unprocessable Entity` response status.
+
+To reveal a calendar event to clients, set its `private` attribute to false.
+
+Comments on a calendar event inherit its privacy. If a calendar event is made public or private, so are all of its comments.

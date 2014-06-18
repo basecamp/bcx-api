@@ -110,3 +110,21 @@ Delete document
 --------------
 
 * `DELETE /projects/1/documents/1.json` will delete the document specified and return `204 No Content` if that was successful. If the user does not have access to delete the document, you'll see `403 Forbidden`.
+
+
+Private documents
+-----------------
+
+To hide a document from clients, set its `private` attribute to `true`.
+
+```json
+{
+  "title": "Very important business notes",
+  "content": "The TPS report is due on Monday morning!",
+  "private": true
+}
+```
+
+To reveal a document to clients, set its `private` attribute to `false`.
+
+Comments on a document inherit its privacy. If a document is made public or private, so are all of its comments.

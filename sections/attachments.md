@@ -136,7 +136,6 @@ query, then `&page=3` and so on.
 
 Linked attachments like [Google Docs](https://basecamp.com/help/guides/projects/google-docs) don't have a `url` attribute and include additional attributes about the source.
 
-
 ```json
 {
   "id": 999008204,
@@ -162,3 +161,9 @@ Linked attachments like [Google Docs](https://basecamp.com/help/guides/projects/
   }
 }
 ```
+
+
+Private attachments
+-------------------
+
+Attachments inherit the privacy of their containers. For example, an attachment on a private message is private. Making the message visible to clients will make all of its attachments visible to clients.
