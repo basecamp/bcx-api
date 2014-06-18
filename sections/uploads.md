@@ -94,3 +94,27 @@ Each attachment blob includes the `url` parameter, which you can make a
   ]
 }
 ```
+
+
+Private uploads
+---------------
+
+To hide an upload from clients, set its `private` attribute to `true`.
+
+```json
+{
+  "content": "Here's the new logo!",
+  "attachments": [
+    {
+      "token": "4f71ea23-134660425d1818169ecfdbaa43cfc07f4e33ef4c",
+      "name": "new_logo.png"
+    }
+  ],
+  "subscribers": [1, 5, 6],
+  "private": true
+}
+```
+
+To reveal an upload to clients, set its `private` attribute to `false`.
+
+Comments and attachments on an upload inherit its privacy. If an upload is made public or private, so are all of its comments and attachments.

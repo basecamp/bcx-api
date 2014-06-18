@@ -119,3 +119,22 @@ Delete message
 -------------
 
 * `DELETE /projects/1/messages/1.json` will delete the message specified and return `204 No Content` if that was successful. If the user does not have access to delete the message, you'll see `403 Forbidden`.
+
+
+Private messages
+----------------
+
+To hide a message from clients, set its `private` attribute to `true`.
+
+```json
+{
+  "subject": "Hello everyone",
+  "content": "This is going to be a GREAT Saturday!",
+  "subscribers": [1, 5, 6],
+  "private": true
+}
+```
+
+To reveal a message to clients, set its `private` attribute to `false`.
+
+Comments and attachments on a message inherit its privacy. If a message is made public or private, so are all of its comments and attachments.

@@ -55,7 +55,7 @@ Create comment
 ```json
 {
   "content": "Imma let you finish, but...",
-  "subscribers": [ 1, 5, 6]
+  "subscribers": [1, 5, 6]
 }
 ```
 
@@ -106,6 +106,14 @@ attachments are allowed.
 
 
 Delete comment
--------------
+--------------
 
 * `DELETE /projects/1/comments/1.json` will delete the comment specified and return `204 No Content` if that was successful. If the user does not have access to delete the comment, you'll see `403 Forbidden`.
+
+
+Private comments
+----------------
+
+Comments inherit the privacy of their commentables. For example, a comment on a private message is private. If a commentable is made public or private, so are all of its comments.
+
+Attachments on a comment inherit the privacy of its commentable. If a commentable is made public or private, so are all attachments on all of its comments.

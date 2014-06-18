@@ -21,7 +21,8 @@ Get projects
     "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx.json",
     "archived": false,
     "starred": true,
-    "trashed": false
+    "trashed": false,
+    "is_client_project": false
   },
   {
     "id": 684146117,
@@ -31,7 +32,8 @@ Get projects
     "url": "https://basecamp.com/999999999/api/v1/projects/684146117-nothing-here.json",
     "archived": false,
     "starred": false,
-    "trashed": false
+    "trashed": false,
+    "is_client_project": true
   }
 ]
 ```
@@ -141,3 +143,19 @@ Delete project
 -------------
 
 * `DELETE /projects/1.json` will delete the project specified and return `204 No Content` if that was successful. If the user does not have access to delete the project, you'll see `403 Forbidden`.
+
+
+Client projects
+---------------
+
+* When creating or updating a project, set its `is_client_project` attribute to `true` to make it a client project.
+
+```json
+{
+  "is_client_project": true
+}
+```
+
+Set a project's `is_client_project` attribute to `false` to prevent content from being newly marked as private. Doing this will not make existing private content visible to clients.
+
+Content in a non-client project cannot be made private. Attempting to make content private in a non-client project will result in an error and a `422 Unprocessable Entity` response status.
