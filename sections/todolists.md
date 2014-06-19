@@ -29,6 +29,12 @@ Get todolists
       "avatar_url": "https://asset0.37img.com/global/9d2148cb8ed8e2e8ecbc625dd1cbe7691896c7d9/avatar.96.gif?r=3",
       "fullsize_avatar_url": "https://asset0.37img.com/global/9d2148cb8ed8e2e8ecbc625dd1cbe7691896c7d9/original.gif?r=3"
     },
+    "bucket": {
+      "id": 605816632,
+      "name": "BCX",
+      "type": "Project",
+      "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx.json"
+    }
   },
   {
     "id": 812358930,
@@ -48,9 +54,18 @@ Get todolists
       "avatar_url": "https://asset0.37img.com/global/9d2148cb8ed8e2e8ecbc625dd1cbe7691896c7d9/avatar.96.gif?r=3",
       "fullsize_avatar_url": "https://asset0.37img.com/global/9d2148cb8ed8e2e8ecbc625dd1cbe7691896c7d9/original.gif?r=3"
     },
+    "bucket": {
+      "id": 605816632,
+      "name": "BCX",
+      "type": "Project",
+      "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx.json"
+    }
   }
 ]
 ```
+
+Buckets are only provided for todolists that are not accessed via a project. For example, todolists returned from `GET /todolists.json` will include their buckets,
+but those returned from `GET /projects/1/todolists.json` will not.
 
 Get todolists with assigned todos
 ---------------------------------
@@ -88,7 +103,13 @@ Get todolists with assigned todos
         "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx/todos/223304243-design-it.json",
         "position": 1
       }
-    ]
+    ],
+    "bucket": {
+      "id": 605816632,
+      "name": "BCX",
+      "type": "Project",
+      "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx.json"
+    }
   },
   {
     "id": 812358930,
@@ -119,7 +140,13 @@ Get todolists with assigned todos
         "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx/todos/270524416-fix-all-the-bugs.json",
         "position": 1
       }
-    ]
+    ],
+    "bucket": {
+      "id": 605816632,
+      "name": "BCX",
+      "type": "Project",
+      "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx.json"
+    }
   }
 ]
 ```
