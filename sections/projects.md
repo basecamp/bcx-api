@@ -48,7 +48,7 @@ Get project
 
 ```json
 {
-  "id": 605816632,
+  "id": 1,
   "name": "BCX",
   "description": "The Next Generation",
   "archived": false,
@@ -56,6 +56,7 @@ Get project
   "updated_at": "2012-03-23T13:55:43-05:00",
   "starred": true,
   "trashed": false,
+  "is_client_project": false,
   "color": "3185c5",
   "creator": {
     "id": 149087659,
