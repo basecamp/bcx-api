@@ -22,7 +22,8 @@ Get projects
     "archived": false,
     "starred": true,
     "trashed": false,
-    "is_client_project": false
+    "is_client_project": false,
+    "color": "3185c5"
   },
   {
     "id": 684146117,
@@ -33,7 +34,8 @@ Get projects
     "archived": false,
     "starred": false,
     "trashed": false,
-    "is_client_project": true
+    "is_client_project": true,
+    "color": "3185c5"
   }
 ]
 ```
@@ -54,6 +56,7 @@ Get project
   "updated_at": "2012-03-23T13:55:43-05:00",
   "starred": true,
   "trashed": false,
+  "color": "3185c5",
   "creator": {
     "id": 149087659,
     "name": "Jason Fried",

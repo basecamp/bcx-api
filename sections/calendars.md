@@ -12,12 +12,14 @@ Get calendars
     "id": 336154974,
     "name": "Board Meetings",
     "updated_at": "2012-03-27T13:19:29-05:00",
+    "color": "3185c5",
     "url": "https://basecamp.com/999999999/api/v1/calendars/336154974-board-meetings.json"
   },
   {
     "id": 237581901,
     "name": "General",
     "updated_at": "2012-03-27T13:19:29-05:00",
+    "color": "3185c5",
     "url": "https://basecamp.com/999999999/api/v1/calendars/237581901-general.json"
   }
 ]
@@ -35,6 +37,7 @@ Get calendar
   "name": "Vacation",
   "created_at": "2012-03-28T13:14:30-05:00",
   "updated_at": "2012-03-28T13:26:07-05:00",
+  "color": "3185c5",
   "creator": {
     "id": 149087659,
     "name": "Jason Fried",
