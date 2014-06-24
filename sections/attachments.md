@@ -85,6 +85,16 @@ result set has 50 attachments, it's your responsibility to check the next page
 to see if there are any more attachments -- you do this by adding `&page=2` to the
 query, then `&page=3` and so on.
 
+It's also possible to change the order attachments are returned in with the `sort`
+parameter. Attachments can be sorted by name, size and age using the parameter
+values `az` and `za` for name, `biggest` and `smallest` for size, and `newest`
+and `oldest` for age.  This can be combined with `page`, so to get the second
+page of attachments sorted by oldest first, use
+`/attachments.json?page=2&sort=oldest`.
+
+The response to an attachments request looks like this:
+
+
 ```json
 [
   {
