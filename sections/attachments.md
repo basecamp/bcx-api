@@ -55,6 +55,7 @@ or Comments) with a `200 OK` response.
   "url": "https://asset1.basecamp.com/1111/api/v1/projects/2222/attachments/3333/40b8a84cb1a30dbe04457dc99e094b6299deea41/original/bearwave.gif",
   "private": false,
   "trashed": false,
+  "tags": ["favorite gifs"],
   "creator": {
     "id": 73,
     "name": "Nick Quaranto",
@@ -107,6 +108,7 @@ The response to an attachments request looks like this:
     "url": "https://asset1.basecamp.com/1111/api/v1/projects/2222/attachments/3333/40b8a84cb1a30dbe04457dc99e094b6299deea41/original/bearwave.gif",
     "private": false,
     "trashed": false,
+    "tags": ["favorite gifs"],
     "creator": {
       "id": 73,
       "name": "Nick Quaranto",
@@ -129,6 +131,7 @@ The response to an attachments request looks like this:
     "url": "https://asset1.basecamp.com/1111/api/v1/projects/2222/attachments/4444/773c74212f81f5c7d66917fb7236d5aece36c56a/original/report.pdf",
     "private": false,
     "trashed": false,
+    "tags": ["reports"],
     "creator": {
       "id": 73,
       "name": "Nick Quaranto",
@@ -158,6 +161,7 @@ Linked attachments like [Google Docs](https://basecamp.com/help/guides/projects/
   "created_at": "2012-03-28T22:48:49-04:00",
   "private": false,
   "trashed": false,
+  "tags": ["writing"],
   "creator": {
     "id": 73,
     "name": "Nick Quaranto",
