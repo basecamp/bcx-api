@@ -3,7 +3,7 @@ Tags
 
 Tags are referred to as "file labels" in Basecamp.
 
-In the API, tags are referenced by name. Tag may contain characters that are not safe for URLs. When using tag names in API URLs, you **must** be careful to properly encode them.
+In the API, tags are referenced by name. Tag names may contain characters that are not safe for URLs. When using tag names in API URLs, you **must** be careful to properly encode them.
 Failing to do so may result in `404 Not Found` errors if you attempt to access a tag with an unsafe name. For example, to delete a tag named "logos/icons" from a project, you should issue a `DELETE` request to
 `/projects/1/tags/logos%2Ficons.json`. More information on URL encoding is available [on Wikipedia](http://en.wikipedia.org/wiki/Percent-encoding).
 
