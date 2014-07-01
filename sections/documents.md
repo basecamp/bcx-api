@@ -14,6 +14,7 @@ Get documents
   {
     "id": 963979453,
     "title": "Manifesto",
+    "created_at": "2012-03-27T13:19:29-05:00",
     "updated_at": "2012-03-27T13:39:33-05:00",
     "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/documents/963979453-manifesto.json",
     "private": false,
@@ -22,6 +23,7 @@ Get documents
   {
     "id": 243535881,
     "title": "Really important notes",
+    "created_at": "2012-03-27T13:19:19-05:00",
     "updated_at": "2012-03-27T13:39:12-05:00",
     "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/documents/243535881-really-important.json",
     "private": false,
