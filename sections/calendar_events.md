@@ -1,11 +1,9 @@
 Calendar events
 ===============
 
-> <Clever quote about todo lists>
+Calendar events are entries on the calendar -- not to be confused with "events", which track all activity in Basecamp. A calendar event can belong to a project or to a standalone calendar.
 
-A calendar event is an entry on the calendar (not to be confused with "events", which track activity in Basecamp -- yes, they could have been named better!).
-
-The `starts_at` and `ends_at` are either dates if the calendar event is an all day affair or times with timezones if they're not.
+If a calendar event is an all day affair, its `starts_at` and `ends_at` values will be dates. For a timed calendar event, the `starts_at` and `ends_at` values are times with timezones.
 
 
 Get calendar events
@@ -55,9 +53,117 @@ Get calendar events
       "fullsize_avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/original.gif?r=3"
     },
     "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/calendar_events/883432031-more-stuff-for-later.json"
+  },
+  {
+    "id": 1030049109,
+    "summary": "Weekly meeting",
+    "description": "To discuss business",
+    "created_at": "2014-07-09T09:40:33.000-05:00",
+    "updated_at": "2014-07-09T09:40:33.000-05:00",
+    "all_day": true,
+    "starts_at": "2014-07-10",
+    "ends_at": "2014-07-10",
+    "private": false,
+    "trashed": false,
+    "creator": {
+      "id": 149087659,
+      "name": "Jason Fried",
+      "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3",
+      "fullsize_avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/original.gif?r=3"
+    },
+    "recurring": {
+      "frequency": "weekly",
+      "count": null,
+      "until": null,
+      "excluding": [2, 3]
+    },
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/calendar_events/1030049109.json",
   }
 ]
 ```
+
+* `GET /calendar_events.json?start_date=2014-07-10` will return six weeks of calendar events after the start date for the account, including recurrences.
+* `GET /projects/1/calendar_events.json?start_date=2014-07-10` will return six weeks of calendar events after the start date for the project, including recurrences.
+* `GET /calendars/1/calendar_events.json?start_date=2014-07-10` will return six weeks of calendar events after the start date for the calendar, including recurrences.
+
+```json
+[
+  {
+    "id": 1030049109,
+    "summary": "Weekly meeting",
+    "description": "To discuss business",
+    "created_at": "2014-07-10T09:40:33.000-05:00",
+    "updated_at": "2014-07-10T09:40:33.000-05:00",
+    "all_day": true,
+    "starts_at": "2014-07-10",
+    "ends_at": "2014-07-10",
+    "private": false,
+    "trashed": false,
+    "creator": {
+      "id": 149087659,
+      "name": "Jason Fried",
+      "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3",
+      "fullsize_avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/original.gif?r=3"
+    },
+    "recurring": {
+      "frequency": "weekly",
+      "count": 5,
+      "until": null,
+      "excluding": [2, 3]
+    },
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/calendar_events/1030049109.json",
+  },
+  {
+    "summary": "Weekly meeting",
+    "description": "To discuss business",
+    "all_day": true,
+    "starts_at": "2014-07-10",
+    "ends_at": "2014-07-10",
+    "private": false,
+    "trashed": false,
+    "creator": {
+      "id": 149087659,
+      "name": "Jason Fried",
+      "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3",
+      "fullsize_avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/original.gif?r=3"
+    },
+    "recurrence": {
+      "number": 1,
+      "master": {
+        "id": 1030049109,
+        "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/calendar_events/1030049109.json"
+      }
+    }
+  },
+  {
+    "summary": "Weekly meeting",
+    "description": "To discuss business",
+    "all_day": true,
+    "starts_at": "2014-07-10",
+    "ends_at": "2014-07-10",
+    "private": false,
+    "trashed": false,
+    "creator": {
+      "id": 149087659,
+      "name": "Jason Fried",
+      "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3",
+      "fullsize_avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/original.gif?r=3"
+    },
+    "recurrence": {
+      "number": 4,
+      "master": {
+        "id": 1030049109,
+        "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/calendar_events/1030049109.json"
+      }
+    }
+  }
+]
+```
+
+See [Recurring calendar events](#recurring-calendar-events) for more information.
+
+Endpoints that include recurrences are paginated within the specified window and return 50 calendar events per page. It is your responsibility to check if the next page contains more calendar events. You do this by specifying a page parameter -- `/calendar_events.json?start_date=2014-07-10&page=2`, `/calendar_events.json?start_date=2014-07-10&page=3`, and so on.
+
 
 Get calendar event
 ------------------
@@ -80,7 +186,7 @@ Get calendar event
   "creator": {
     "id": 149087659,
     "name": "Jason Fried",
-    "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3"
+    "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3",
     "fullsize_avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/original.gif?r=3"
   },
   "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/calendar_events/883432030-something-coming-up.json",
@@ -162,6 +268,7 @@ This will return `201 Created`, with the URL of the new calendar_event in the `L
 
 Basecamp will send a reminder email to all subscribers if `remind_at` is set. `remind_at` can't be more than three days before `starts_at` or any time after `starts_at`.
 
+
 Update calendar event
 ---------------------
 
@@ -186,6 +293,77 @@ Delete calendar event
 
 * `DELETE /projects/1/calendar_events/1.json` will delete the calendar event specified and return `204 No Content` if that was successful. (The same for /calendars/)
 
+
+Recurring calendar events
+-------------------------
+
+For recurring events:
+
+  * The `frequency` value may be `"daily"`, `"weekly"`, `"monthly"`, or `"yearly"`.
+  * The `count` value describes how many times the event occurs.
+  * The `until` value specifies the date of the last recurrence.
+  * The `count` and `until` values are exclusive -- no event has both.
+  * If `count` and `until` are both `null` for an event, it recurs infinitely.
+  * The `excluding` value identifies which recurrences, indexed from 1, are skipped.
+
+Here's a sample recurring event:
+
+```json
+{
+  "id": 1030049109,
+  "summary": "Weekly meeting",
+  "description": "To discuss business",
+  "created_at": "2014-07-10T09:40:33.000-05:00",
+  "updated_at": "2014-07-10T09:40:33.000-05:00",
+  "all_day": true,
+  "starts_at": "2014-07-10",
+  "ends_at": "2014-07-10",
+  "private": false,
+  "trashed": false,
+  "creator": {
+    "id": 149087659,
+    "name": "Jason Fried",
+    "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3",
+    "fullsize_avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/original.gif?r=3"
+  },
+  "recurring": {
+    "frequency": "weekly",
+    "count": 5,
+    "until": null,
+    "excluding": [2, 3]
+  },
+  "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/calendar_events/1030049109.json",
+}
+```
+
+For recurrences of an original event, the `number` value specifies which recurrence is represented. Recurrences are numbered starting from 1. The first recurrence of an event is numbered 1, the second is 2, and so forth. A recurrence includes details about its originating event, such as its ID and API URL. Recurrences do not have their own IDs or URLs.
+
+Here's a sample recurrence:
+
+```json
+{
+  "summary": "Weekly meeting",
+  "description": "To discuss business",
+  "all_day": true,
+  "starts_at": "2014-07-10",
+  "ends_at": "2014-07-10",
+  "private": false,
+  "trashed": false,
+  "creator": {
+    "id": 149087659,
+    "name": "Jason Fried",
+    "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3",
+    "fullsize_avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/original.gif?r=3"
+  },
+  "recurrence": {
+    "number": 1,
+    "master": {
+      "id": 1030049109,
+      "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/calendar_events/1030049109.json"
+    }
+  }
+}
+```
 
 Private calendar events
 -----------------------
