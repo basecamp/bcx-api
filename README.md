@@ -56,6 +56,13 @@ We only support JSON for serialization of data. Our format is to have no root el
 
 You'll receive a `415 Unsupported Media Type` response code if you attempt to use a different URL suffix or leave out the `Content-Type` header.
 
+Pagination
+----------
+
+Most collection APIs paginate their results. The first request returns up to
+50 records. Check the next page for more results by adding `&page=2`, then
+`&page=3`, and so on until you get an empty response.
+
 Use HTTP caching
 ----------------
 

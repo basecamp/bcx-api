@@ -7,6 +7,9 @@ Get accesses
 * `GET /projects/1/accesses.json` will return all the people with access to the project.
 * `GET /calendars/1/accesses.json` will return all the people with access to the calendar.
 
+We will return 50 people per page. If the response has 50 people, check the next page
+for more people. Do this by adding `&page=2` to the query, then `&page=3` and so on.
+
 ```json
 [
   {
