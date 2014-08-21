@@ -48,11 +48,10 @@ Buckets are only provided for forwards that are not accessed via a project. For 
 but those returned from `GET /projects/1/forwards.json` will not.
 
 It's possible to change the order forwards are returned in with the `sort`
-parameter. Forwards can be sorted by subject or latest update time using the
-parameter values:
+parameter. Forwards can be sorted by subject or age using the parameter values:
 
 * `az` and `za` for subject
-* `newest` and `oldest` for latest update time
+* `newest` and `oldest` for age
 
 The default sort is `newest`.
 
