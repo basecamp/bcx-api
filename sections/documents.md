@@ -6,8 +6,8 @@ All documents are automatically version-tracked. The API only exposes the most r
 Get documents
 -------------
 
-* `GET /projects/1/documents.json` shows documents for this project ordered alphabetically by `title`.
-* `GET /documents.json` shows documents for all projects.
+* `GET /projects/1/documents.json` shows documents in one project.
+* `GET /documents.json` shows documents in all projects.
 
 ```json
 [
@@ -16,21 +16,48 @@ Get documents
     "title": "Manifesto",
     "created_at": "2012-03-27T13:19:29-05:00",
     "updated_at": "2012-03-27T13:39:33-05:00",
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/documents/963979453-manifesto.json",
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/documents/963979453.json",
     "private": false,
-    "trashed": false
+    "trashed": false,
+    "bucket": {
+      "type": "Project",
+      "id": 605816632,
+      "name": "BCX",
+      "color": "3185c5",
+      "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json"
+    }
   },
   {
     "id": 243535881,
     "title": "Really important notes",
     "created_at": "2012-03-27T13:19:19-05:00",
     "updated_at": "2012-03-27T13:39:12-05:00",
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/documents/243535881-really-important.json",
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/documents/243535881.json",
     "private": false,
-    "trashed": false
+    "trashed": false,
+    "bucket": {
+      "type": "Project",
+      "id": 605816632,
+      "name": "BCX",
+      "color": "3185c5",
+      "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json"
+    }
   }
 ]
 ```
+
+Buckets are only provided for documents that are not accessed via a project.
+For example, documents returned from `GET /documents.json` will include their
+buckets, but those returned from `GET /projects/1/documents.json` will not.
+
+It's possible to change the order documents are returned in with the `sort`
+parameter. Documents can be sorted by title or latest update time using the
+parameter values:
+
+* `az` and `za` for title
+* `newest` and `oldest` for latest update time
+
+The default sort is `newest`.
 
 
 Get document

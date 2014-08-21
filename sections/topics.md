@@ -55,4 +55,16 @@ Get topics
 ]
 ```
 
-The `title` is the original title of the topicable and the `excerpt` is from the latest comment. If a message does not have any comments, the `last_updater` is the creator of the message.
+For a topic:
+
+* `title` is the original title of the topicable
+* `excerpt` is from the latest comment on the topicable
+* `last_updater` is the creator of the latest comment, or the creator of the
+  topicable if it has no comments
+
+It's possible to change the order topics are returned in with the `sort`
+parameter. Topics can be sorted by their latest update times using the
+parameter values `newest` and `oldest`. The default sort is `newest`.
+
+Sorting can be combined with pagination. To get the second page of topics
+sorted by oldest first, request `/topics.json?page=2&sort=oldest`.
