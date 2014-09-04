@@ -4,8 +4,14 @@ Todos
 Get todos
 ---------
 
+* `GET /projects/1/todos.json` shows all todos for this project
+* `GET /projects/1/todos.json?due_since=2014-09-01` shows all todos for this projects with a due date starting at `2014-09-01`.
+* `GET /todos.json` shows all todos for all projects
+* `GET /todos.json?due_since=2014-09-01` shows all todos for all projects with a due date starting at `2014-09-01`.
+
 To get an index of all todos on a list, see [todolists](https://github.com/basecamp/bcx-api/blob/master/sections/todolists.md).
 
+Note: Showing todos for all projects will include the todos' `todolist`, which also includes its `bucket`.
 
 Get todo
 --------

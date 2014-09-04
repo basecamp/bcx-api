@@ -9,6 +9,8 @@ Get todolists
 * `GET /todolists.json` shows active todolists for all projects.
 * `GET /todolists/completed.json` shows completed todolists for all projects.
 
+Note: Showing active/completed todolists for all projects will include the todolists' `bucket`.
+
 ```json
 [
   {
