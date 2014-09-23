@@ -156,6 +156,14 @@ Archiving/activating a project
 This will return `200 OK` if the update was a success, along with the current JSON representation of the project. If the user does not have access to update the project, you'll see `403 Forbidden`.
 
 
+Publishing a project
+--------------------
+
+* `POST /projects/1/publish.json` will publish/activate a draft project.
+
+This will return `200 OK` if the update was a success, along with the current JSON representation of the project. If the user does not have access to update the project, you'll see `403 Forbidden`.
+
+
 Delete project
 -------------
 
