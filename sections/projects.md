@@ -113,6 +113,19 @@ Create project
 
 This will return `201 Created`, with the location of the new project in the `Location` header along with the current JSON representation of the project if the creation was a success. See the **Get project** endpoint for more info. If the user does not have access to create new projects or the account has reached the project limit, you'll see `403 Forbidden`.
 
+Create project from template
+----------------------------
+
+* `POST /project_templates/1/projects.json` will create a new draft project from the template specified with the parameters passed. If a name and description are not passed the name and description from the template will be used.
+
+```json
+{
+  "name": "This is my new project!",
+  "description": "It's going to run real smooth"
+}
+```
+
+This will return `201 Created`, with the location of the new project in the `Location` header along with the current JSON representation of the project if the creation was a success. See the **Get project** endpoint for more info. If the user does not have access to create new projects or the account has reached the project limit, you'll see `403 Forbidden`.
 
 Update project
 ---------------
