@@ -114,7 +114,7 @@ Create project
 }
 ```
 
-This will return `201 Created`, with the location of the new project in the `Location` header along with the current JSON representation of the project if the creation was a success. See the **Get project** endpoint for more info. If the user does not have access to create new projects or the account has reached the project limit, you'll see `403 Forbidden`.
+This will return `201 Created`, with the location of the new project in the `Location` header along with the current JSON representation of the project if the creation was a success. See the **Get project** endpoint for more info. If the user does not have access to create new projects you'll see `403 Forbidden`. If the account has reached the project limit you'll see a `507 Insufficient Storage`.
 
 Create project from template
 ----------------------------
@@ -128,7 +128,7 @@ Create project from template
 }
 ```
 
-This will return `201 Created`, with the location of the new project in the `Location` header along with the current JSON representation of the project if the creation was a success. See the **Get project** endpoint for more info. If the user does not have access to create new projects or the account has reached the project limit, you'll see `403 Forbidden`.
+This will return `201 Created`, with the location of the new project in the `Location` header along with the current JSON representation of the project if the creation was a success. See the **Get project** endpoint for more info. If the user does not have access to create new projects you'll see `403 Forbidden`. If the account has reached the project limit you'll see a `507 Insufficient Storage`.
 
 Update project
 ---------------
