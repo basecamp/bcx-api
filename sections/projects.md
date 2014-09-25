@@ -19,6 +19,7 @@ Get projects
     "description": "The Next Generation",
     "updated_at": "2012-03-23T13:55:43-05:00",
     "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx.json",
+    "template": false,
     "archived": false,
     "starred": true,
     "trashed": false,
@@ -31,6 +32,7 @@ Get projects
     "description": null,
     "updated_at": "2012-03-22T16:56:51-05:00",
     "url": "https://basecamp.com/999999999/api/v1/projects/684146117-nothing-here.json",
+    "template": false,
     "archived": false,
     "starred": false,
     "trashed": false,
@@ -54,6 +56,7 @@ Get project
   "archived": false,
   "created_at": "2012-03-22T16:56:51-05:00",
   "updated_at": "2012-03-23T13:55:43-05:00",
+  "template": false,
   "starred": true,
   "trashed": false,
   "is_client_project": false,
@@ -111,7 +114,29 @@ Create project
 }
 ```
 
-This will return `201 Created`, with the location of the new project in the `Location` header along with the current JSON representation of the project if the creation was a success. See the **Get project** endpoint for more info. If the user does not have access to create new projects or the account has reached the project limit, you'll see `403 Forbidden`.
+This will return `201 Created`, with the location of the new project in the `Location` header along with the current JSON representation of the project if the creation was a success. See the **Get project** endpoint for more info. If the user does not have access to create new projects you'll see `403 Forbidden`. If the account has reached the project limit you'll see a `507 Insufficient Storage`.
+
+Create project from template
+----------------------------
+
+* `POST /project_templates/1/projects.json` will create a project from the template specified with the parameters passed. If a name and description are not passed the name and description from the template will be used instead. Projects created from templates will automatically be saved as draft projects. Before you start your project, you'll be able to make updates and changes. When you're ready for your project to go live you will need to publish your project. Until the project is published only the person who created the draft will be able to access it.
+
+```json
+{
+  "name": "This is my new project!",
+  "description": "I was created from a template!"
+}
+```
+
+This will return `201 Created`, with the location of the new project in the `Location` header along with the current JSON representation of the project if the creation was a success. See the **Get project** endpoint for more info. If the user does not have access to create new projects you'll see `403 Forbidden`. If the account has reached the project limit you'll see a `507 Insufficient Storage`.
+
+
+Publishing a project
+--------------------
+
+* `POST /projects/1/publish.json` will publish/activate a project created from a template (draft project). This will automatically send invitations to those you invited and make your project live.
+
+This will return `200 OK` if the update was a success, along with the current JSON representation of the project. If the user does not have access to update the project, you'll see `403 Forbidden`.
 
 
 Update project
