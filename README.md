@@ -86,7 +86,7 @@ API ready for use
 -----------------
 
 * [Projects](https://github.com/basecamp/bcx-api/blob/master/sections/projects.md)
-* [Project Templates](https://github.com/basecamp/bcx-api/blob/master/sections/projects_templates.md)
+* [Project Templates](https://github.com/basecamp/bcx-api/blob/master/sections/project_templates.md)
 * [Stars](https://github.com/basecamp/bcx-api/blob/master/sections/stars.md)
 * [People](https://github.com/basecamp/bcx-api/blob/master/sections/people.md)
 * [Accesses](https://github.com/basecamp/bcx-api/blob/master/sections/accesses.md)
