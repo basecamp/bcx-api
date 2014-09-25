@@ -119,16 +119,25 @@ This will return `201 Created`, with the location of the new project in the `Loc
 Create project from template
 ----------------------------
 
-* `POST /project_templates/1/projects.json` will create a new draft project from the template specified with the parameters passed. If a name and description are not passed the name and description from the template will be used.
+* `POST /project_templates/1/projects.json` will create a project from the template specified with the parameters passed. If a name and description are not passed the name and description from the template will be used instead. Projects created from templates will automatically be saved as draft projects. Before you start your project, you'll be able to make updates and changes. When you're ready for your project to go live you will need to publish your project. Until the project is published only the person who created the draft will be able to access it.
 
 ```json
 {
   "name": "This is my new project!",
-  "description": "It's going to run real smooth"
+  "description": "I was created from a template!"
 }
 ```
 
 This will return `201 Created`, with the location of the new project in the `Location` header along with the current JSON representation of the project if the creation was a success. See the **Get project** endpoint for more info. If the user does not have access to create new projects you'll see `403 Forbidden`. If the account has reached the project limit you'll see a `507 Insufficient Storage`.
+
+
+Publishing a project
+--------------------
+
+* `POST /projects/1/publish.json` will publish/activate a project created from a template (draft project). This will automatically send invitations to those you invited and make your project live.
+
+This will return `200 OK` if the update was a success, along with the current JSON representation of the project. If the user does not have access to update the project, you'll see `403 Forbidden`.
+
 
 Update project
 ---------------
@@ -155,14 +164,6 @@ Archiving/activating a project
   "archived": true
 }
 ```
-
-This will return `200 OK` if the update was a success, along with the current JSON representation of the project. If the user does not have access to update the project, you'll see `403 Forbidden`.
-
-
-Publishing a project
---------------------
-
-* `POST /projects/1/publish.json` will publish/activate a draft project.
 
 This will return `200 OK` if the update was a success, along with the current JSON representation of the project. If the user does not have access to update the project, you'll see `403 Forbidden`.
 
