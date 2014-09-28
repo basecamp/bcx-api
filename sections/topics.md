@@ -30,7 +30,7 @@ Get topics
     "topicable": {
       "id": 174886926,
       "type": "CalendarEvent",
-      "url": "https://basecamp.com/999999999//api/v1/projects/605816632-bcx/calendar_events/174886926-prep-the-materials.json"
+      "url": "https://basecamp.com/999999999/api/v1/projects/605816632/calendar_events/174886926.json"
     }
   },
   {
@@ -49,7 +49,7 @@ Get topics
     "topicable": {
       "id": 936075699,
       "type": "Message",
-      "url": "https://basecamp.com/999999999//api/v1/projects/605816632-bcx/messages/936075699-welcome.json"
+      "url": "https://basecamp.com/999999999/api/v1/projects/605816632/messages/936075699.json"
     }
   }
 ]

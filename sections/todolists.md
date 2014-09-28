@@ -17,7 +17,7 @@ Get todolists
     "description": "What we need for launch",
     "created_at": "2012-03-22T16:46:52-05:00",
     "updated_at": "2012-03-22T16:56:52-05:00",
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/todolists/968316918-launch-list.json",
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todolists/968316918.json",
     "completed": false,
     "position": 1,
     "private": false,
@@ -34,7 +34,7 @@ Get todolists
       "id": 605816632,
       "name": "BCX",
       "type": "Project",
-      "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx.json"
+      "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json"
     }
   },
   {
@@ -43,7 +43,7 @@ Get todolists
     "description": "What we will do next",
     "created_at": "2012-03-22T16:46:52-05:00",
     "updated_at": "2012-03-22T16:56:52-05:00",
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/todolists/812358930-version-2.json",
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todolists/812358930.json",
     "completed": false,
     "position": 2,
     "private": false,
@@ -60,7 +60,7 @@ Get todolists
       "id": 605816632,
       "name": "BCX",
       "type": "Project",
-      "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx.json"
+      "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json"
     }
   }
 ]
@@ -82,7 +82,7 @@ Get todolists with assigned todos
     "description": "What we need for launch!",
     "created_at": "2012-03-22T16:46:52-05:00",
     "updated_at": "2012-03-29T11:00:39-05:00",
-    "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx/todolists/968316918-launch-list.json",
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todolists/968316918.json",
     "completed": false,
     "position": 1,
     "private": false,
@@ -103,7 +103,7 @@ Get todolists with assigned todos
         "comments_count": 0,
         "created_at": "2012-03-27T13:19:30-05:00",
         "updated_at": "2012-03-29T11:00:38-05:00",
-        "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx/todos/223304243-design-it.json",
+        "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todos/223304243.json",
         "position": 1
       }
     ],
@@ -111,7 +111,7 @@ Get todolists with assigned todos
       "id": 605816632,
       "name": "BCX",
       "type": "Project",
-      "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx.json"
+      "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json"
     }
   },
   {
@@ -120,7 +120,7 @@ Get todolists with assigned todos
     "description": "What we will do next",
     "created_at": "2012-03-22T16:46:52-05:00",
     "updated_at": "2012-03-29T10:50:33-05:00",
-    "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx/todolists/812358930-version-2.json",
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todolists/812358930.json",
     "completed": false,
     "position": 2,
     "private": false,
@@ -141,7 +141,7 @@ Get todolists with assigned todos
         "comments_count": 0,
         "created_at": "2012-03-27T13:19:30-05:00",
         "updated_at": "2012-03-29T10:50:33-05:00",
-        "url": "http://bcx.dev/735644780/api/v1/projects/605816632-bcx/todos/270524416-fix-all-the-bugs.json",
+        "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todos/270524416.json",
         "position": 1
       }
     ],
@@ -149,7 +149,7 @@ Get todolists with assigned todos
       "id": 605816632,
       "name": "BCX",
       "type": "Project",
-      "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx.json"
+      "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json"
     }
   }
 ]
@@ -195,7 +195,7 @@ Get todolist
           "name": "Jason Fried"
         },
         "position": 1,
-        "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/todos/223304243-design-it.json"
+        "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todos/223304243.json"
       },
       {
         "id": 411008527,
@@ -206,7 +206,7 @@ Get todolist
         "updated_at": "2012-03-24T09:53:35-05:00",
         "assignee": {},
         "position": 2,
-        "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/todos/411008527-test-it.json"
+        "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todos/411008527.json"
       }
     ],
     "completed": [
@@ -218,7 +218,7 @@ Get todolist
         "created_at": "2012-03-24T09:59:33-05:00",
         "updated_at": "2012-03-24T09:59:35-05:00",
         "completed_at": "2012-03-24T09:59:35-05:00",
-        "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/todos/1046098401-think-of-it.json",
+        "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todos/1046098401.json",
         "assignee": {},
         "position": 3,
         "completer": {

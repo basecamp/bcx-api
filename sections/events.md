@@ -30,10 +30,10 @@ Get global events
       "id": 605816632,
       "name": "BCX",
       "type": "Project",
-      "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx.json"
+      "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json"
     },
     "summary": "re-assigned a to-do to Funky ones: Design it",
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/todos/223304243-design-it.json"
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todos/223304243.json"
   },
   {
     "id": 1054456334,
@@ -50,10 +50,10 @@ Get global events
       "id": 605816632,
       "name": "BCX",
       "type": "Project",
-      "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx.json"
+      "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json"
     },
     "summary": "created a to-do list: lists",
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/todolists/1056802576-lists.json"
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todolists/1056802576.json"
   },
   {
     "id": 973672263,
@@ -70,10 +70,10 @@ Get global events
       "id": 605816632,
       "name": "BCX",
       "type": "Project",
-      "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx.json"
+      "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json"
     },
     "summary": "commented on Prep the materials before the board meeting with Bezos",
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/calendar_events/174886926-prep-the-materials.json"
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/calendar_events/174886926.json"
   }
 ]
 ```
@@ -102,7 +102,7 @@ Get project events
       "fullsize_avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/original.gif?r=3"
     },
     "summary": "re-assigned a to-do to Funky ones: Design it",
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/todos/223304243-design-it.json"
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todos/223304243.json"
   },
   {
     "id": 1054456335,
@@ -116,7 +116,7 @@ Get project events
       "fullsize_avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/original.gif?r=3"
     },
     "summary": "added a to-do: t",
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/todos/1046098402-t.json"
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todos/1046098402.json"
   }
 ]
 ```
@@ -138,10 +138,10 @@ Get person events
       "id": 605816632,
       "name": "BCX",
       "type": "Project",
-      "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx.json"
+      "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json"
     },
     "summary": "re-assigned a to-do to Funky ones: Design it",
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/todos/223304243-design-it.json"
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todos/223304243.json"
   },
   {
     "id": 1054456334,
@@ -152,10 +152,10 @@ Get person events
       "id": 605816632,
       "name": "BCX",
       "type": "Project",
-      "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx.json"
+      "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json"
     },
     "summary": "created a to-do list: lists",
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/todolists/1056802576-lists.json"
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todolists/1056802576.json"
   }
 ]
 ```

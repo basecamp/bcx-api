@@ -18,7 +18,7 @@ Get projects
     "name": "BCX",
     "description": "The Next Generation",
     "updated_at": "2012-03-23T13:55:43-05:00",
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx.json",
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json",
     "template": false,
     "archived": false,
     "starred": true,
@@ -31,7 +31,7 @@ Get projects
     "name": "Nothing here!",
     "description": null,
     "updated_at": "2012-03-22T16:56:51-05:00",
-    "url": "https://basecamp.com/999999999/api/v1/projects/684146117-nothing-here.json",
+    "url": "https://basecamp.com/999999999/api/v1/projects/684146117.json",
     "template": false,
     "archived": false,
     "starred": false,
@@ -70,33 +70,33 @@ Get project
   "accesses": {
     "count": 5,
     "updated_at": "2012-03-23T13:55:43-05:00",
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/accesses.json"
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/accesses.json"
   },
   "attachments": {
     "count": 0,
     "updated_at": null,
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/attachments.json"
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/attachments.json"
   },
   "calendar_events": {
     "count": 3,
     "updated_at": "2012-03-22T17:35:50-05:00",
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/calendar_events.json"
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/calendar_events.json"
   },
   "documents": {
     "count": 0,
     "updated_at": null,
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/documents.json"
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/documents.json"
   },
   "topics": {
     "count": 2,
     "updated_at": "2012-03-22T17:35:50-05:00",
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/topics.json"
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/topics.json"
   },
   "todolists": {
     "remaining_count": 4,
     "completed_count": 0,
     "updated_at": "2012-03-23T12:59:23-05:00",
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632-bcx/todolists.json"
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todolists.json"
   }
 }
 ```
