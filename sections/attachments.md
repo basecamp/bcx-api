@@ -1,23 +1,23 @@
 Attachments
 ===========
 
-Submitting files to Basecamp is a two step process:
+Uploading files to Basecamp is a two-step process:
 
-1. Create the attachment, receive a token verifying the upload was successful ("Create attachment" endpoint)
-2. Attach the file to a comment, message, or upload. See the following endpoints for attaching:
+1. Create the attachment and receive a token verifying that the upload was successful.
+2. Associate the attachment with a message, todo, upload, or comment. See the following endpoints for attaching:
+
+   * [Create messages](https://github.com/basecamp/bcx-api/blob/master/sections/messages.md)
+   * [Create todos](https://github.com/basecamp/bcx-api/blob/master/sections/todos.md)
    * [Create uploads](https://github.com/basecamp/bcx-api/blob/master/sections/uploads.md)
    * [Create comments](https://github.com/basecamp/bcx-api/blob/master/sections/comments.md)
-   * [Create messages](https://github.com/basecamp/bcx-api/blob/master/sections/messages.md)
+
 
 Create attachment
 -----------------
 
-* `POST /attachments.json` uploads a file. The request body should be the
-binary data of the attachment. Make sure to set the `Content-Type` and
-`Content-Length` headers.
+* `POST /attachments.json` uploads a file. The request body should be the file's binary data. The `Content-Type` and `Content-Length` headers should be set accordingly.
 
-Once the upload is successful, you'll get a `200 OK` response, and we'll give
-you a token back that you'll need to save locally to attach the file.
+When an upload is successful, you'll get a `200 OK` response, with a token that you use to attach the file to something.
 
 ```json
 {
@@ -25,7 +25,7 @@ you a token back that you'll need to save locally to attach the file.
 }
 ```
 
-With `curl`, here's an example:
+Here's an example using `curl`:
 
 ```
 curl --data-binary @logo.png \
@@ -35,14 +35,13 @@ curl --data-binary @logo.png \
        https://basecamp.com/999999999/api/v1/attachments.json
 ```
 
-*Note:* Uploading can take a while, if the file is big! Make sure to account for this in your implementation.
+**Note:** If a file is big, uploading can take a long time! Make sure to account for this in your implementation.
+
 
 Get attachment
 --------------
 
-* `GET /projects/1/attachments/1.json` will return the specified attachment
- with file metadata, urls, and associated attachables (Uploads, Messages,
-or Comments) with a `200 OK` response.
+* `GET /projects/1/attachments/1.json` will return the specified attachment with its file metadata, URLs, and associated attachable (a message, todo, upload, or comment).
 
 ```json
 {
@@ -70,13 +69,12 @@ or Comments) with a `200 OK` response.
 }
 ```
 
+
 Get attachments
 ---------------
 
-* `GET /projects/1/attachments.json` shows attachments for this
-project with file metadata, urls, and associated attachables (Uploads, Messages,
-or Comments) with a `200 OK` response.
-* `GET /attachments.json` shows attachments for all projects.
+* `GET /projects/1/attachments.json` returns attachments in the specified project, each with its file metadata, URLs, and associated attachable (a message, todo, upload, or comment).
+* `GET /attachments.json` returns attachments in all projects.
 
 ```json
 [

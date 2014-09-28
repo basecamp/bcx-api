@@ -82,6 +82,36 @@ Create todo
 
 This will return `201 Created`, with the URL of the new todo in the `Location` header along with the current JSON representation of the todo if the creation was a success. See the **Get todo** endpoint for more info. If the assignee type is unrecognized or the `due_at` is in a wrong format, you'll see a `400 Bad Request`.
 
+### Attaching files
+
+Attaching files to a todo requires both the token and the name of the attachment. The
+token is returned from the [Create attachments](https://github.com/basecamp/bcx-api/blob/master/sections/attachments.md)
+endpoint, which you must hit first before creating an upload.
+
+The `name` parameter *must* be a valid filename with an extension. Multiple
+attachments are allowed.
+
+```json
+{
+  "content": "This is my new thing!",
+  "due_at": "2012-03-27",
+  "assignee": {
+    "id": 149087659,
+    "type": "Person"
+  },
+  "attachments": [
+    {
+      "token": "4f73595a-39a6fd18317b1eeffb9c4734e95a179aa4b1b7c8",
+      "name": "cover_page.pdf"
+    },
+    {
+      "token": "4f73595f-78efbe63c77a4f5c752ce7d113d0361220f70b69",
+      "name": "final_draft.pdf"
+    }
+  ]
+}
+```
+
 
 Update todo
 -----------
