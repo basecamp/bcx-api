@@ -8,6 +8,7 @@ Get people
 ----------
 
 * `GET /people.json` will return all people on the account.
+* `GET /people/trashed.json` will return all people who have been deleted from the account. Only admins are able to access trashed people.
 
 ```json
 [
@@ -17,6 +18,7 @@ Get people
     "name": "Jason Fried",
     "email_address": "jason@basecamp.com",
     "admin": true,
+    "trashed": false,
     "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif",
     "fullsize_avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/original.gif?r=3",
     "created_at": "2012-03-22T16:56:48-05:00",
@@ -29,6 +31,7 @@ Get people
     "name": "Jeremy Kemper",
     "email_address": "jeremy@basecamp.com",
     "admin": true,
+    "trashed": false,
     "avatar_url": "https://asset0.37img.com/global/e68cafa694e8f22203eb36f13dccfefa9ac0acb2/avatar.96.gif",
     "fullsize_avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/original.gif?r=3",
     "created_at": "2012-03-22T16:56:48-05:00",
@@ -51,6 +54,7 @@ Get person
   "name": "Jason Fried",
   "email_address": "jason@basecamp.com",
   "admin": true,
+  "trashed": false,
   "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3",
   "fullsize_avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/original.gif?r=3",
   "created_at": "2012-03-22T16:56:51-05:00",
