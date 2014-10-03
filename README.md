@@ -90,6 +90,7 @@ API ready for use
 * [Stars](https://github.com/basecamp/bcx-api/blob/master/sections/stars.md)
 * [People](https://github.com/basecamp/bcx-api/blob/master/sections/people.md)
 * [Accesses](https://github.com/basecamp/bcx-api/blob/master/sections/accesses.md)
+* [Companies/Groups](https://github.com/basecamp/bcx-api/blob/master/sections/groups.md)
 * [Events](https://github.com/basecamp/bcx-api/blob/master/sections/events.md)
 * [Topics](https://github.com/basecamp/bcx-api/blob/master/sections/topics.md)
 * [Messages](https://github.com/basecamp/bcx-api/blob/master/sections/messages.md)
