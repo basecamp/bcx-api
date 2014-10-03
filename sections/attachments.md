@@ -176,6 +176,12 @@ The default sort is `newest`.
 Sorting can be combined with pagination. To get the second page of attachments
 sorted by oldest first, request `/attachments.json?page=2&sort=oldest`.
 
+Delete attachment
+-------------------
+
+* `DELETE /projects/1/attachments/1.json` will delete the attachment specified and return `204 No Content` if that was successful. If the user does not have access to delete the attachment, you'll see `403 Forbidden`.
+
+If an attachment is deleted on a upload with no comments that will delete the upload as well. If the upload does have comments the attachment will be removed but the upload will remain with the images intact.
 
 Private attachments
 -------------------
