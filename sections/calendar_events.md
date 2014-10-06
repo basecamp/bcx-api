@@ -25,6 +25,7 @@ Get calendar events
     "all_day": false,
     "starts_at": "2012-03-28T07:00:00-05:00",
     "ends_at": "2012-03-28T07:00:00-05:00",
+    "comments_count": 0,
     "private": false,
     "trashed": false,
     "creator": {
@@ -44,6 +45,7 @@ Get calendar events
     "all_day": true,
     "starts_at": "2012-03-28",
     "ends_at": "2012-03-28",
+    "comments_count": 0,
     "private": false,
     "trashed": false,
     "creator": {
@@ -63,6 +65,7 @@ Get calendar events
     "all_day": true,
     "starts_at": "2014-07-10",
     "ends_at": "2014-07-10",
+    "comments_count": 0,
     "private": false,
     "trashed": false,
     "creator": {
@@ -97,6 +100,7 @@ Get calendar events
     "all_day": true,
     "starts_at": "2014-07-10",
     "ends_at": "2014-07-10",
+    "comments_count": 0,
     "private": false,
     "trashed": false,
     "creator": {
@@ -141,6 +145,7 @@ Get calendar events
     "all_day": true,
     "starts_at": "2014-07-10",
     "ends_at": "2014-07-10",
+    "comments_count": 0,
     "private": false,
     "trashed": false,
     "creator": {
