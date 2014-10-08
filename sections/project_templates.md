@@ -101,7 +101,7 @@ Getting a project template is the same as getting a project via the API.
 Create project template
 ----------------------
 
-* `POST /projects\_templates.json` will create a new project template from the parameters passed.
+* `POST /project_templates.json` will create a new project template from the parameters passed.
 
 ```json
 {
