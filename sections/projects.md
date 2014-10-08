@@ -9,6 +9,7 @@ Get projects
 ------------
 
 * `GET /projects.json` will return all active projects.
+* `GET /projects/drafts.json` will return all draft projects.
 * `GET /projects/archived.json` will return all archived projects.
 
 ```json
@@ -23,6 +24,7 @@ Get projects
     "archived": false,
     "starred": true,
     "trashed": false,
+    "draft":false,
     "is_client_project": false,
     "color": "3185c5"
   },
@@ -36,6 +38,7 @@ Get projects
     "archived": false,
     "starred": false,
     "trashed": false,
+    "draft":false,
     "is_client_project": true,
     "color": "3185c5"
   }
@@ -59,6 +62,7 @@ Get project
   "template": false,
   "starred": true,
   "trashed": false,
+  "draft":false,
   "is_client_project": false,
   "color": "3185c5",
   "creator": {
