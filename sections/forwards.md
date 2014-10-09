@@ -18,11 +18,13 @@ Get forwards
     "private": false,
     "trashed": false,
     "url": "https://basecamp.com/999999999/api/v1/projects/605816632/forwards/1072010356.json",
+    "app_url": "https://basecamp.com/999999999/projects/605816632/forwards/1072010356",
     "bucket": {
       "id": 605816632,
       "name": "BCX",
       "type": "Project",
-      "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json"
+      "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json",
+      "app_url": "https://basecamp.com/999999999/projects/605816632"
     }
   },
   {
@@ -34,11 +36,13 @@ Get forwards
     "private": false,
     "trashed": false,
     "url": "https://basecamp.com/999999999/api/v1/projects/605816632/forwards/617311580.json",
+    "app_url": "https://basecamp.com/999999999/projects/605816632/forwards/617311580",
     "bucket": {
       "id": 605816632,
       "name": "BCX",
       "type": "Project",
-      "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json"
+      "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json",
+      "app_url": "https://basecamp.com/999999999/projects/605816632"
     }
   }
 ]

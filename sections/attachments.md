@@ -52,6 +52,7 @@ Get attachment
   "content_type": "image/gif",
   "created_at": "2012-03-27T22:48:49-04:00",
   "url": "https://asset1.basecamp.com/1111/api/v1/projects/2222/attachments/3333/40b8a84cb1a30dbe04457dc99e094b6299deea41/original/bearwave.gif",
+  "app_url": "https://asset1.basecamp.com/1111/projects/2222/attachments/3333/40b8a84cb1a30dbe04457dc99e094b6299deea41/original/bearwave.gif",
   "private": false,
   "trashed": false,
   "tags": ["favorite gifs"],
@@ -64,7 +65,8 @@ Get attachment
   "attachable": {
     "id": 70219655,
     "type": "Upload",
-    "url": "https://basecamp.com/1111/api/v1/projects/2222/uploads/70219655.json"
+    "url": "https://basecamp.com/1111/api/v1/projects/2222/uploads/70219655.json",
+    "app_url": "https://basecamp.com/1111/projects/2222/uploads/70219655"
   }
 }
 ```
@@ -86,6 +88,7 @@ Get attachments
     "content_type": "image/gif",
     "created_at": "2012-03-27T22:48:49-04:00",
     "url": "https://asset1.basecamp.com/1111/api/v1/projects/2222/attachments/3333/40b8a84cb1a30dbe04457dc99e094b6299deea41/original/bearwave.gif",
+    "app_url": "https://asset1.basecamp.com/1111/projects/2222/attachments/3333/40b8a84cb1a30dbe04457dc99e094b6299deea41/original/bearwave.gif",
     "private": false,
     "trashed": false,
     "tags": ["favorite gifs"],
@@ -98,7 +101,8 @@ Get attachments
     "attachable": {
       "id": 70219655,
       "type": "Upload",
-      "url": "https://basecamp.com/1111/api/v1/projects/2222/uploads/70219655.json"
+      "url": "https://basecamp.com/1111/api/v1/projects/2222/uploads/70219655.json",
+      "app_url": "https://basecamp.com/1111/projects/2222/uploads/70219655"
     }
   }
   {
@@ -109,6 +113,7 @@ Get attachments
     "content_type": "application/pdf",
     "created_at": "2012-03-27T22:48:49-04:00",
     "url": "https://asset1.basecamp.com/1111/api/v1/projects/2222/attachments/4444/773c74212f81f5c7d66917fb7236d5aece36c56a/original/report.pdf",
+    "app_url": "https://asset1.basecamp.com/1111/projects/2222/attachments/4444/773c74212f81f5c7d66917fb7236d5aece36c56a/original/report.pdf",
     "private": false,
     "trashed": false,
     "tags": ["reports"],
@@ -121,7 +126,8 @@ Get attachments
     "attachable": {
       "id": 12092382,
       "type": "Message",
-      "url": "https://basecamp.com/1111/api/v1/projects/2222/messages/12092382.json"
+      "url": "https://basecamp.com/1111/api/v1/projects/2222/messages/12092382.json",
+      "app_url": "https://basecamp.com/1111/projects/2222/messages/12092382"
     }
   }
 ]
@@ -151,7 +157,8 @@ Linked attachments like [Google Docs](https://basecamp.com/help/guides/projects/
   "attachable": {
     "id": 12092383,
     "type": "Message",
-    "url": "https://basecamp.com/1111/api/v1/projects/2222/messages/12092383.json"
+    "url": "https://basecamp.com/1111/api/v1/projects/2222/messages/12092383.json",
+    "app_url": "https://basecamp.com/1111/projects/2222/messages/12092383"
   }
 }
 ```
