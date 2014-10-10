@@ -95,6 +95,10 @@ Each attachment blob includes the `url` parameter, which you can make a
 }
 ```
 
+Delete upload
+-------------
+
+* `DELETE /projects/1/uploads/2.json` will trash the upload specified and return `204 No Content` if that was successful. If the user does not have access to delete the upload, you'll see `403 Forbidden`. If the upload was deleted accidently simply retreive it from the trash with the "bring it back" link in the application. Uploads cannot be permanently deleted via the API.
 
 Private uploads
 ---------------
