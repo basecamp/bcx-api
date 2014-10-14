@@ -47,6 +47,8 @@ Get forwards
 Buckets are only provided for forwards that are not accessed via a project. For example, todolists returned from `GET /forwards.json` will include their buckets,
 but those returned from `GET /projects/1/forwards.json` will not.
 
+### Sorting
+
 It's possible to change the order forwards are returned in with the `sort`
 parameter. Forwards can be sorted by subject or age using the parameter values:
 

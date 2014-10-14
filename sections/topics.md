@@ -9,7 +9,7 @@ Topics are anything in Basecamp that can have comments: Messages, Calendar Event
 Get topics
 ----------
 
-* `GET /projects/1/topics.json` shows topics for this project. We will return 50 topics per page. If the result set has 50 topics, it's your responsibility to check the next page to see if there are any more topics -- you do this by adding `&page=2` to the query, then `&page=3` and so on.
+* `GET /projects/1/topics.json` shows topics for this project.
 * `GET /topics.json` shows topics for all projects.
 
 ```json
@@ -61,6 +61,18 @@ For a topic:
 * `excerpt` is from the latest comment on the topicable
 * `last_updater` is the creator of the latest comment, or the creator of the
   topicable if it has no comments
+
+Buckets are only provided for topics that are not accessed via a project. For
+example, topics returned from `GET /topics.json` will include their buckets,
+but those returned from `GET /projects/1/topics.json` will not.
+
+### Pagination
+
+We will return 50 topics per page. If the result set has 50 topics, it's your
+responsibility to check the next page to see if there are any more topics --
+you do this by adding `&page=2` to the query, then `&page=3` and so on.
+
+### Sorting
 
 It's possible to change the order topics are returned in with the `sort`
 parameter. Topics can be sorted by their latest update times using the

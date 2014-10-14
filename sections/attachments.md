@@ -159,9 +159,13 @@ Linked attachments like [Google Docs](https://basecamp.com/help/guides/projects/
 If you need more information about what an attachment is attached to, you can
 make another request to its `attachable`'s `url` value.
 
+### Pagination
+
 We will return 50 attachments per page. If the result set has 50 attachments,
 it's your responsibility to check the next page to see if there are any more
 attachments -- you do this by adding `&page=2` to the query, then `&page=3`, and so on.
+
+### Sorting
 
 It's also possible to change the order attachments are returned in with the `sort`
 parameter. Attachments can be sorted by name, size, or age using the parameter
@@ -176,12 +180,14 @@ The default sort is `newest`.
 Sorting can be combined with pagination. To get the second page of attachments
 sorted by oldest first, request `/attachments.json?page=2&sort=oldest`.
 
+
 Delete attachment
--------------------
+-----------------
 
 * `DELETE /projects/1/attachments/1.json` will delete the attachment specified and return `204 No Content` if that was successful. If the user does not have access to delete the attachment, you'll see `403 Forbidden`.
 
 If an attachment is deleted on a upload with no comments that will delete the upload as well. If the upload does have comments the attachment will be removed but the upload will remain with the images intact.
+
 
 Private attachments
 -------------------

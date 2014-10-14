@@ -50,6 +50,8 @@ Buckets are only provided for documents that are not accessed via a project.
 For example, documents returned from `GET /documents.json` will include their
 buckets, but those returned from `GET /projects/1/documents.json` will not.
 
+### Sorting
+
 It's possible to change the order documents are returned in with the `sort`
 parameter. Documents can be sorted by title or latest update time using the
 parameter values:

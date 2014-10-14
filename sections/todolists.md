@@ -69,6 +69,7 @@ Get todolists
 Buckets are only provided for todolists that are not accessed via a project. For example, todolists returned from `GET /todolists.json` will include their buckets,
 but those returned from `GET /projects/1/todolists.json` will not.
 
+
 Get todolists with assigned todos
 ---------------------------------
 
@@ -314,6 +315,7 @@ Updating the `position` of a todolist is also possible through this endpoint by 
 ```
 
 *Note*: If the position is out of bounds, the todo will be moved to the bottom.
+
 
 Delete todolist
 --------------
