@@ -1,16 +1,26 @@
 Topics
 ========
 
-> <Clever topics quote>
+Topics refer to anything in Basecamp that can have comments:
 
-Topics are anything in Basecamp that can have comments: Messages, Calendar Events, Uploads, Todos. Messages will appear in the topics index even before they have any comments, but any other topicable type will only appear if there's at least one comment posted.
+* Messages
+* Documents
+* Forwards
+* Calendar events
+* Uploads
+* Todolists
+* Todos
+
+Topics will only appear for resources that have at least one comment. However, topics will appear for messages even before they have any comments.
 
 
 Get topics
 ----------
 
-* `GET /projects/1/topics.json` shows topics for this project.
-* `GET /topics.json` shows topics for all projects.
+* `GET /projects/1/topics.json` returns active topics in the specified project.
+* `GET /projects/1/topics/archived.json` returns archived topics in the specified project.
+* `GET /topics.json` returns active topics in all projects.
+* `GET /topics/archived.json` returns archived topics in all projects.
 
 ```json
 [
@@ -31,6 +41,12 @@ Get topics
       "id": 174886926,
       "type": "CalendarEvent",
       "url": "https://basecamp.com/999999999/api/v1/projects/605816632/calendar_events/174886926.json"
+    },
+    "bucket": {
+      "id": 605816632,
+      "name": "BCX",
+      "type": "Project",
+      "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json"
     }
   },
   {
@@ -50,6 +66,12 @@ Get topics
       "id": 936075699,
       "type": "Message",
       "url": "https://basecamp.com/999999999/api/v1/projects/605816632/messages/936075699.json"
+    },
+    "bucket": {
+      "id": 605816632,
+      "name": "BCX",
+      "type": "Project",
+      "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json"
     }
   }
 ]
@@ -80,3 +102,15 @@ parameter values `newest` and `oldest`. The default sort is `newest`.
 
 Sorting can be combined with pagination. To get the second page of topics
 sorted by oldest first, request `/topics.json?page=2&sort=oldest`.
+
+
+Archive/activate a topic
+------------------------
+
+* `PUT /projects/1/topics/1/archive.json` will archive the specified topic.
+* `PUT /projects/1/topics/1/activate.json` will activate the specified topic.
+
+No request body is necessary. In response, expect:
+
+* `204 No Content` if archiving/activating is successful
+* `403 Forbidden` if the topic's project is not active, or the authenticated user does not have permission
