@@ -11,7 +11,7 @@ Topics refer to anything in Basecamp that can have comments:
 * Todolists
 * Todos
 
-Topics will only appear for resources that have at least one comment. However, topics will appear for messages even before they have any comments.
+Topics will only appear for resources that have at least one comment, except for Messages, which always have topics.
 
 
 Get topics
@@ -108,7 +108,7 @@ Archive/activate a topic
 ------------------------
 
 * `PUT /projects/1/topics/1/archive.json` will archive the specified topic.
-* `PUT /projects/1/topics/1/activate.json` will activate the specified topic.
+* `PUT /projects/1/topics/1/activate.json` will activate (reopen) the specified topic.
 
 No request body is necessary. In response, expect:
 
