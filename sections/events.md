@@ -85,7 +85,7 @@ If an event's `created_at` and `updated_at` fields differ, it means that the eve
 Buckets are only provided for events that are not accessed via a project. For example, events returned from `GET /events.json` will include their buckets,
 but those returned from `GET /projects/1/events.json` will not.
 
-Creators are only provided for events that are not accessed via a person. For example, events return from `GET /events.json` will include their creators,
+Creators are only provided for events that are not accessed via a person. For example, events returned from `GET /events.json` will include their creators,
 but those returned from `GET /people/1/events.json` will not.
 
 ### Pagination
