@@ -56,7 +56,7 @@ To get an index of all todos on a list, see [todolists](https://github.com/basec
       "remaining_count": 2,
       "trashed": false,
       "created_at": "2012-03-24T09:53:35-05:00",
-      "url": "http://37s.bcx.dev/735644780/api/v1/projects/605816632/todolists/1.json"
+      "url": "http://37s.bcx.dev/735644780/api/v1/projects/605816632/todolists/1.json",
       "app_url": "https://basecamp.com/999999999/projects/605816632/todolists/1"
     }
   },
@@ -85,6 +85,8 @@ To get an index of all todos on a list, see [todolists](https://github.com/basec
       "name": "Jason Fried"
     },
     "completed": false,
+    "url": "http://37s.bcx.dev/999999999/api/v1/projects/605816632/todos/2.json",
+    "app_url": "http://37s.bcx.dev/999999999/projects/605816632/todos/2",
     "todolist": {
       "completed": false,
       "completed_count": 1,
@@ -103,11 +105,9 @@ To get an index of all todos on a list, see [todolists](https://github.com/basec
       "remaining_count": 2,
       "trashed": false,
       "created_at": "2012-03-24T09:53:35-05:00",
-      "url": "http://37s.bcx.dev/735644780/api/v1/projects/605816632/todolists/1.json"
+      "url": "http://37s.bcx.dev/735644780/api/v1/projects/605816632/todolists/1.json",
       "app_url": "https://basecamp.com/999999999/projects/605816632/todolists/1"
-    },
-    "url": "http://37s.bcx.dev/999999999/api/v1/projects/605816632/todos/2.json"
-    "app_url": "http://37s.bcx.dev/999999999/projects/605816632/todos/2"
+    }
   }
 ]
 ```
@@ -163,7 +163,7 @@ Get todo
     "remaining_count": 2,
     "trashed": false,
     "created_at": "2012-03-24T09:53:35-05:00",
-    "url": "http://37s.bcx.dev/735644780/api/v1/projects/605816632/todolists/1.json"
+    "url": "http://37s.bcx.dev/735644780/api/v1/projects/605816632/todolists/1.json",
     "app_url": "https://basecamp.com/999999999/projects/605816632/todolists/1"
   }
 }
