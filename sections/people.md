@@ -79,7 +79,7 @@ Get person
 Get projects a person has access to
 -----------------------------------
 
-* `GET /people/1/projects.json` will return a list of all projects a person has access to including draft, template, archived, and deleted projects. If the requesting user does not have the ablity to manage the person `403 Forbidden will be returned.`
+* `GET /people/1/projects.json` will return a list of all projects a person has access to including draft, template, archived, and deleted projects. Projects that the requesting user does not have access to will not appear in the project list. If the requesting user does not have the ablity to view the person `404 Not Found will be returned.`
 
 ```json
 [
