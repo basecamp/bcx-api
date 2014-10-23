@@ -23,7 +23,8 @@ Get people
     "fullsize_avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/original.gif?r=3",
     "created_at": "2012-03-22T16:56:48-05:00",
     "updated_at": "2012-03-22T16:56:48-05:00",
-    "url": "https://basecamp.com/999999999/api/v1/people/149087659-jason-fried.json"
+    "url": "https://basecamp.com/999999999/api/v1/people/149087659-jason-fried.json",
+    "app_url": "https://basecamp.com/999999999/people/149087659-jason-fried"
   },
   {
     "id": 1071630348,
@@ -36,7 +37,8 @@ Get people
     "fullsize_avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/original.gif?r=3",
     "created_at": "2012-03-22T16:56:48-05:00",
     "updated_at": "2012-03-22T16:56:48-05:00",
-    "url": "https://basecamp.com/999999999/api/v1/people/1071630348-jeremy-kemper.json"
+    "url": "https://basecamp.com/999999999/api/v1/people/1071630348-jeremy-kemper.json",
+    "app_url": "https://basecamp.com/999999999/people/1071630348-jeremy-kemper"
   }
 ]
 ```
@@ -62,16 +64,55 @@ Get person
   "events": {
     "count": 19,
     "updated_at": "2012-03-23T13:55:43-05:00",
-    "url": "https://basecamp.com/999999999/api/v1/people/149087659-jason-fried/events.json"
+    "url": "https://basecamp.com/999999999/api/v1/people/149087659-jason-fried/events.json",
+    "app_url": "https://basecamp.com/999999999/people/149087659-jason-fried/events"
   },
   "assigned_todos": {
     "count": 80,
     "updated_at": "2013-06-26T16:22:05.000-04:00",
-    "url": "https://basecamp.com/999999999/api/v1/people/149087659-jason-fried/assigned_todos.json"
+    "url": "https://basecamp.com/999999999/api/v1/people/149087659-jason-fried/assigned_todos.json",
+    "app_url": "https://basecamp.com/999999999/people/149087659-jason-fried/assigned_todos"
   }
 }
 ```
 
+Get projects a person has access to
+-----------------------------------
+
+* `GET /people/1/projects.json` will return a list of all projects a person has access to including draft, template, archived, and deleted projects. Projects that the requesting user does not have access to will not appear in the project list. If the requesting user does not have the ablity to view the person `404 Not Found will be returned.`
+
+```json
+[
+  {
+    "id": 605816632,
+    "name": "BCX",
+    "description": "The Next Generation",
+    "updated_at": "2012-03-23T13:55:43-05:00",
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json",
+    "template": false,
+    "archived": false,
+    "starred": true,
+    "trashed": false,
+    "draft":false,
+    "is_client_project": false,
+    "color": "3185c5"
+  },
+  {
+    "id": 684146117,
+    "name": "Nothing here!",
+    "description": null,
+    "updated_at": "2012-03-22T16:56:51-05:00",
+    "url": "https://basecamp.com/999999999/api/v1/projects/684146117.json",
+    "template": false,
+    "archived": false,
+    "starred": false,
+    "trashed": false,
+    "draft":false,
+    "is_client_project": true,
+    "color": "3185c5"
+  }
+]
+```
 
 Create person
 -------------

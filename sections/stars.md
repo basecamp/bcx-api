@@ -35,11 +35,13 @@ Expect a `200 OK` response with the JSON collection of starred project IDs, crea
     "project_id": 605816632,
     "created_at": "2012-03-23T13:55:43-05:00",
     "url": "https://basecamp.com/999999999/api/v1/projects/605816632/star.json",
+    "app_url": "https://basecamp.com/999999999/projects/605816632/star"
   },
   {
     "project_id": 684146117,
     "created_at": "2012-03-22T16:56:51-05:00",
     "url": "https://basecamp.com/999999999/api/v1/projects/684146117/star.json",
+    "app_url": "https://basecamp.com/999999999/projects/684146117/star"
   }
 ]
 ```

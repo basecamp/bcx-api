@@ -30,10 +30,12 @@ Get events
       "id": 605816632,
       "name": "BCX",
       "type": "Project",
-      "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json"
+      "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json",
+      "app_url": "https://basecamp.com/999999999/projects/605816632"
     },
     "summary": "re-assigned a to-do to Funky ones: Design it",
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todos/223304243.json"
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todos/223304243.json",
+    "app_url": "https://basecamp.com/999999999/projects/605816632/todos/223304243"
   },
   {
     "id": 1054456334,
@@ -50,10 +52,12 @@ Get events
       "id": 605816632,
       "name": "BCX",
       "type": "Project",
-      "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json"
+      "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json",
+      "app_url": "https://basecamp.com/999999999/projects/605816632"
     },
     "summary": "created a to-do list: lists",
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todolists/1056802576.json"
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todolists/1056802576.json",
+    "app_url": "https://basecamp.com/999999999/projects/605816632/calendar_events/174886926"
   },
   {
     "id": 973672263,
@@ -70,10 +74,12 @@ Get events
       "id": 605816632,
       "name": "BCX",
       "type": "Project",
-      "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json"
+      "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json",
+      "app_url": "https://basecamp.com/999999999/projects/605816632"
     },
     "summary": "commented on Prep the materials before the board meeting with Bezos",
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/calendar_events/174886926.json"
+    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/calendar_events/174886926.json",
+    "app_url": "https://basecamp.com/999999999/projects/605816632/todos/223304243"
   }
 ]
 ```

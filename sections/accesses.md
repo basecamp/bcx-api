@@ -17,14 +17,16 @@ for more people. Do this by adding `&page=2` to the query, then `&page=3` and so
     "name": "Jason Fried",
     "email_address": "jason@basecamp.com",
     "updated_at": "2012-03-22T16:56:48-05:00",
-    "url": "https://basecamp.com/999999999/api/v1/people/149087659-jason-fried.json"
+    "url": "https://basecamp.com/999999999/api/v1/people/149087659-jason-fried.json",
+    "app_url": "https://basecamp.com/999999999/people/149087659-jason-fried"
   },
   {
     "id": 1071630348,
     "name": "Jeremy Kemper",
     "email_address": "jeremy@basecamp.com",
     "updated_at": "2012-03-22T16:56:48-05:00",
-    "url": "https://basecamp.com/999999999/api/v1/people/1071630348-jeremy-kemper.json"
+    "url": "https://basecamp.com/999999999/api/v1/people/1071630348-jeremy-kemper.json",
+    "app_url": "https://basecamp.com/999999999/people/1071630348-jeremy-kemper"
   }
 ]
 ```
