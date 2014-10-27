@@ -41,7 +41,7 @@ Get events
     },
     "summary": "re-assigned a to-do to Funky ones: Design it",
     "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todos/223304243.json",
-    "app_url": "https://basecamp.com/999999999/projects/605816632/todos/223304243"
+    "html_url": "https://basecamp.com/999999999/projects/605816632/todos/223304243"
   },
   {
     "id": 1054456334,
@@ -69,7 +69,7 @@ Get events
     },
     "summary": "created a to-do list: lists",
     "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todolists/1056802576.json",
-    "app_url": "https://basecamp.com/999999999/projects/605816632/calendar_events/174886926"
+    "html_url": "https://basecamp.com/999999999/projects/605816632/todolists/1056802576"
   },
   {
     "id": 973672263,
@@ -97,7 +97,7 @@ Get events
     },
     "summary": "commented on Prep the materials before the board meeting with Bezos",
     "url": "https://basecamp.com/999999999/api/v1/projects/605816632/calendar_events/174886926.json",
-    "app_url": "https://basecamp.com/999999999/projects/605816632/todos/223304243"
+    "html_url": "https://basecamp.com/999999999/projects/605816632/calendar_events/174886926"
   }
 ]
 ```
