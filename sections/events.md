@@ -20,6 +20,12 @@ Get events
     "created_at": "2012-03-24T11:00:50-05:00",
     "updated_at": "2012-03-24T11:00:50-05:00",
     "private": false,
+    "eventable": {
+      "id": 223304243,
+      "type": "Todo",
+      "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todos/223304243.json",
+      "app_url": "https://basecamp.com/999999999/projects/605816632/todos/223304243"
+    },
     "creator": {
       "id": 149087659,
       "name": "Jason Fried",
@@ -42,6 +48,12 @@ Get events
     "created_at": "2012-03-24T11:00:39-05:00",
     "updated_at": "2012-03-24T11:00:39-05:00",
     "private": false,
+    "eventable": {
+      "id": 1056802576,
+      "type": "Todolist",
+      "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todolists/1056802576.json",
+      "app_url": "https://basecamp.com/999999999/projects/605816632/todolists/1056802576"
+    },
     "creator": {
       "id": 149087659,
       "name": "Jason Fried",
@@ -64,6 +76,12 @@ Get events
     "created_at": "2012-03-24T09:53:35-05:00",
     "updated_at": "2012-03-24T09:53:35-05:00",
     "private": false,
+    "eventable": {
+      "id": 174886926,
+      "type": "CalendarEvent",
+      "url": "https://basecamp.com/999999999/api/v1/projects/605816632/calendar_events/174886926.json",
+      "app_url": "https://basecamp.com/999999999/projects/605816632/calendar_events/174886926"
+    },
     "creator": {
       "id": 149087659,
       "name": "Jason Fried",
