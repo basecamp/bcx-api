@@ -20,66 +20,72 @@ Get events
     "created_at": "2012-03-24T11:00:50-05:00",
     "updated_at": "2012-03-24T11:00:50-05:00",
     "private": false,
+    "action": "re-assigned a to-do to Funky ones.<span>:</span>",
+    "target": "Design it",
+    "eventable": {
+      "id": 223304243,
+      "type": "Todo",
+      "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todos/223304243.json",
+      "app_url": "https://basecamp.com/999999999/projects/605816632/todos/223304243"
+    },
     "creator": {
       "id": 149087659,
       "name": "Jason Fried",
       "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3",
       "fullsize_avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/original.gif?r=3"
     },
-    "bucket": {
-      "id": 605816632,
-      "name": "BCX",
-      "type": "Project",
-      "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json",
-      "app_url": "https://basecamp.com/999999999/projects/605816632"
-    },
     "summary": "re-assigned a to-do to Funky ones: Design it",
     "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todos/223304243.json",
-    "app_url": "https://basecamp.com/999999999/projects/605816632/todos/223304243"
+    "html_url": "https://basecamp.com/999999999/projects/605816632/todos/223304243"
   },
   {
     "id": 1054456334,
     "created_at": "2012-03-24T11:00:39-05:00",
     "updated_at": "2012-03-24T11:00:39-05:00",
     "private": false,
+    "action": "created a to-do list<span>:</span>",
+    "target": "Launch list",
+    "eventable": {
+      "id": 1056802576,
+      "type": "Todolist",
+      "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todolists/1056802576.json",
+      "app_url": "https://basecamp.com/999999999/projects/605816632/todolists/1056802576"
+    },
     "creator": {
       "id": 149087659,
       "name": "Jason Fried",
       "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3",
       "fullsize_avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/original.gif?r=3"
     },
-    "bucket": {
-      "id": 605816632,
-      "name": "BCX",
-      "type": "Project",
-      "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json",
-      "app_url": "https://basecamp.com/999999999/projects/605816632"
-    },
-    "summary": "created a to-do list: lists",
+    "summary": "created a to-do list<span>:</span> Launch list",
     "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todolists/1056802576.json",
-    "app_url": "https://basecamp.com/999999999/projects/605816632/calendar_events/174886926"
+    "html_url": "https://basecamp.com/999999999/projects/605816632/todolists/1056802576"
   },
   {
     "id": 973672263,
     "created_at": "2012-03-24T09:53:35-05:00",
     "updated_at": "2012-03-24T09:53:35-05:00",
     "private": false,
+    "action": "commented on",
+    "target": "Prep the materials before the board meeting with Bezos",
+    "eventable": {
+      "id": 174886926,
+      "type": "CalendarEvent",
+      "url": "https://basecamp.com/999999999/api/v1/projects/605816632/calendar_events/174886926.json",
+      "app_url": "https://basecamp.com/999999999/projects/605816632/calendar_events/174886926"
+    },
     "creator": {
       "id": 149087659,
       "name": "Jason Fried",
       "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3",
       "fullsize_avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/original.gif?r=3"
     },
-    "bucket": {
-      "id": 605816632,
-      "name": "BCX",
-      "type": "Project",
-      "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json",
-      "app_url": "https://basecamp.com/999999999/projects/605816632"
-    },
+    "attachments": [],
+    "excerpt": "I&#39;ll be there!",
+    "raw_excerpt": "I&#39;ll be there!",
     "summary": "commented on Prep the materials before the board meeting with Bezos",
     "url": "https://basecamp.com/999999999/api/v1/projects/605816632/calendar_events/174886926.json",
-    "app_url": "https://basecamp.com/999999999/projects/605816632/todos/223304243"
+    "html_url": "https://basecamp.com/999999999/projects/605816632/calendar_events/174886926"
   }
 ]
 ```
