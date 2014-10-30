@@ -275,6 +275,30 @@ Examples:
   "remind_at": "2012-03-28T11:20:00-05:00"
 }
 ```
+To subscribe specific people to a calendar event pass their person IDs with the create parameters.
+
+```json
+{
+  "summary": "My single event for a specific time",
+  "description": "Details to follow",
+  "starts_at": "2012-03-28T11:50:00-05:00"
+  "subscribers": [
+    149087659,
+    1071630348
+  ]
+}
+```
+
+To subscribe all people on the project to a calendar event pass "all" with the create parameters.
+
+```json
+{
+  "summary": "My single event for a specific time",
+  "description": "Details to follow",
+  "starts_at": "2012-03-28T11:50:00-05:00"
+  "subscribers": "all"
+}
+```
 
 This will return `201 Created`, with the URL of the new calendar_event in the `Location` header and a JSON representation of the event in the response body, if the creation was a success. If the dates are not in the proper format, you'll get a `400 Bad Request`.
 
@@ -296,9 +320,34 @@ Update calendar event
   "ends_at": "2012-03-30"
 }
 ```
+To update the subscribers on an event pass their person IDs with the parameters. Note: This update will replace all subscribers, not add subscribers to the calendar event.
+
+```json
+{
+  "subscribers": [
+    149087659,
+    1071630348
+  ]
+}
+```
+
+To subscribe all people to a calendar event, pass "all" with the parameters.
+
+```json
+{
+  "subscribers": "all"
+}
+```
+
+To remove all subscribers on an event pass an empty array with the parameters.
+
+```json
+{
+  "subscribers": []
+}
+```
 
 This will return `200 OK` if the creation was a success, with a JSON representation of the resource in the response body. If the dates are not in the proper format, you'll get a `400 Bad Request`.
-
 
 Delete calendar event
 ---------------------
