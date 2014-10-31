@@ -71,6 +71,16 @@ Create message
 }
 ```
 
+To "loop-in" outside email addresses for users without an account, include a new_subscriber_emails array with the parameters.
+
+```json
+{
+  "subject": "Hello everyone",
+  "content": "This is going to be a GREAT Saturday!",
+  "new_subscriber_emails": ["example@example.com"]
+}
+```
+
 This will return `201 Created`, with the location of the new project in the `Location` header along with the current JSON representation of the message  if the creation was a success. See the [Get message](https://github.com/basecamp/bcx-api/blob/master/sections/messages.md#get-message) endpoint for more info.
 
 ### Attaching files

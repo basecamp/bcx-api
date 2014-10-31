@@ -60,6 +60,16 @@ Create comment
 }
 ```
 
+To "loop-in" outside email addresses for users without an account, include a new_subscriber_emails array with the parameters.
+
+```json
+{
+  "subject": "Hello everyone",
+  "content": "This is going to be a GREAT Saturday!",
+  "new_subscriber_emails": ["example@example.com"]
+}
+```
+
 This will return `201 Created`, with a representation of the comment just created in the response body if the creation was a success. The topic can be accessed via the `topic_url` parameter. For example:
 
 ```json
