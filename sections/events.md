@@ -13,6 +13,8 @@ Get events
 * `GET /people/1/events.json?since=2012-03-24T11:00:00-06:00` will return all the events created by the specified person since 11am CST on March 24, 2012.
 * `GET /events.json?since=2012-03-24T11:00:00-06:00` will return all events in all projects and calendars since 11am CST on March 24, 2012.
 
+Note that the `+` character must be url-escaped, while the `-` character can be used as-is. So, use `?since=2014-01-01T01:00:00%2B01:00` as opposed to `?since=2014-01-01T01:00:00+01:00` for east-of-GMT time zones. 
+
 ```json
 [
   {
