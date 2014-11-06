@@ -91,6 +91,9 @@ Get calendar events
 * `GET /calendar_events.json?start_date=2014-07-10` will return six weeks of calendar events after the start date for the account, including recurrences.
 * `GET /projects/1/calendar_events.json?start_date=2014-07-10` will return six weeks of calendar events after the start date for the project, including recurrences.
 * `GET /calendars/1/calendar_events.json?start_date=2014-07-10` will return six weeks of calendar events after the start date for the calendar, including recurrences.
+* `GET /calendar_events.json?start_date=2014-07-10&end_date=2014-07-12` will return 6 weeks of calendar events between the start and end date for the account, including recurrences.
+* `GET /projects/1/calendar_events.json?start_date=2014-07-10&end_date=2014-07-12` will return 6 weeks of calendar events between the start and end date for the project, including recurrences.
+* `GET /calendars/1/calendar_events.json?start_date=2014-07-10&end_date=2014-07-12` will return 6 weeks of calendar events between the start and end date, including recurrences.
 
 ```json
 [
