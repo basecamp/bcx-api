@@ -78,6 +78,7 @@ Get todolists with assigned todos
 ---------------------------------
 
 * `GET /people/1/assigned_todos.json` will return all the todolists with todos assigned to the specified person.
+* `GET /people/1/assigned_todos.json?due_since=2014-07-10` will return all the todolists with todos assigned to the specified person due after the date specified.
 
 ```json
 [

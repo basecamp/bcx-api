@@ -9,6 +9,7 @@ To get an index of all todos on a list, see [todolists](https://github.com/basec
 * `GET /projects/1/todos.json` shows a list of all todos for this project; completed and remaining.
 * `GET /projects/1/todos/completed.json` shows a list of all completed todos for this project.
 * `GET /projects/1/todos/remaining.json` shows a list of all remaining/active todos for this project.
+* `GET /projects/1/todos.json?due_since=2014-07-10` will return all the todos due after the date specified.
 
 ```json
 [
