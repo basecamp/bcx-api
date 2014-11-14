@@ -241,6 +241,13 @@ This will return `200 OK` if the update was a success along with the current JSO
 
 Sending a payload with `assignee` set to `null` will un-assign the todo, and setting `due_at` to `null` will remove the due date.
 
+```json
+{
+  "due_at": null,
+  "assignee": null
+}
+```
+
 ### Reordering todos
 
 Updating the `position` of a todo is also possible through this endpoint by passing an integer between `1` and `n`, where `n` is the number of todos in this list.
