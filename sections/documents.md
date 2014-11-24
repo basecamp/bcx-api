@@ -84,6 +84,12 @@ Get document
     "id": 149087659,
     "name": "Jason Fried"
   },
+  "creator": {
+    "id": 149087659,
+    "name": "Jason Fried",
+    "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3",
+    "fullsize_avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/original.gif?r=3"
+  },
   "comments": [
     {
       "content": "I think there should be more sass to it.",
