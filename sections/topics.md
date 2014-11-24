@@ -8,8 +8,8 @@ Topics refer to anything in Basecamp that can have comments:
 * Forwards
 * Calendar events
 * Uploads
-* Todolists
-* Todos
+* To-do lists
+* To-dos
 
 Topics will only appear for resources that have at least one comment, except for Messages, which always have topics.
 

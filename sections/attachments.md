@@ -4,10 +4,10 @@ Attachments
 Uploading files to Basecamp is a two-step process:
 
 1. Create the attachment and receive a token verifying that the upload was successful.
-2. Associate the attachment with a message, todo, upload, or comment. See the following endpoints for attaching:
+2. Associate the attachment with a message, to-do, upload, or comment. See the following endpoints for attaching:
 
    * [Create messages](https://github.com/basecamp/bcx-api/blob/master/sections/messages.md)
-   * [Create todos](https://github.com/basecamp/bcx-api/blob/master/sections/todos.md)
+   * [Create to-dos](https://github.com/basecamp/bcx-api/blob/master/sections/todos.md)
    * [Create uploads](https://github.com/basecamp/bcx-api/blob/master/sections/uploads.md)
    * [Create comments](https://github.com/basecamp/bcx-api/blob/master/sections/comments.md)
 
@@ -41,7 +41,7 @@ curl --data-binary @logo.png \
 Get attachment
 --------------
 
-* `GET /projects/1/attachments/1.json` will return the specified attachment with its file metadata, URLs, and associated attachable (a message, todo, upload, or comment).
+* `GET /projects/1/attachments/1.json` will return the specified attachment with its file metadata, URLs, and associated attachable (a message, to-do, upload, or comment).
 
 ```json
 {
@@ -77,7 +77,7 @@ Get attachment
 Get attachments
 ---------------
 
-* `GET /projects/1/attachments.json` returns attachments in the specified project, each with its file metadata, URLs, and associated attachable (a message, todo, upload, or comment).
+* `GET /projects/1/attachments.json` returns attachments in the specified project, each with its file metadata, URLs, and associated attachable (a message, to-do, upload, or comment).
 * `GET /attachments.json` returns attachments in all projects.
 
 ```json

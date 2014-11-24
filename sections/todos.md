@@ -1,23 +1,23 @@
-Todos
+To-dos
 =====
 
-Get todos
+Get to-dos
 ---------
 
-To get an index of all todos on a list, see [todolists](https://github.com/basecamp/bcx-api/blob/master/sections/todolists.md).
+To get an index of all to-dos on a list, see [to-do lists](https://github.com/basecamp/bcx-api/blob/master/sections/todolists.md).
 
 Per Project:
 
-* `GET /projects/1/todos.json` shows a list of all todos for this project; completed and remaining.
-* `GET /projects/1/todos/completed.json` shows a list of all completed todos for this project.
-* `GET /projects/1/todos/remaining.json` shows a list of all remaining/active todos for this project.
-* `GET /projects/1/todos.json?due_since=2014-07-10` will return all the todos due after the date specified.
+* `GET /projects/1/todos.json` shows a list of all to-dos for this project; completed and remaining.
+* `GET /projects/1/todos/completed.json` shows a list of all completed to-dos for this project.
+* `GET /projects/1/todos/remaining.json` shows a list of all remaining/active to-dos for this project.
+* `GET /projects/1/todos.json?due_since=2014-07-10` will return all the to-dos due after the date specified.
 
 Per To-do List:
-* `GET /projects/1/todolists/1/todos.json` shows a list of all todos for this todolist; completed and remaining.
-* `GET /projects/1/todolists/1/todos/completed.json` shows a list of all completed todos for this todolist.
-* `GET /projects/1/todolists/1/todos/remaining.json` shows a list of all remaining todos for this todolist.
-* `GET /projects/1/todolists/1/todos/trashed.json` shows a list of all trashed todos for this todolist.
+* `GET /projects/1/todolists/1/todos.json` shows a list of all to-dos for this to-do list; completed and remaining.
+* `GET /projects/1/todolists/1/todos/completed.json` shows a list of all completed to-dos for this to-do list.
+* `GET /projects/1/todolists/1/todos/remaining.json` shows a list of all remaining to-dos for this to-do list.
+* `GET /projects/1/todolists/1/todos/trashed.json` shows a list of all trashed to-dos for this to-do list.
 
 ```json
 [
@@ -122,10 +122,10 @@ Per To-do List:
 ]
 ```
 
-Get todo
+Get to-do
 --------
 
-* `GET /projects/1/todos/1.json` will return the specified todo.
+* `GET /projects/1/todos/1.json` will return the specified to-do.
 
 ```json
 {
@@ -179,10 +179,10 @@ Get todo
 }
 ```
 
-Create todo
+Create to-do
 -----------
 
-* `POST /projects/1/todolists/1/todos.json` will add a new todo to the specified todolist from the parameters passed. The `due_at` parameter should be in ISO 8601 format (like "2012-03-27T16:00:00-05:00"). The assignee parameters need a `type` field with the `Person` specified. The `id` is then the id of the person who was assigned.
+* `POST /projects/1/todolists/1/todos.json` will add a new to-do to the specified to-do list from the parameters passed. The `due_at` parameter should be in ISO 8601 format (like "2012-03-27T16:00:00-05:00"). The assignee parameters need a `type` field with the `Person` specified. The `id` is then the id of the person who was assigned.
 
 ```json
 {
@@ -195,11 +195,11 @@ Create todo
 }
 ```
 
-This will return `201 Created`, with the URL of the new todo in the `Location` header along with the current JSON representation of the todo if the creation was a success. See the **Get todo** endpoint for more info. If the assignee type is unrecognized or the `due_at` is in a wrong format, you'll see a `400 Bad Request`.
+This will return `201 Created`, with the URL of the new to-do in the `Location` header along with the current JSON representation of the to-do if the creation was a success. See the **Get to-do** endpoint for more info. If the assignee type is unrecognized or the `due_at` is in a wrong format, you'll see a `400 Bad Request`.
 
 ### Attaching files
 
-Attaching files to a todo requires both the token and the name of the attachment. The
+Attaching files to a to-do requires both the token and the name of the attachment. The
 token is returned from the [Create attachments](https://github.com/basecamp/bcx-api/blob/master/sections/attachments.md)
 endpoint, which you must hit first before creating an upload.
 
@@ -228,10 +228,10 @@ attachments are allowed.
 ```
 
 
-Update todo
+Update to-do
 -----------
 
-* `PUT /projects/1/todos/1.json` will update the todo from the parameters passed. The `completed` field can be set to either `true` or `false` to check or uncheck the todo.
+* `PUT /projects/1/todos/1.json` will update the to-do from the parameters passed. The `completed` field can be set to either `true` or `false` to check or uncheck the to-do.
 
 ```json
 {
@@ -245,9 +245,9 @@ Update todo
 }
 ```
 
-This will return `200 OK` if the update was a success along with the current JSON representation of the todo in the response body. See the **Get todo** endpoint for more info. If the assignee type is unrecognized or the `due_at` is in a wrong format, you'll see a `400 Bad Request`.
+This will return `200 OK` if the update was a success along with the current JSON representation of the to-do in the response body. See the **Get to-do** endpoint for more info. If the assignee type is unrecognized or the `due_at` is in a wrong format, you'll see a `400 Bad Request`.
 
-Sending a payload with `assignee` set to `null` will un-assign the todo, and setting `due_at` to `null` will remove the due date.
+Sending a payload with `assignee` set to `null` will un-assign the to-do, and setting `due_at` to `null` will remove the due date.
 
 ```json
 {
@@ -256,9 +256,9 @@ Sending a payload with `assignee` set to `null` will un-assign the todo, and set
 }
 ```
 
-### Reordering todos
+### Reordering to-dos
 
-Updating the `position` of a todo is also possible through this endpoint by passing an integer between `1` and `n`, where `n` is the number of todos in this list.
+Updating the `position` of a to-do is also possible through this endpoint by passing an integer between `1` and `n`, where `n` is the number of to-dos in this list.
 
 ```json
 {
@@ -266,18 +266,18 @@ Updating the `position` of a todo is also possible through this endpoint by pass
 }
 ```
 
-*Note*: If the position is out of bounds, the todo will be moved to the bottom.
+*Note*: If the position is out of bounds, the to-do will be moved to the bottom.
 
 
-Delete todo
+Delete to-do
 ----------
 
-* `DELETE /projects/1/todos/1.json` will delete the todo specified and return `204 No Content` if that was successful. If the user does not have access to delete the todo, you'll see `403 Forbidden`.
+* `DELETE /projects/1/todos/1.json` will delete the to-do specified and return `204 No Content` if that was successful. If the user does not have access to delete the to-do, you'll see `403 Forbidden`.
 
 
-Private todos
+Private to-dos
 -------------
 
-Todos inherit the privacy of their todolists. A todo on a private todolist is private. If a todolist is made private or public, so are all of its todos.
+To-dos inherit the privacy of their to-do lists. A to-do on a private to-do list is private. If a to-do list is made private or public, so are all of its to-dos.
 
-Comments on a todo inherit the privacy of its todolist. If a todolist is made public or private, so are all comments on all of its todos.
+Comments on a to-do inherit the privacy of its to-do list. If a to-do list is made public or private, so are all comments on all of its to-dos.
