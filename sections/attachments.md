@@ -211,7 +211,7 @@ have permission to update the attachment, you'll receive `403 Forbidden`.
 Linked attachments, such as [Google Docs](https://basecamp.com/help/guides/projects/google-docs),
 can't be renamed. Their names are automatically synced from their sources when
 they are viewed. If you attempt to rename a linked attachment, you'll receive
-an error with a `422 Unprocessable Entity` response status.
+an error with a `400 Bad Request` response status.
 
 
 Delete attachment
