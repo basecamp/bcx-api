@@ -195,12 +195,31 @@ Sorting can be combined with pagination. To get the second page of attachments
 sorted by oldest first, request `/attachments.json?page=2&sort=oldest`.
 
 
+Rename attachment
+-----------------
+
+* `PUT /projects/1/attachments/1.json` will rename the specified attachment.
+
+```json
+{"name": "TPS report.pdf"}
+```
+
+This will return `200 OK` if the update was a success, with the current JSON
+representation of the attachment in the response body. If the user does not
+have permission to update the attachment, you'll receive `403 Forbidden`.
+
+Linked attachments, such as [Google Docs](https://basecamp.com/help/guides/projects/google-docs),
+can't be renamed. Their names are automatically synced from their sources when
+they are viewed. If you attempt to rename a linked attachment, you'll receive
+an error with a `422 Unprocessable Entity` response status.
+
+
 Delete attachment
 -----------------
 
 * `DELETE /projects/1/attachments/1.json` will delete the attachment specified and return `204 No Content` if that was successful. If the user does not have access to delete the attachment, you'll see `403 Forbidden`.
 
-If an attachment is deleted on a upload with no comments that will delete the upload as well. If the upload does have comments the attachment will be removed but the upload will remain with the images intact.
+If an attachment on an upload with no comments is deleted, the upload will be deleted as well. If an attachment on an upload with comments is deleted, the upload will remain.
 
 
 Private attachments
