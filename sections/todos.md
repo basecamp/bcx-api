@@ -6,10 +6,18 @@ Get todos
 
 To get an index of all todos on a list, see [todolists](https://github.com/basecamp/bcx-api/blob/master/sections/todolists.md).
 
+Per Project:
+
 * `GET /projects/1/todos.json` shows a list of all todos for this project; completed and remaining.
 * `GET /projects/1/todos/completed.json` shows a list of all completed todos for this project.
 * `GET /projects/1/todos/remaining.json` shows a list of all remaining/active todos for this project.
 * `GET /projects/1/todos.json?due_since=2014-07-10` will return all the todos due after the date specified.
+
+Per To-do List:
+* `GET /projects/1/todolists/1/todos.json` shows a list of all todos for this todolist; completed and remaining.
+* `GET /projects/1/todolists/1/todos/completed.json` shows a list of all completed todos for this todolist.
+* `GET /projects/1/todolists/1/todos/remaining.json` shows a list of all remaining todos for this todolist.
+* `GET /projects/1/todolists/1/todos/trashed.json` shows a list of all trashed todos for this todolist.
 
 ```json
 [

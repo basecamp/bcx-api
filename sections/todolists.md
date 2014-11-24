@@ -172,6 +172,9 @@ Get todolist
 ------------
 
 * `GET /projects/1/todolists/1.json` will return the specified todolist including the todos.
+* `GET /projects/1/todolists/1.json?exclude_todos=true` will return the specified todolist excluding the todos.
+If your todolists have a 1000+ total todos we request you use the todolist with the exclude_todos parameter and
+retrieve todos from the [todo endpoints](https://github.com/basecamp/bcx-api/blob/master/sections/todos.md#get-todos).
 
 ```json
 {
