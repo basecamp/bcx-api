@@ -1,13 +1,13 @@
-Todo lists
+To-do lists
 ==========
 
-Get todolists
+Get to-do lists
 -------------
 
-* `GET /projects/1/todolists.json` shows active todolists for this project sorted by position.
-* `GET /projects/1/todolists/completed.json` shows completed todolists for this project.
-* `GET /todolists.json` shows active todolists for all projects.
-* `GET /todolists/completed.json` shows completed todolists for all projects.
+* `GET /projects/1/todolists.json` shows active to-do lists for this project sorted by position.
+* `GET /projects/1/todolists/completed.json` shows completed to-do lists for this project.
+* `GET /todolists.json` shows active to-do lists for all projects.
+* `GET /todolists/completed.json` shows completed to-do lists for all projects.
 
 ```json
 [
@@ -70,15 +70,15 @@ Get todolists
 ]
 ```
 
-Buckets are only provided for todolists that are not accessed via a project. For example, todolists returned from `GET /todolists.json` will include their buckets,
+Buckets are only provided for to-do lists that are not accessed via a project. For example, to-do lists returned from `GET /todolists.json` will include their buckets,
 but those returned from `GET /projects/1/todolists.json` will not.
 
 
-Get todolists with assigned todos
+Get to-do lists with assigned to-dos
 ---------------------------------
 
-* `GET /people/1/assigned_todos.json` will return all the todolists with todos assigned to the specified person.
-* `GET /people/1/assigned_todos.json?due_since=2014-07-10` will return all the todolists with todos assigned to the specified person due after the date specified.
+* `GET /people/1/assigned_todos.json` will return all the to-do lists with to-dos assigned to the specified person.
+* `GET /people/1/assigned_todos.json?due_since=2014-07-10` will return all the to-do lists with to-dos assigned to the specified person due after the date specified.
 
 ```json
 [
@@ -168,10 +168,13 @@ Get todolists with assigned todos
 ```
 
 
-Get todolist
+Get to-do list
 ------------
 
-* `GET /projects/1/todolists/1.json` will return the specified todolist including the todos.
+* `GET /projects/1/todolists/1.json` will return the specified to-do list including the to-dos.
+* `GET /projects/1/todolists/1.json?exclude_todos=true` will return the specified to-do list excluding the to-dos.
+If your to-do lists have a 1000+ total to-dos we request you use the to-do list with the exclude_todos parameter and
+retrieve to-dos from the [to-do endpoints](https://github.com/basecamp/bcx-api/blob/master/sections/todos.md#get-todos).
 
 ```json
 {
@@ -290,10 +293,10 @@ Get todolist
 ```
 
 
-Create todolist
+Create to-do list
 ---------------
 
-* `POST /projects/1/todolists.json` will create a new todolist from the parameters passed.
+* `POST /projects/1/todolists.json` will create a new to-do list from the parameters passed.
 
 ```json
 {
@@ -302,13 +305,13 @@ Create todolist
 }
 ```
 
-This will return `201 Created`, with the URL of the new todolist in the `Location` header along with the current JSON representation of the todolist if the creation was a success. See the **Get todolist** endpoint for more info.
+This will return `201 Created`, with the URL of the new to-do list in the `Location` header along with the current JSON representation of the to-do list if the creation was a success. See the **Get to-do list** endpoint for more info.
 
 
-Update todolist
+Update to-do list
 ---------------
 
-* `PUT /projects/1/todolists/1.json` will update the todolist from the parameters passed.
+* `PUT /projects/1/todolists/1.json` will update the to-do list from the parameters passed.
 
 ```json
 {
@@ -317,11 +320,11 @@ Update todolist
 }
 ```
 
-This will return `200 OK` if the creation was a success along with the current JSON representation of the todolist in the response body. See the **Get todolist** endpoint for more info. If the user does not have access to update the todolist, you'll see `403 Forbidden`.
+This will return `200 OK` if the creation was a success along with the current JSON representation of the to-do list in the response body. See the **Get to-do list** endpoint for more info. If the user does not have access to update the to-do list, you'll see `403 Forbidden`.
 
-### Reordering todolists
+### Reordering to-do lists
 
-Updating the `position` of a todolist is also possible through this endpoint by passing an integer between `1` and `n`, where `n` is the number of todolists in this project.
+Updating the `position` of a to-do list is also possible through this endpoint by passing an integer between `1` and `n`, where `n` is the number of to-do lists in this project.
 
 ```json
 {
@@ -329,19 +332,19 @@ Updating the `position` of a todolist is also possible through this endpoint by 
 }
 ```
 
-*Note*: If the position is out of bounds, the todo will be moved to the bottom.
+*Note*: If the position is out of bounds, the to-do will be moved to the bottom.
 
 
-Delete todolist
+Delete to-do list
 --------------
 
-* `DELETE /projects/1/todolists/1.json` will delete the todolist specified and return `204 No Content` if that was successful. If the user does not have access to delete the todolist, you'll see `403 Forbidden`.
+* `DELETE /projects/1/todolists/1.json` will delete the to-do list specified and return `204 No Content` if that was successful. If the user does not have access to delete the to-do list, you'll see `403 Forbidden`.
 
 
-Private todolists
+Private to-do lists
 -----------------
 
-To hide a todolist and its todos from clients, set its `private` attribute to `true`.
+To hide a to-do list and its to-dos from clients, set its `private` attribute to `true`.
 
 ```json
 {
@@ -351,6 +354,6 @@ To hide a todolist and its todos from clients, set its `private` attribute to `t
 }
 ```
 
-To reveal a todolist and its todos to clients, set its `private` attribute to `false`.
+To reveal a to-do list and its to-dos to clients, set its `private` attribute to `false`.
 
-Comments on a todolist inherit its privacy. If a todolist is made public or private, so are all of its comments.
+Comments on a to-do list inherit its privacy. If a to-do list is made public or private, so are all of its comments.

@@ -1,7 +1,7 @@
 Events
 ======
 
-All actions in Basecamp generate an event for the progress log. If you start a new todo list, there's an event. If you give someone access to a project, there's an event. If you add a comment. You get the drill.
+All actions in Basecamp generate an event for the progress log. If you start a new to-do list, there's an event. If you give someone access to a project, there's an event. If you add a comment. You get the drill.
 
 If you're using this API for polling, please make sure that you're using the `since` parameter to limit the result set. Use the `created_at` time of the first item on the list for subsequent polls. If there's nothing new since that date, you'll get `[]` back.
 

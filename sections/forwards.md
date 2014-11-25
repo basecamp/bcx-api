@@ -48,7 +48,7 @@ Get forwards
 ]
 ```
 
-Buckets are only provided for forwards that are not accessed via a project. For example, todolists returned from `GET /forwards.json` will include their buckets,
+Buckets are only provided for forwards that are not accessed via a project. For example, forwards returned from `GET /forwards.json` will include their buckets,
 but those returned from `GET /projects/1/forwards.json` will not.
 
 ### Sorting
