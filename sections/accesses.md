@@ -48,12 +48,25 @@ for more people. Do this by adding `&page=2` to the query, then `&page=3` and so
 Grant access
 ------------
 
-* `POST /projects/1/accesses.json` will grant access to the project for the existing `ids` of people already on the account or new people via `email_addresses`. (Same goes for calendars with /calendars/ instead)
+Grant access to team members:
+
+* `POST /projects/1/accesses.json` will grant team access to the project for the existing `ids` of people already on the account or new people via `email_addresses`. (Same goes for calendars with /calendars/ instead)
 
 ```json
 {
   "ids": [ 5, 6, 10 ],
   "email_addresses": [ "someone@example.com", "someoneelse@example.com" ]
+}
+```
+
+Grant access to clients:
+
+* `POST /projects/1/client_accesses.json` will grant client access to the project for the existing `ids` of people already on the account or new people via `email_addresses`. Calendars only have team access so this endpoint is not applicable. Project calendars adhere to the accesses set in the project.
+
+```json
+{
+  "ids": [ 1, 9, 11 ],
+  "email_addresses": [ "client@example.com", "anotherclient@example.com" ]
 }
 ```
 
