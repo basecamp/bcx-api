@@ -307,7 +307,6 @@ This will return `201 Created`, with the URL of the new calendar_event in the `L
 
 Basecamp will send a reminder email to all subscribers if `remind_at` is set. `remind_at` can't be more than three days before `starts_at` or any time after `starts_at`.
 
-See [Create a recurring event](#create-a-recurring-event) for examples of recurring events.
 
 Update calendar event
 ---------------------
@@ -429,48 +428,6 @@ Here's a sample recurrence:
       "app_url": "https://basecamp.com/999999999/projects/605816632/calendar_events/1030049109"
     }
   }
-}
-```
-
-Create a recurring event
-------------------------
-* `POST /projects/1/calendar_events.json` will create a new calendar event for a project.
-* `POST /calendars/1/calendar_events.json` will create a new calendar event for a calendar.
-
-Examples:
-
-Use `count`:
-```json
-{
-"summary": "My weekly all-day event",
-"description": "Details to follow",
-"all_day": true,
-"starts_at": "2012-03-28",
-"freq": "weekly",
-"count": 4
-}
-```
-or `until_date`:
-```json
-{
-"summary": "My daily all-day event",
-"description": "Details to follow",
-"all_day": true,
-"starts_at": "2012-03-28",
-"freq": "daily",
-"until_date": "2012-04-01"
-}
-```
-
-or neither for an infinitely recurring event:
-
-```json
-{
-"summary": "Happy birthday Basecamp!",
-"description": "Another year older",
-"all_day": true,
-"starts_at": "2004-02-04",
-"freq": "yearly"
 }
 ```
 
