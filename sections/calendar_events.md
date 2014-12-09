@@ -445,9 +445,11 @@ Use `count`:
   "summary": "My weekly all-day event",
   "description": "Details to follow",
   "all_day": true,
-  "starts_at": "2012-03-28",
-  "frequency": "weekly",
-  "count": 4
+  "recurring": {
+    "starts_at": "2012-03-28",
+    "frequency": "weekly",
+    "count": 4
+  }
 }
 ```
 or `until`:
@@ -456,9 +458,12 @@ or `until`:
   "summary": "My daily all-day event",
   "description": "Details to follow",
   "all_day": true,
-  "starts_at": "2012-03-28",
-  "frequency": "daily",
-  "until": "2012-04-01"
+  "recurring": {
+    "starts_at": "2012-03-28",
+    "frequency": "daily",
+    "until": "2012-04-10"
+    "excluding": [2,3]
+  }
 }
 ```
 
@@ -469,8 +474,10 @@ or neither for an infinitely recurring event:
   "summary": "Happy birthday Basecamp!",
   "description": "Another year older",
   "all_day": true,
-  "starts_at": "2004-02-04",
-  "frequency": "yearly"
+  "recurring": {
+    "starts_at": "2004-02-04",
+    "frequency": "yearly"
+  }
 }
 ```
 
