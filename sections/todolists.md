@@ -6,8 +6,10 @@ Get to-do lists
 
 * `GET /projects/1/todolists.json` shows active to-do lists for this project sorted by position.
 * `GET /projects/1/todolists/completed.json` shows completed to-do lists for this project.
+* `GET /projects/1/todolists/trashed.json` shows trashed to-do lists for this project.
 * `GET /todolists.json` shows active to-do lists for all projects.
 * `GET /todolists/completed.json` shows completed to-do lists for all projects.
+* `GET /todolists/trashed.json` shows trashed to-do lists for all projects.
 
 ```json
 [
