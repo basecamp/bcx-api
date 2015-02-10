@@ -155,27 +155,17 @@ Get to-do
   "completed": false,
   "url": "http://37s.bcx.dev/999999999/api/v1/projects/605816632/todos/1.json",
   "app_url": "http://37s.bcx.dev/999999999/projects/605816632/todos/1",
-  "todolist": {
-    "completed": false,
-    "completed_count": 1,
-    "created_at": "2012-03-24T09:53:35-05:00",
-    "creator": {
-      "id": 127326141,
-      "name": "David Heinemeier Hansson",
-      "avatar_url": "https://asset0.37img.com/global/9d2148cb8ed8e2e8ecbc625dd1cbe7691896c7d9/avatar.96.gif?r=3",
-      "fullsize_avatar_url": "https://asset0.37img.com/global/9d2148cb8ed8e2e8ecbc625dd1cbe7691896c7d9/original.gif?r=3"
+  "attachments": [],
+  "subscribers": [
+    {
+      "id": 149087659,
+      "name": "Jason Fried"
     },
-    "description": "What we will do next",
-    "id": 1000,
-    "name": "Launch list",
-    "position": 3,
-    "private": false,
-    "remaining_count": 2,
-    "trashed": false,
-    "created_at": "2012-03-24T09:53:35-05:00",
-    "url": "http://37s.bcx.dev/735644780/api/v1/projects/605816632/todolists/1.json",
-    "app_url": "https://basecamp.com/999999999/projects/605816632/todolists/1"
-  }
+    {
+      "id": 127326141,
+      "name": "David Heinemeier Hansson"
+    }
+  ]
 }
 ```
 
