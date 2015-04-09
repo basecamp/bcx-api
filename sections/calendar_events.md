@@ -215,7 +215,7 @@ Get calendar event
       "creator": {
         "id": 149087659,
         "name": "Jason Fried",
-        "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3"
+        "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3",
         "fullsize_avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/original.gif?r=3"
       }
     }
@@ -284,7 +284,7 @@ To subscribe specific people to a calendar event pass their person IDs with the 
 {
   "summary": "My single event for a specific time",
   "description": "Details to follow",
-  "starts_at": "2012-03-28T11:50:00-05:00"
+  "starts_at": "2012-03-28T11:50:00-05:00",
   "subscribers": [
     149087659,
     1071630348
@@ -298,7 +298,7 @@ To subscribe all people on the project to a calendar event pass "all" with the c
 {
   "summary": "My single event for a specific time",
   "description": "Details to follow",
-  "starts_at": "2012-03-28T11:50:00-05:00"
+  "starts_at": "2012-03-28T11:50:00-05:00",
   "subscribers": "all"
 }
 ```
@@ -461,7 +461,7 @@ or `until`:
   "recurring": {
     "starts_at": "2012-03-28",
     "frequency": "daily",
-    "until": "2012-04-10"
+    "until": "2012-04-10",
     "excluding": [2,3]
   }
 }
