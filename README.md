@@ -107,7 +107,7 @@ API libraries
 -------------
 
 * [Logan](https://rubygems.org/gems/logan) - Ruby gem
-* [bcx.rb](http://paulspringett.github.io/bcx/docs/lib/bcx.html) - Ruby client
+* [bcx.rb](http://paulspringett.github.io/bcx/docs/bcx.html) - Ruby client
 
 Help us make it better
 ----------------------
