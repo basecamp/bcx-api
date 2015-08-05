@@ -139,6 +139,23 @@ Get to-do
   "updated_at": "2012-03-24T10:56:33-05:00",
   "completed_at": false,
   "comments_count": 1,
+  "comments": [
+      {
+        "attachments": [], 
+        "content": "such a great comment!", 
+        "created_at": "2015-08-05T09:54:18.000+01:00", 
+        "creator": {
+            "avatar_url": "http://cdn.37img.com/global/t4783t741837tb43bnct34872t87/avatar.gif?r=3", 
+            "fullsize_avatar_url": "https://cdn.37img.com/global/4738075413805714038cb7451vb142708/original.gif?r=3", 
+            "id": 7408325432, 
+            "name": "Jason Fried"
+        }, 
+        "id": 314405456, 
+        "private": false, 
+        "trashed": false, 
+        "updated_at": "2015-08-05T09:54:18.000+01:00"
+      }, 
+    ], 
   "private": false,
   "trashed": false,
   "creator": {
@@ -168,6 +185,68 @@ Get to-do
   ]
 }
 ```
+
+{
+    "app_url": "https://basecamp.com/2896498/projects/10017469/todos/194528828", 
+    "attachments": [], 
+    "comments": [
+        {
+            "attachments": [], 
+            "content": "unknown student", 
+            "created_at": "2015-08-05T09:54:18.000+01:00", 
+            "creator": {
+                "avatar_url": "http://cdn.37img.com/global/40004903e1eb5bdea8566dde24971bc60010/avatar.gif?r=3", 
+                "fullsize_avatar_url": "https://cdn.37img.com/global/40004903e1eb5bdea8566dde24971bc60010/original.gif?r=3", 
+                "id": 11686828, 
+                "name": "Jason Gwartz"
+            }, 
+            "id": 314405456, 
+            "private": false, 
+            "trashed": false, 
+            "updated_at": "2015-08-05T09:54:18.000+01:00"
+        }, 
+        {
+            "attachments": [], 
+            "content": "unknown student2", 
+            "created_at": "2015-08-05T09:56:52.000+01:00", 
+            "creator": {
+                "avatar_url": "http://cdn.37img.com/global/40004903e1eb5bdea8566dde24971bc60010/avatar.gif?r=3", 
+                "fullsize_avatar_url": "https://cdn.37img.com/global/40004903e1eb5bdea8566dde24971bc60010/original.gif?r=3", 
+                "id": 11686828, 
+                "name": "Jason Gwartz"
+            }, 
+            "id": 314406143, 
+            "private": false, 
+            "trashed": false, 
+            "updated_at": "2015-08-05T09:56:52.000+01:00"
+        }
+    ], 
+    "comments_count": 2, 
+    "completed": false, 
+    "content": "MagSafe 1 adapter", 
+    "created_at": "2015-08-03T09:51:12.000+01:00", 
+    "creator": {
+        "avatar_url": "http://cdn.37img.com/builtin/default_avatar_v1_1/avatar.gif?r=3", 
+        "fullsize_avatar_url": "https://cdn.37img.com/builtin/default_avatar_v1_1/original.gif?r=3", 
+        "id": 12031691, 
+        "name": "BasecampHelper"
+    }, 
+    "due_at": "2015-08-06", 
+    "due_on": "2015-08-06", 
+    "id": 194528828, 
+    "position": 1, 
+    "private": false, 
+    "subscribers": [
+        {
+            "id": 11686828, 
+            "name": "Jason Gwartz"
+        }
+    ], 
+    "todolist_id": 30550423, 
+    "trashed": false, 
+    "updated_at": "2015-08-05T09:56:52.000+01:00", 
+    "url": "https://basecamp.com/2896498/api/v1/projects/10017469/todos/194528828.json"
+}
 
 Create to-do
 -----------
