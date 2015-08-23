@@ -102,6 +102,7 @@ API ready for use
 * [Uploads](https://github.com/basecamp/bcx-api/blob/master/sections/uploads.md)
 * [Calendars](https://github.com/basecamp/bcx-api/blob/master/sections/calendars.md)
 * [Calendar events](https://github.com/basecamp/bcx-api/blob/master/sections/calendar_events.md)
+* [Forwards](https://github.com/basecamp/bcx-api/blob/master/sections/forwards.md)
 
 API libraries
 -------------
