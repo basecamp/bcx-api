@@ -17,14 +17,14 @@ Get forwards
     "updated_at": "2014-08-19T15:33:12.000-05:00",
     "private": false,
     "trashed": false,
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/forwards/1072010356.json",
-    "app_url": "https://basecamp.com/999999999/projects/605816632/forwards/1072010356",
+    "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632/forwards/1072010356.json",
+    "app_url": "https://basecamp.com/<accountid>/projects/605816632/forwards/1072010356",
     "bucket": {
       "id": 605816632,
       "name": "BCX",
       "type": "Project",
-      "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json",
-      "app_url": "https://basecamp.com/999999999/projects/605816632"
+      "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632.json",
+      "app_url": "https://basecamp.com/<accountid>/projects/605816632"
     }
   },
   {
@@ -35,14 +35,14 @@ Get forwards
     "updated_at": "2014-08-19T15:33:15.000-05:00",
     "private": false,
     "trashed": false,
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/forwards/617311580.json",
-    "app_url": "https://basecamp.com/999999999/projects/605816632/forwards/617311580",
+    "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632/forwards/617311580.json",
+    "app_url": "https://basecamp.com/<accountid>/projects/605816632/forwards/617311580",
     "bucket": {
       "id": 605816632,
       "name": "BCX",
       "type": "Project",
-      "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json",
-      "app_url": "https://basecamp.com/999999999/projects/605816632"
+      "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632.json",
+      "app_url": "https://basecamp.com/<accountid>/projects/605816632"
     }
   }
 ]
@@ -91,7 +91,7 @@ Get forward
       "byte_size": 508254,
       "content_type": "image/gif",
       "created_at": "2012-03-27T22:48:49-04:00",
-      "url": "https://basecamp.com/999999999/api/v1/projects/2222/attachments/3333/40b8a84cb1a30dbe04457dc99e094b6299deea41/original/bearwave.gif",
+      "url": "https://basecamp.com/<accountid>/api/v1/projects/2222/attachments/3333/40b8a84cb1a30dbe04457dc99e094b6299deea41/original/bearwave.gif",
       "creator": {
         "id": 149087659,
         "name": "Jason Fried",
@@ -125,7 +125,7 @@ Get forward
     "id": 605816632,
     "name": "BCX",
     "type": "Project",
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json"
+    "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632.json"
   }
 }
 ```

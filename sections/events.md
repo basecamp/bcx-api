@@ -27,8 +27,8 @@ Note that the `+` character must be url-escaped, while the `-` character can be 
     "eventable": {
       "id": 223304243,
       "type": "Todo",
-      "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todos/223304243.json",
-      "app_url": "https://basecamp.com/999999999/projects/605816632/todos/223304243"
+      "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632/todos/223304243.json",
+      "app_url": "https://basecamp.com/<accountid>/projects/605816632/todos/223304243"
     },
     "creator": {
       "id": 149087659,
@@ -37,8 +37,8 @@ Note that the `+` character must be url-escaped, while the `-` character can be 
       "fullsize_avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/original.gif?r=3"
     },
     "summary": "re-assigned a to-do to Funky ones: Design it",
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todos/223304243.json",
-    "html_url": "https://basecamp.com/999999999/projects/605816632/todos/223304243"
+    "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632/todos/223304243.json",
+    "html_url": "https://basecamp.com/<accountid>/projects/605816632/todos/223304243"
   },
   {
     "id": 1054456334,
@@ -50,8 +50,8 @@ Note that the `+` character must be url-escaped, while the `-` character can be 
     "eventable": {
       "id": 1056802576,
       "type": "Todolist",
-      "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todolists/1056802576.json",
-      "app_url": "https://basecamp.com/999999999/projects/605816632/todolists/1056802576"
+      "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632/todolists/1056802576.json",
+      "app_url": "https://basecamp.com/<accountid>/projects/605816632/todolists/1056802576"
     },
     "creator": {
       "id": 149087659,
@@ -60,8 +60,8 @@ Note that the `+` character must be url-escaped, while the `-` character can be 
       "fullsize_avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/original.gif?r=3"
     },
     "summary": "created a to-do list<span>:</span> Launch list",
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todolists/1056802576.json",
-    "html_url": "https://basecamp.com/999999999/projects/605816632/todolists/1056802576"
+    "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632/todolists/1056802576.json",
+    "html_url": "https://basecamp.com/<accountid>/projects/605816632/todolists/1056802576"
   },
   {
     "id": 973672263,
@@ -73,8 +73,8 @@ Note that the `+` character must be url-escaped, while the `-` character can be 
     "eventable": {
       "id": 174886926,
       "type": "CalendarEvent",
-      "url": "https://basecamp.com/999999999/api/v1/projects/605816632/calendar_events/174886926.json",
-      "app_url": "https://basecamp.com/999999999/projects/605816632/calendar_events/174886926"
+      "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632/calendar_events/174886926.json",
+      "app_url": "https://basecamp.com/<accountid>/projects/605816632/calendar_events/174886926"
     },
     "creator": {
       "id": 149087659,
@@ -86,8 +86,8 @@ Note that the `+` character must be url-escaped, while the `-` character can be 
     "excerpt": "I&#39;ll be there!",
     "raw_excerpt": "I&#39;ll be there!",
     "summary": "commented on Prep the materials before the board meeting with Bezos",
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/calendar_events/174886926.json",
-    "html_url": "https://basecamp.com/999999999/projects/605816632/calendar_events/174886926"
+    "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632/calendar_events/174886926.json",
+    "html_url": "https://basecamp.com/<accountid>/projects/605816632/calendar_events/174886926"
   }
 ]
 ```

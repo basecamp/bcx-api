@@ -23,8 +23,8 @@ Get people
     "fullsize_avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/original.gif?r=3",
     "created_at": "2012-03-22T16:56:48-05:00",
     "updated_at": "2012-03-22T16:56:48-05:00",
-    "url": "https://basecamp.com/999999999/api/v1/people/149087659-jason-fried.json",
-    "app_url": "https://basecamp.com/999999999/people/149087659-jason-fried"
+    "url": "https://basecamp.com/<accountid>/api/v1/people/149087659-jason-fried.json",
+    "app_url": "https://basecamp.com/<accountid>/people/149087659-jason-fried"
   },
   {
     "id": 1071630348,
@@ -37,8 +37,8 @@ Get people
     "fullsize_avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/original.gif?r=3",
     "created_at": "2012-03-22T16:56:48-05:00",
     "updated_at": "2012-03-22T16:56:48-05:00",
-    "url": "https://basecamp.com/999999999/api/v1/people/1071630348-jeremy-kemper.json",
-    "app_url": "https://basecamp.com/999999999/people/1071630348-jeremy-kemper"
+    "url": "https://basecamp.com/<accountid>/api/v1/people/1071630348-jeremy-kemper.json",
+    "app_url": "https://basecamp.com/<accountid>/people/1071630348-jeremy-kemper"
   }
 ]
 ```
@@ -64,14 +64,14 @@ Get person
   "events": {
     "count": 19,
     "updated_at": "2012-03-23T13:55:43-05:00",
-    "url": "https://basecamp.com/999999999/api/v1/people/149087659-jason-fried/events.json",
-    "app_url": "https://basecamp.com/999999999/people/149087659-jason-fried/events"
+    "url": "https://basecamp.com/<accountid>/api/v1/people/149087659-jason-fried/events.json",
+    "app_url": "https://basecamp.com/<accountid>/people/149087659-jason-fried/events"
   },
   "assigned_todos": {
     "count": 80,
     "updated_at": "2013-06-26T16:22:05.000-04:00",
-    "url": "https://basecamp.com/999999999/api/v1/people/149087659-jason-fried/assigned_todos.json",
-    "app_url": "https://basecamp.com/999999999/people/149087659-jason-fried/assigned_todos"
+    "url": "https://basecamp.com/<accountid>/api/v1/people/149087659-jason-fried/assigned_todos.json",
+    "app_url": "https://basecamp.com/<accountid>/people/149087659-jason-fried/assigned_todos"
   }
 }
 ```
@@ -88,7 +88,7 @@ Get projects a person has access to
     "name": "BCX",
     "description": "The Next Generation",
     "updated_at": "2012-03-23T13:55:43-05:00",
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json",
+    "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632.json",
     "template": false,
     "archived": false,
     "starred": true,
@@ -102,7 +102,7 @@ Get projects a person has access to
     "name": "Nothing here!",
     "description": null,
     "updated_at": "2012-03-22T16:56:51-05:00",
-    "url": "https://basecamp.com/999999999/api/v1/projects/684146117.json",
+    "url": "https://basecamp.com/<accountid>/api/v1/projects/684146117.json",
     "template": false,
     "archived": false,
     "starred": false,

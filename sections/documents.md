@@ -16,8 +16,8 @@ Get documents
     "title": "Manifesto",
     "created_at": "2012-03-27T13:19:29-05:00",
     "updated_at": "2012-03-27T13:39:33-05:00",
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/documents/963979453.json",
-    "app_url": "https://basecamp.com/999999999/projects/605816632/documents/963979453",
+    "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632/documents/963979453.json",
+    "app_url": "https://basecamp.com/<accountid>/projects/605816632/documents/963979453",
     "private": false,
     "trashed": false,
     "bucket": {
@@ -25,8 +25,8 @@ Get documents
       "id": 605816632,
       "name": "BCX",
       "color": "3185c5",
-      "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json",
-      "app_url": "https://basecamp.com/999999999/projects/605816632"
+      "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632.json",
+      "app_url": "https://basecamp.com/<accountid>/projects/605816632"
     }
   },
   {
@@ -34,8 +34,8 @@ Get documents
     "title": "Really important notes",
     "created_at": "2012-03-27T13:19:19-05:00",
     "updated_at": "2012-03-27T13:39:12-05:00",
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/documents/243535881.json",
-    "app_url": "https://basecamp.com/999999999/projects/605816632/documents/243535881",
+    "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632/documents/243535881.json",
+    "app_url": "https://basecamp.com/<accountid>/projects/605816632/documents/243535881",
     "private": false,
     "trashed": false,
     "bucket": {
@@ -43,8 +43,8 @@ Get documents
       "id": 605816632,
       "name": "BCX",
       "color": "3185c5",
-      "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json",
-      "app_url": "https://basecamp.com/999999999/projects/605816632"
+      "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632.json",
+      "app_url": "https://basecamp.com/<accountid>/projects/605816632"
     }
   }
 ]

@@ -32,7 +32,7 @@ curl --data-binary @logo.png \
        -u user:pass \
        -H 'Content-Type: image/png' \
        -H 'User-Agent: Rapp (david@basecamp.com)' \
-       https://basecamp.com/999999999/api/v1/attachments.json
+       https://basecamp.com/<accountid>/api/v1/attachments.json
 ```
 
 **Note:** If a file is big, uploading can take a long time! Make sure to account for this in your implementation.

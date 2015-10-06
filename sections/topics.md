@@ -40,15 +40,15 @@ Get topics
     "topicable": {
       "id": 174886926,
       "type": "CalendarEvent",
-      "url": "https://basecamp.com/999999999/api/v1/projects/605816632/calendar_events/174886926.json",
-      "app_url": "https://basecamp.com/999999999/projects/605816632/calendar_events/174886926"
+      "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632/calendar_events/174886926.json",
+      "app_url": "https://basecamp.com/<accountid>/projects/605816632/calendar_events/174886926"
     },
     "bucket": {
       "id": 605816632,
       "name": "BCX",
       "type": "Project",
-      "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json",
-      "app_url": "https://basecamp.com/999999999/projects/605816632"
+      "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632.json",
+      "app_url": "https://basecamp.com/<accountid>/projects/605816632"
     }
   },
   {
@@ -67,15 +67,15 @@ Get topics
     "topicable": {
       "id": 936075699,
       "type": "Message",
-      "url": "https://basecamp.com/999999999/api/v1/projects/605816632/messages/936075699.json",
-      "app_url": "https://basecamp.com/999999999/projects/605816632/messages/936075699"
+      "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632/messages/936075699.json",
+      "app_url": "https://basecamp.com/<accountid>/projects/605816632/messages/936075699"
     },
     "bucket": {
       "id": 605816632,
       "name": "BCX",
       "type": "Project",
-       "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json",
-      "app_url": "https://basecamp.com/999999999/projects/605816632"
+       "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632.json",
+      "app_url": "https://basecamp.com/<accountid>/projects/605816632"
     }
   }
 ]

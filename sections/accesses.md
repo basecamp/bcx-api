@@ -24,8 +24,8 @@ for more people. Do this by adding `&page=2` to the query, then `&page=3` and so
     "fullsize_avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/original.gif?r=3",
     "created_at": "2012-03-22T16:56:48-05:00",
     "updated_at": "2012-03-22T16:56:48-05:00",
-    "url": "https://basecamp.com/999999999/api/v1/people/149087659-jason-fried.json",
-    "app_url": "https://basecamp.com/999999999/people/149087659-jason-fried"
+    "url": "https://basecamp.com/<accountid>/api/v1/people/149087659-jason-fried.json",
+    "app_url": "https://basecamp.com/<accountid>/people/149087659-jason-fried"
   },
   {
     "id": 1071630348,
@@ -39,8 +39,8 @@ for more people. Do this by adding `&page=2` to the query, then `&page=3` and so
     "fullsize_avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/original.gif?r=3",
     "created_at": "2012-03-22T16:56:48-05:00",
     "updated_at": "2012-03-22T16:56:48-05:00",
-    "url": "https://basecamp.com/999999999/api/v1/people/1071630348-jeremy-kemper.json",
-    "app_url": "https://basecamp.com/999999999/people/1071630348-jeremy-kemper"
+    "url": "https://basecamp.com/<accountid>/api/v1/people/1071630348-jeremy-kemper.json",
+    "app_url": "https://basecamp.com/<accountid>/people/1071630348-jeremy-kemper"
   }
 ]
 ```

@@ -46,8 +46,8 @@ Per To-do List:
       "name": "Jason Fried"
     },
     "completed": false,
-    "url": "http://37s.bcx.dev/999999999/api/v1/projects/605816632/todos/1.json",
-    "app_url": "http://37s.bcx.dev/999999999/projects/605816632/todos/1",
+    "url": "http://37s.bcx.dev/<accountid>/api/v1/projects/605816632/todos/1.json",
+    "app_url": "http://37s.bcx.dev/<accountid>/projects/605816632/todos/1",
     "todolist": {
       "completed": false,
       "completed_count": 1,
@@ -67,7 +67,7 @@ Per To-do List:
       "trashed": false,
       "created_at": "2012-03-24T09:53:35-05:00",
       "url": "http://37s.bcx.dev/735644780/api/v1/projects/605816632/todolists/1.json",
-      "app_url": "https://basecamp.com/999999999/projects/605816632/todolists/1"
+      "app_url": "https://basecamp.com/<accountid>/projects/605816632/todolists/1"
     }
   },
   {
@@ -95,8 +95,8 @@ Per To-do List:
       "name": "Jason Fried"
     },
     "completed": false,
-    "url": "http://37s.bcx.dev/999999999/api/v1/projects/605816632/todos/2.json",
-    "app_url": "http://37s.bcx.dev/999999999/projects/605816632/todos/2",
+    "url": "http://37s.bcx.dev/<accountid>/api/v1/projects/605816632/todos/2.json",
+    "app_url": "http://37s.bcx.dev/<accountid>/projects/605816632/todos/2",
     "todolist": {
       "completed": false,
       "completed_count": 1,
@@ -116,7 +116,7 @@ Per To-do List:
       "trashed": false,
       "created_at": "2012-03-24T09:53:35-05:00",
       "url": "http://37s.bcx.dev/735644780/api/v1/projects/605816632/todolists/1.json",
-      "app_url": "https://basecamp.com/999999999/projects/605816632/todolists/1"
+      "app_url": "https://basecamp.com/<accountid>/projects/605816632/todolists/1"
     }
   }
 ]
@@ -153,8 +153,8 @@ Get to-do
     "name": "Jason Fried"
   },
   "completed": false,
-  "url": "http://37s.bcx.dev/999999999/api/v1/projects/605816632/todos/1.json",
-  "app_url": "http://37s.bcx.dev/999999999/projects/605816632/todos/1",
+  "url": "http://37s.bcx.dev/<accountid>/api/v1/projects/605816632/todos/1.json",
+  "app_url": "http://37s.bcx.dev/<accountid>/projects/605816632/todos/1",
   "attachments": [],
   "subscribers": [
     {
