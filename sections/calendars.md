@@ -89,7 +89,7 @@ Update calendar
 }
 ```
 
-This will return `200 OK` if the update was a success, along with a represenation of the calendar in JSON (See the **Get calendar** endpoint). If the user does not have access to update the calendar, you'll see `403 Forbidden`.
+This will return `200 OK` if the update was a success, along with a representation of the calendar in JSON (See the **Get calendar** endpoint). If the user does not have access to update the calendar, you'll see `403 Forbidden`.
 
 
 Delete calendar
