@@ -1,7 +1,7 @@
 The Basecamp 2 API
 ====================
 
-Basecamp 2 has its own API. It is not compatible with the [Basecamp Classic API](https://github.com/basecamp/basecamp-classic-api) or the soon-to-be-released Basecamp 3 API. The core ingredients are still the same, though. This is a REST-style API that uses JSON for serialization and OAuth 2 for authentication.
+Basecamp 2 has its own API. It is not compatible with the [Basecamp Classic API](https://github.com/basecamp/basecamp-classic-api) or the [Basecamp 3 API](https://github.com/basecamp/bc3-api). The core ingredients are still the same, though. This is a REST-style API that uses JSON for serialization and OAuth 2 for authentication.
 
 
 Making a request
