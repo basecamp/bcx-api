@@ -110,6 +110,11 @@ API libraries
 * [Logan](https://rubygems.org/gems/logan) - Ruby gem
 * [bcx.rb](http://paulspringett.github.io/bcx/docs/bcx.html) - Ruby client
 
+3rd Party Drivers
+-----------------
+
+* [CData Software Drivers for Basecamp](http://www.cdata.com/drivers/basecamp) - Standards-based drivers, including ADO.NET, JDBC, ODBC, Excel Add-In, and more, for connecting to Basecamp data.
+
 Help us make it better
 ----------------------
 
