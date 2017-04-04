@@ -19,8 +19,8 @@ Get to-do lists
     "description": "What we need for launch",
     "created_at": "2012-03-22T16:46:52-05:00",
     "updated_at": "2012-03-22T16:56:52-05:00",
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todolists/968316918.json",
-    "app_url": "https://basecamp.com/999999999/projects/605816632/todolists/968316918",
+    "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632/todolists/968316918.json",
+    "app_url": "https://basecamp.com/<accountid>/projects/605816632/todolists/968316918",
     "completed": false,
     "position": 1,
     "private": false,
@@ -37,8 +37,8 @@ Get to-do lists
       "id": 605816632,
       "name": "BCX",
       "type": "Project",
-      "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json",
-      "app_url": "https://basecamp.com/999999999/projects/605816632"
+      "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632.json",
+      "app_url": "https://basecamp.com/<accountid>/projects/605816632"
     }
   },
   {
@@ -47,8 +47,8 @@ Get to-do lists
     "description": "What we will do next",
     "created_at": "2012-03-22T16:46:52-05:00",
     "updated_at": "2012-03-22T16:56:52-05:00",
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todolists/812358930.json",
-    "app_url": "https://basecamp.com/999999999/projects/605816632/todolists/812358930",
+    "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632/todolists/812358930.json",
+    "app_url": "https://basecamp.com/<accountid>/projects/605816632/todolists/812358930",
     "completed": false,
     "position": 2,
     "private": false,
@@ -65,8 +65,8 @@ Get to-do lists
       "id": 605816632,
       "name": "BCX",
       "type": "Project",
-      "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json",
-      "app_url": "https://basecamp.com/999999999/projects/605816632"
+      "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632.json",
+      "app_url": "https://basecamp.com/<accountid>/projects/605816632"
     }
   }
 ]
@@ -90,8 +90,8 @@ Get to-do lists with assigned to-dos
     "description": "What we need for launch!",
     "created_at": "2012-03-22T16:46:52-05:00",
     "updated_at": "2012-03-29T11:00:39-05:00",
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todolists/968316918.json",
-    "app_url": "https://basecamp.com/999999999/projects/605816632/todolists/968316918",
+    "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632/todolists/968316918.json",
+    "app_url": "https://basecamp.com/<accountid>/projects/605816632/todolists/968316918",
     "completed": false,
     "position": 1,
     "private": false,
@@ -112,8 +112,8 @@ Get to-do lists with assigned to-dos
         "comments_count": 0,
         "created_at": "2012-03-27T13:19:30-05:00",
         "updated_at": "2012-03-29T11:00:38-05:00",
-        "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todos/223304243.json",
-        "app_url": "https://basecamp.com/999999999/projects/605816632/todos/223304243",
+        "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632/todos/223304243.json",
+        "app_url": "https://basecamp.com/<accountid>/projects/605816632/todos/223304243",
         "position": 1
       }
     ],
@@ -121,8 +121,8 @@ Get to-do lists with assigned to-dos
       "id": 605816632,
       "name": "BCX",
       "type": "Project",
-      "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json",
-      "app_url": "https://basecamp.com/999999999/projects/605816632"
+      "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632.json",
+      "app_url": "https://basecamp.com/<accountid>/projects/605816632"
     }
   },
   {
@@ -131,8 +131,8 @@ Get to-do lists with assigned to-dos
     "description": "What we will do next",
     "created_at": "2012-03-22T16:46:52-05:00",
     "updated_at": "2012-03-29T10:50:33-05:00",
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todolists/812358930.json",
-    "app_url": "https://basecamp.com/999999999/projects/605816632/todolists/812358930",
+    "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632/todolists/812358930.json",
+    "app_url": "https://basecamp.com/<accountid>/projects/605816632/todolists/812358930",
     "completed": false,
     "position": 2,
     "private": false,
@@ -153,8 +153,8 @@ Get to-do lists with assigned to-dos
         "comments_count": 0,
         "created_at": "2012-03-27T13:19:30-05:00",
         "updated_at": "2012-03-29T10:50:33-05:00",
-        "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todos/270524416.json",
-        "app_url": "https://basecamp.com/999999999/projects/605816632/todos/270524416",
+        "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632/todos/270524416.json",
+        "app_url": "https://basecamp.com/<accountid>/projects/605816632/todos/270524416",
         "position": 1
       }
     ],
@@ -162,8 +162,8 @@ Get to-do lists with assigned to-dos
       "id": 605816632,
       "name": "BCX",
       "type": "Project",
-      "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json",
-      "app_url": "https://basecamp.com/999999999/projects/605816632"
+      "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632.json",
+      "app_url": "https://basecamp.com/<accountid>/projects/605816632"
     }
   }
 ]
@@ -212,8 +212,8 @@ retrieve to-dos from the [to-do endpoints](https://github.com/basecamp/bcx-api/b
           "name": "Jason Fried"
         },
         "position": 1,
-        "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todos/223304243.json",
-        "app_url": "https://basecamp.com/999999999/projects/605816632/todos/223304243"
+        "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632/todos/223304243.json",
+        "app_url": "https://basecamp.com/<accountid>/projects/605816632/todos/223304243"
       },
       {
         "id": 411008527,
@@ -224,8 +224,8 @@ retrieve to-dos from the [to-do endpoints](https://github.com/basecamp/bcx-api/b
         "updated_at": "2012-03-24T09:53:35-05:00",
         "assignee": {},
         "position": 2,
-        "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todos/411008527.json",
-        "app_url": "https://basecamp.com/999999999/projects/605816632/todos/411008527"
+        "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632/todos/411008527.json",
+        "app_url": "https://basecamp.com/<accountid>/projects/605816632/todos/411008527"
       }
     ],
     "completed": [
@@ -237,8 +237,8 @@ retrieve to-dos from the [to-do endpoints](https://github.com/basecamp/bcx-api/b
         "created_at": "2012-03-24T09:59:33-05:00",
         "updated_at": "2012-03-24T09:59:35-05:00",
         "completed_at": "2012-03-24T09:59:35-05:00",
-        "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todos/1046098401.json",
-        "app_url": "https://basecamp.com/999999999/projects/605816632/todos/1046098401",
+        "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632/todos/1046098401.json",
+        "app_url": "https://basecamp.com/<accountid>/projects/605816632/todos/1046098401",
         "assignee": {},
         "position": 3,
         "completer": {
@@ -256,8 +256,8 @@ retrieve to-dos from the [to-do endpoints](https://github.com/basecamp/bcx-api/b
         "created_at": "2012-03-24T09:59:33-05:00",
         "updated_at": "2012-03-24T09:59:35-05:00",
         "completed_at": "2012-03-24T09:59:35-05:00",
-        "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todos/1046098402.json",
-        "app_url": "https://basecamp.com/999999999/projects/605816632/todos/1046098402",
+        "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632/todos/1046098402.json",
+        "app_url": "https://basecamp.com/<accountid>/projects/605816632/todos/1046098402",
         "assignee": {},
         "position": 4,
         "completer": {

@@ -19,8 +19,8 @@ Get projects
     "name": "BCX",
     "description": "The Next Generation",
     "updated_at": "2012-03-23T13:55:43-05:00",
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632.json",
-    "app_url": "https://basecamp.com/999999999/projects/605816632",
+    "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632.json",
+    "app_url": "https://basecamp.com/<accountid>/projects/605816632",
     "template": false,
     "archived": false,
     "starred": true,
@@ -34,8 +34,8 @@ Get projects
     "name": "Nothing here!",
     "description": null,
     "updated_at": "2012-03-22T16:56:51-05:00",
-    "url": "https://basecamp.com/999999999/api/v1/projects/684146117.json",
-    "app_url": "https://basecamp.com/999999999/projects/684146117",
+    "url": "https://basecamp.com/<accountid>/api/v1/projects/684146117.json",
+    "app_url": "https://basecamp.com/<accountid>/projects/684146117",
     "template": false,
     "archived": false,
     "starred": false,
@@ -76,39 +76,39 @@ Get project
   "accesses": {
     "count": 5,
     "updated_at": "2012-03-23T13:55:43-05:00",
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/accesses.json",
-    "app_url": "https://basecamp.com/999999999/projects/605816632/accesses"
+    "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632/accesses.json",
+    "app_url": "https://basecamp.com/<accountid>/projects/605816632/accesses"
   },
   "attachments": {
     "count": 0,
     "updated_at": null,
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/attachments.json",
-    "app_url": "https://basecamp.com/999999999/projects/605816632/attachments"
+    "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632/attachments.json",
+    "app_url": "https://basecamp.com/<accountid>/projects/605816632/attachments"
   },
   "calendar_events": {
     "count": 3,
     "updated_at": "2012-03-22T17:35:50-05:00",
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/calendar_events.json",
-    "app_url": "https://basecamp.com/999999999/projects/605816632/calendar_events"
+    "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632/calendar_events.json",
+    "app_url": "https://basecamp.com/<accountid>/projects/605816632/calendar_events"
   },
   "documents": {
     "count": 0,
     "updated_at": null,
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/documents.json",
-    "app_url": "https://basecamp.com/999999999/projects/605816632/documents"
+    "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632/documents.json",
+    "app_url": "https://basecamp.com/<accountid>/projects/605816632/documents"
   },
   "topics": {
     "count": 2,
     "updated_at": "2012-03-22T17:35:50-05:00",
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/topics.json",
-    "app_url": "https://basecamp.com/999999999/projects/605816632/topics"
+    "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632/topics.json",
+    "app_url": "https://basecamp.com/<accountid>/projects/605816632/topics"
   },
   "todolists": {
     "remaining_count": 4,
     "completed_count": 0,
     "updated_at": "2012-03-23T12:59:23-05:00",
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/todolists.json",
-    "app_url": "https://basecamp.com/999999999/projects/605816632/todolists"
+    "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632/todolists.json",
+    "app_url": "https://basecamp.com/<accountid>/projects/605816632/todolists"
   }
 }
 ```

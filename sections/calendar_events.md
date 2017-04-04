@@ -34,8 +34,8 @@ Get calendar events
       "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3",
       "fullsize_avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/original.gif?r=3"
     },
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/calendar_events/883432030.json",
-    "app_url": "https://basecamp.com/999999999/projects/605816632/calendar_events/883432030"
+    "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632/calendar_events/883432030.json",
+    "app_url": "https://basecamp.com/<accountid>/projects/605816632/calendar_events/883432030"
   },
   {
     "id": 883432031,
@@ -55,8 +55,8 @@ Get calendar events
       "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3",
       "fullsize_avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/original.gif?r=3"
     },
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/calendar_events/883432031.json",
-    "app_url": "https://basecamp.com/999999999/projects/605816632/calendar_events/883432031"
+    "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632/calendar_events/883432031.json",
+    "app_url": "https://basecamp.com/<accountid>/projects/605816632/calendar_events/883432031"
   },
   {
     "id": 1030049109,
@@ -82,8 +82,8 @@ Get calendar events
       "until": null,
       "excluding": [2, 3]
     },
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/calendar_events/1030049109.json",
-    "app_url": "https://basecamp.com/999999999/projects/605816632/calendar_events/1030049109"
+    "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632/calendar_events/1030049109.json",
+    "app_url": "https://basecamp.com/<accountid>/projects/605816632/calendar_events/1030049109"
   }
 ]
 ```
@@ -121,8 +121,8 @@ Get calendar events
       "until": null,
       "excluding": [2, 3]
     },
-    "url": "https://basecamp.com/999999999/api/v1/projects/605816632/calendar_events/1030049109.json",
-    "app_url": "https://basecamp.com/999999999/projects/605816632/calendar_events/1030049109"
+    "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632/calendar_events/1030049109.json",
+    "app_url": "https://basecamp.com/<accountid>/projects/605816632/calendar_events/1030049109"
   },
   {
     "summary": "Weekly meeting",
@@ -142,8 +142,8 @@ Get calendar events
       "number": 1,
       "master": {
         "id": 1030049109,
-        "url": "https://basecamp.com/999999999/api/v1/projects/605816632/calendar_events/1030049109.json",
-        "app_url": "https://basecamp.com/999999999/projects/605816632/calendar_events/1030049109"
+        "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632/calendar_events/1030049109.json",
+        "app_url": "https://basecamp.com/<accountid>/projects/605816632/calendar_events/1030049109"
       }
     }
   },
@@ -166,8 +166,8 @@ Get calendar events
       "number": 4,
       "master": {
         "id": 1030049109,
-        "url": "https://basecamp.com/999999999/api/v1/projects/605816632/calendar_events/1030049109.json",
-        "app_url": "https://basecamp.com/999999999/projects/605816632/calendar_events/1030049109"
+        "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632/calendar_events/1030049109.json",
+        "app_url": "https://basecamp.com/<accountid>/projects/605816632/calendar_events/1030049109"
       }
     }
   }
@@ -203,8 +203,8 @@ Get calendar event
     "avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/avatar.96.gif?r=3",
     "fullsize_avatar_url": "https://asset0.37img.com/global/4113d0a133a32931be8934e70b2ea21efeff72c1/original.gif?r=3"
   },
-  "url": "https://basecamp.com/999999999/api/v1/projects/605816632/calendar_events/883432030.json",
-  "app_url": "https://basecamp.com/999999999/projects/605816632/calendar_events/883432030",
+  "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632/calendar_events/883432030.json",
+  "app_url": "https://basecamp.com/<accountid>/projects/605816632/calendar_events/883432030",
   "comments": [
     {
       "id": 1028592772,
@@ -397,8 +397,8 @@ Here's a sample recurring event:
     "until": null,
     "excluding": [2, 3]
   },
-  "url": "https://basecamp.com/999999999/api/v1/projects/605816632/calendar_events/1030049109.json",
-  "app_url": "https://basecamp.com/999999999/projects/605816632/calendar_events/1030049109"
+  "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632/calendar_events/1030049109.json",
+  "app_url": "https://basecamp.com/<accountid>/projects/605816632/calendar_events/1030049109"
 }
 ```
 
@@ -425,8 +425,8 @@ Here's a sample recurrence:
     "number": 1,
     "master": {
       "id": 1030049109,
-      "url": "https://basecamp.com/999999999/api/v1/projects/605816632/calendar_events/1030049109.json",
-      "app_url": "https://basecamp.com/999999999/projects/605816632/calendar_events/1030049109"
+      "url": "https://basecamp.com/<accountid>/api/v1/projects/605816632/calendar_events/1030049109.json",
+      "app_url": "https://basecamp.com/<accountid>/projects/605816632/calendar_events/1030049109"
     }
   }
 }
