@@ -60,8 +60,9 @@ Pagination
 ----------
 
 Most collection APIs paginate their results. The first request returns up to
-50 records. Check the next page for more results by adding `&page=2`, then
-`&page=3`, and so on until you get an empty response.
+50 records. Check the next page for more results by adding `?page=2`, then
+`?page=3` (or `&page=2`, `&page=3`, if you already have a query string in the URL),
+and so on until you get an empty response.
 
 Use HTTP caching
 ----------------
