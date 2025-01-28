@@ -10,7 +10,7 @@ Get projects
 
 * `GET /projects.json` will return all active projects.
 * `GET /projects/drafts.json` will return all draft projects.
-* `GET /projects/archived.json` will return all archived projects.
+* `GET /projects/archived.json` will return all archived projects. This request is [paginated](https://github.com/basecamp/bcx-api?tab=readme-ov-file#pagination).
 
 ```json
 [
